@@ -1,22 +1,21 @@
-import os
+import re
 from aiogram import Router, types
 from aiogram.filters import StateFilter
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from telethon import TelegramClient
-from telethon.errors import SessionPasswordNeededError, FloodWaitError, PhoneNumberInvalidError
-from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy.future import select
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from telethon.errors import SessionPasswordNeededError, PhoneCodeExpiredError,FloodWaitError,PhoneNumberInvalidError
+from sqlalchemy import select
 from db.sessions import get_db
 from db.models import TelegramSession, User
 from bot.logger import logger
+import os
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 router = Router()
 UPLOAD_PATH = "sessions/"
 os.makedirs(UPLOAD_PATH, exist_ok=True)
 
-# 🔹 FSM состояния
 class SessionStates(StatesGroup):
     waiting_for_api_id = State()
     waiting_for_api_hash = State()
@@ -24,9 +23,7 @@ class SessionStates(StatesGroup):
     waiting_for_code = State()
     waiting_for_password = State()
 
-# ================== 🔹 АВТОРИЗАЦИЯ И СОЗДАНИЕ СЕССИИ 🔹 ==================
 async def request_api_id(message: types.Message, state: FSMContext):
-    """ 🔹 Запрос API ID """
     await state.clear()
     await state.set_state(SessionStates.waiting_for_api_id)
     await message.answer(
@@ -37,21 +34,19 @@ async def request_api_id(message: types.Message, state: FSMContext):
 
 @router.message(StateFilter(SessionStates.waiting_for_api_id))
 async def get_api_id(message: types.Message, state: FSMContext):
-    """ 🔹 Получаем API ID """
     if not message.text.isdigit():
         await message.answer("❌ Введите корректный API ID (только число).")
         return
-
     await state.update_data(api_id=int(message.text.strip()))
     await state.set_state(SessionStates.waiting_for_api_hash)
     await message.answer("✏ Введите API HASH:")
 
 @router.message(StateFilter(SessionStates.waiting_for_api_hash))
 async def get_api_hash(message: types.Message, state: FSMContext):
-    """ 🔹 Получаем API HASH """
     await state.update_data(api_hash=message.text.strip())
     await state.set_state(SessionStates.waiting_for_phone)
     await message.answer("📞 Введите номер телефона:")
+
 
 @router.message(StateFilter(SessionStates.waiting_for_phone))
 async def get_phone_number(message: types.Message, state: FSMContext):
@@ -62,7 +57,6 @@ async def get_phone_number(message: types.Message, state: FSMContext):
         return
 
     await state.update_data(phone=phone)
-
     data = await state.get_data()
     api_id = data["api_id"]
     api_hash = data["api_hash"]
@@ -74,39 +68,75 @@ async def get_phone_number(message: types.Message, state: FSMContext):
     try:
         await client.connect()
         if not await client.is_user_authorized():
-            await client.send_code_request(phone)
+            logger.info(f"📨 Попытка отправки кода на {phone}...")
+
+            sent = await client.send_code_request(phone)
+
+            if not sent.phone_code_hash:
+                raise Exception("Telegram не вернул `phone_code_hash`, код НЕ отправлен.")
+
+            await state.update_data(phone_code_hash=sent.phone_code_hash)
             await state.set_state(SessionStates.waiting_for_code)
-            await message.answer("📨 Код отправлен, введите его:")
+            await message.answer("📨 Код отправлен! Введите его:")
+            logger.info(f"✅ Код успешно отправлен на {phone}")
+
         else:
             await message.answer("✅ Сессия уже активна!")
             await client.disconnect()
             await state.clear()
 
+    except FloodWaitError as e:
+        await message.answer(f"⏳ Telegram временно заблокировал отправку кода. Повторите через {e.seconds} секунд.")
+        logger.warning(f"❌ FloodWaitError: {e}")
+
+    except PhoneNumberInvalidError:
+        await message.answer("❌ Ошибка: Некорректный номер телефона. Проверьте номер и попробуйте снова.")
+
     except Exception as e:
-        logger.error(f"Ошибка отправки кода: {e}")
-        await message.answer(f"❌ Ошибка: {e}")
+        logger.error(f"❌ Ошибка отправки кода: {e}")
+        await message.answer(f"❌ Ошибка: {e}\nПопробуйте позже или используйте другой номер.")
         await state.clear()
+
 
 @router.message(StateFilter(SessionStates.waiting_for_code))
 async def verify_code(message: types.Message, state: FSMContext):
-    """ 🔹 Проверяем введённый код и сохраняем сессию """
+    """ 🔹 Проверяем введённый код и обрабатываем двухфакторную аутентификацию (если требуется) """
     data = await state.get_data()
+
+    if "phone_code_hash" not in data:
+        await message.answer("❌ Ошибка: отсутствует phone_code_hash. Попробуйте запросить код заново.")
+        await state.clear()
+        return
+
     phone = data["phone"]
     api_id = data["api_id"]
     api_hash = data["api_hash"]
-    session_path = os.path.join(UPLOAD_PATH, f"{phone.replace('+', '')}.session")
+    phone_code_hash = data["phone_code_hash"]
+    session_file = f"{phone.replace('+', '')}.session"
+    session_path = os.path.join(UPLOAD_PATH, session_file)
 
     client = TelegramClient(session_path, api_id, api_hash)
+    await client.connect()
 
     try:
-        await client.connect()
-        await client.sign_in(phone, message.text.strip())
+        logger.info(f"📨 Попытка входа: phone={phone}, code={message.text.strip()}, phone_code_hash={phone_code_hash}")
+
+        await client.sign_in(phone, code=message.text.strip(), phone_code_hash=phone_code_hash)
         await message.answer("✅ Сессия успешно создана!")
 
         async for db in get_db():
+            user = await db.execute(select(User).where(User.id == message.from_user.id))
+            user = user.scalars().first()
+
+            # ✅ Если пользователя нет – добавляем его перед сохранением сессии
+            if not user:
+                new_user = User(id=message.from_user.id, telegram_id=message.from_user.id)
+                db.add(new_user)
+                await db.commit()
+                logger.info(f"✅ Новый пользователь добавлен в БД: {message.from_user.id}")
             session = TelegramSession(
                 user_id=message.from_user.id,
-                session_file=f"{phone.replace('+', '')}.session",
+                session_file=session_file,
                 api_id=api_id,
                 api_hash=api_hash
             )
@@ -122,8 +152,12 @@ async def verify_code(message: types.Message, state: FSMContext):
         await message.answer("🔒 Аккаунт защищён паролем. Введите пароль:")
 
     except Exception as e:
-        await message.answer(f"❌ Ошибка: {e}")
+        logger.error(f"❌ Ошибка входа: {e}")
+        await message.answer(f"❌ Ошибка: {e}\nПопробуйте снова запросить код.")
         await state.clear()
+
+    finally:
+        await client.disconnect()
 
 @router.message(StateFilter(SessionStates.waiting_for_password))
 async def get_password(message: types.Message, state: FSMContext):
@@ -158,8 +192,8 @@ async def get_password(message: types.Message, state: FSMContext):
         await message.answer(f"❌ Ошибка: {e}")
         await state.clear()
 
-# ================== 🔹 ПРОСМОТР И УДАЛЕНИЕ СЕССИЙ 🔹 ==================
 
+# ================== 🔹 ПРОСМОТР И УДАЛЕНИЕ СЕССИЙ 🔹 ==================
 
 async def list_sessions(message: types.Message):
     """ 🔹 Показывает список сохранённых сессий пользователя """
@@ -193,13 +227,12 @@ async def list_sessions(message: types.Message):
         except Exception as e:
             user_display = "⚠ Ошибка загрузки"
 
-        text += f"🔹 `{session_name}` {user_display}\n"
+        text += f"🔹 {session_name} {user_display}\n"
         keyboard.inline_keyboard.append([
             InlineKeyboardButton(text=f"🗑 Удалить {session_name}", callback_data=f"delete_session:{session.session_file}")
         ])
 
     await message.answer(text, reply_markup=keyboard, parse_mode="Markdown")
-
 
 @router.callback_query(lambda c: c.data.startswith("delete_session:"))
 async def delete_session(callback: types.CallbackQuery):
@@ -223,5 +256,5 @@ async def delete_session(callback: types.CallbackQuery):
         if os.path.exists(session_path):
             os.remove(session_path)
 
-    await callback.message.answer(f"✅ Сессия `{session_file}` удалена.")
+    await callback.message.answer(f"✅ Сессия {session_file} удалена.")
     await callback.answer()

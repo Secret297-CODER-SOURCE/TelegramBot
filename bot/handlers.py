@@ -23,8 +23,7 @@ class BotStates(StatesGroup):
 # 🔹 Главное меню с кнопками
 main_keyboard = ReplyKeyboardMarkup(
     keyboard=[
-        [KeyboardButton(text="➕ Создать сессию")],
-        [KeyboardButton(text="📂 Мои сессии")],  # ✅ Новая кнопка просмотра сессий
+        [KeyboardButton(text="➕ Создать сессию"),KeyboardButton(text="📂 Мои сессии")], # ✅ Новая кнопка просмотра сессий
         [KeyboardButton(text="📩 Подписаться на группу"), KeyboardButton(text="🚫 Выйти из группы")],
         [KeyboardButton(text="📢 Проверить подписку"), KeyboardButton(text="📨 Начать рассылку")],
         [KeyboardButton(text="🌐 Управление прокси")]
@@ -114,7 +113,7 @@ async def process_spam_start(message: types.Message, state: FSMContext):
     logger.info(f"👤 {message.from_user.id} запустил рассылку: {message.text}")
 
 # 📌 Управление прокси
-@router.message(F.text == "🌐 Управление прокси")
+@router.message( F.text   == "🌐 Управление прокси")
 async def manage_proxy(message: types.Message, state: FSMContext):
     """ 🔹 Открываем меню управления прокси """
     await state.clear()
