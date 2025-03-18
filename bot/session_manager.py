@@ -47,7 +47,6 @@ async def get_api_hash(message: types.Message, state: FSMContext):
     await state.set_state(SessionStates.waiting_for_phone)
     await message.answer("📞 Введите номер телефона:")
 
-
 @router.message(StateFilter(SessionStates.waiting_for_phone))
 async def get_phone_number(message: types.Message, state: FSMContext):
     """ 🔹 Получаем номер телефона и отправляем SMS с кодом """
@@ -70,15 +69,21 @@ async def get_phone_number(message: types.Message, state: FSMContext):
         if not await client.is_user_authorized():
             logger.info(f"📨 Попытка отправки кода на {phone}...")
 
+            # ✅ Отправляем код
             sent = await client.send_code_request(phone)
 
+            # ✅ Проверяем, есть ли `phone_code_hash`
             if not sent.phone_code_hash:
-                raise Exception("Telegram не вернул `phone_code_hash`, код НЕ отправлен.")
+                logger.error("❌ Telegram не вернул `phone_code_hash`, код НЕ отправлен.")
+                await message.answer("❌ Ошибка: Telegram не вернул код подтверждения. Попробуйте снова.")
+                return
+
+            # ✅ Логируем `phone_code_hash`
+            logger.info(f"📩 Код отправлен! `phone_code_hash`: {sent.phone_code_hash}")
 
             await state.update_data(phone_code_hash=sent.phone_code_hash)
             await state.set_state(SessionStates.waiting_for_code)
             await message.answer("📨 Код отправлен! Введите его:")
-            logger.info(f"✅ Код успешно отправлен на {phone}")
 
         else:
             await message.answer("✅ Сессия уже активна!")
@@ -97,14 +102,13 @@ async def get_phone_number(message: types.Message, state: FSMContext):
         await message.answer(f"❌ Ошибка: {e}\nПопробуйте позже или используйте другой номер.")
         await state.clear()
 
-
 @router.message(StateFilter(SessionStates.waiting_for_code))
 async def verify_code(message: types.Message, state: FSMContext):
-    """ 🔹 Проверяем введённый код и обрабатываем двухфакторную аутентификацию (если требуется) """
+    """ 🔹 Проверяем введённый код и сохраняем сессию """
     data = await state.get_data()
 
     if "phone_code_hash" not in data:
-        await message.answer("❌ Ошибка: отсутствует phone_code_hash. Попробуйте запросить код заново.")
+        await message.answer("❌ Ошибка: отсутствует `phone_code_hash`. Попробуйте запросить код заново.")
         await state.clear()
         return
 
@@ -121,19 +125,22 @@ async def verify_code(message: types.Message, state: FSMContext):
     try:
         logger.info(f"📨 Попытка входа: phone={phone}, code={message.text.strip()}, phone_code_hash={phone_code_hash}")
 
+        # ✅ Вход в Telegram
         await client.sign_in(phone, code=message.text.strip(), phone_code_hash=phone_code_hash)
         await message.answer("✅ Сессия успешно создана!")
 
         async for db in get_db():
+            # ✅ Проверяем, есть ли пользователь в БД
             user = await db.execute(select(User).where(User.id == message.from_user.id))
             user = user.scalars().first()
 
-            # ✅ Если пользователя нет – добавляем его перед сохранением сессии
             if not user:
+                # ✅ Создаём пользователя перед сохранением сессии
                 new_user = User(id=message.from_user.id, telegram_id=message.from_user.id)
                 db.add(new_user)
                 await db.commit()
-                logger.info(f"✅ Новый пользователь добавлен в БД: {message.from_user.id}")
+
+            # ✅ Сохраняем сессию после создания юзера
             session = TelegramSession(
                 user_id=message.from_user.id,
                 session_file=session_file,
@@ -146,8 +153,19 @@ async def verify_code(message: types.Message, state: FSMContext):
         logger.info(f"🔹 Сессия создана для {phone}")
         await state.clear()
 
+    except PhoneCodeExpiredError:
+        logger.warning(f"❌ Код истёк для {phone}, запрашиваю новый...")
+
+        sent = await client.send_code_request(phone)
+        if not sent.phone_code_hash:
+            logger.error("❌ Telegram не вернул новый `phone_code_hash`, код НЕ отправлен.")
+            await message.answer("❌ Ошибка: Telegram не вернул новый код. Попробуйте снова.")
+            return
+
+        await state.update_data(phone_code_hash=sent.phone_code_hash)
+        await message.answer("📨 Новый код отправлен. Введите его.")
+
     except SessionPasswordNeededError:
-        """ 🔹 Если аккаунт требует пароль – запрашиваем его у пользователя """
         await state.set_state(SessionStates.waiting_for_password)
         await message.answer("🔒 Аккаунт защищён паролем. Введите пароль:")
 
@@ -158,6 +176,7 @@ async def verify_code(message: types.Message, state: FSMContext):
 
     finally:
         await client.disconnect()
+
 
 @router.message(StateFilter(SessionStates.waiting_for_password))
 async def get_password(message: types.Message, state: FSMContext):

@@ -4892,3 +4892,213 @@ WHERE telegram_sessions.user_id = $1::BIGINT
 2025-03-18 15:45:46,243 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2775)
 2025-03-18 15:45:46,251 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7852439023)
 2025-03-18 15:45:46,285 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-19 00:20:08,841 [INFO] 🤖 Бот запущен!
+2025-03-19 00:20:08,843 [INFO] Start polling
+2025-03-19 00:20:09,145 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-19 00:20:38,060 [INFO] 👤 667217727 открыл меню
+2025-03-19 00:20:38,061 [INFO] Update id=677740552 is handled. Duration 270 ms by bot id=7852439023
+2025-03-19 00:20:43,502 [INFO] 👤 667217727 начал создание сессии
+2025-03-19 00:20:43,503 [INFO] Update id=677740553 is handled. Duration 97 ms by bot id=7852439023
+2025-03-19 00:20:50,932 [INFO] Update id=677740554 is handled. Duration 112 ms by bot id=7852439023
+2025-03-19 00:20:59,338 [INFO] Update id=677740555 is handled. Duration 110 ms by bot id=7852439023
+2025-03-19 00:21:02,063 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 00:21:03,238 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:21:03,542 [INFO] 📨 Попытка отправки кода на +380664266109...
+2025-03-19 00:21:03,854 [INFO] ✅ Код успешно отправлен на +380664266109
+2025-03-19 00:21:03,854 [INFO] Update id=677740556 is handled. Duration 1841 ms by bot id=7852439023
+2025-03-19 00:21:10,074 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 00:21:10,145 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:21:10,382 [INFO] 📨 Попытка входа: phone=+380664266109, code=75665, phone_code_hash=e69fa5e2b340c7b7dc
+2025-03-19 00:21:10,533 [ERROR] ❌ Ошибка входа: The confirmation code has expired (caused by SignInRequest)
+2025-03-19 00:21:10,636 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-19 00:21:10,637 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:21:10,643 [INFO] Update id=677740557 is handled. Duration 573 ms by bot id=7852439023
+2025-03-19 00:28:14,403 [INFO] Polling stopped
+2025-03-19 00:28:14,429 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-19 00:28:43,019 [INFO] 🤖 Бот запущен!
+2025-03-19 00:28:43,020 [INFO] Start polling
+2025-03-19 00:28:43,303 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-19 00:28:44,634 [INFO] 👤 667217727 начал создание сессии
+2025-03-19 00:28:44,635 [INFO] Update id=677740558 is handled. Duration 277 ms by bot id=7852439023
+2025-03-19 00:29:00,486 [INFO] Update id=677740559 is handled. Duration 108 ms by bot id=7852439023
+2025-03-19 00:29:05,511 [INFO] Update id=677740560 is handled. Duration 89 ms by bot id=7852439023
+2025-03-19 00:29:12,463 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 00:29:12,535 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:29:12,869 [INFO] 📨 Попытка отправки кода на +380664266109...
+2025-03-19 00:29:13,177 [INFO] ✅ Код успешно отправлен на +380664266109
+2025-03-19 00:29:13,178 [INFO] Update id=677740561 is handled. Duration 721 ms by bot id=7852439023
+2025-03-19 00:29:23,011 [INFO] Update id=677740562 is not handled. Duration 3 ms by bot id=7852439023
+2025-03-19 00:29:35,979 [INFO] 👤 667217727 начал создание сессии
+2025-03-19 00:29:35,980 [INFO] Update id=677740563 is handled. Duration 104 ms by bot id=7852439023
+2025-03-19 00:29:37,190 [INFO] Update id=677740564 is handled. Duration 101 ms by bot id=7852439023
+2025-03-19 00:29:39,504 [INFO] select pg_catalog.version()
+2025-03-19 00:29:39,505 [INFO] [raw sql] ()
+2025-03-19 00:29:39,517 [INFO] select current_schema()
+2025-03-19 00:29:39,517 [INFO] [raw sql] ()
+2025-03-19 00:29:39,523 [INFO] show standard_conforming_strings
+2025-03-19 00:29:39,524 [INFO] [raw sql] ()
+2025-03-19 00:29:39,528 [INFO] BEGIN (implicit)
+2025-03-19 00:29:39,541 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-19 00:29:39,543 [INFO] [generated in 0.00153s] (667217727,)
+2025-03-19 00:29:39,559 [INFO] ROLLBACK
+2025-03-19 00:29:39,648 [INFO] Update id=677740565 is handled. Duration 405 ms by bot id=7852439023
+2025-03-19 00:35:32,976 [INFO] Polling stopped
+2025-03-19 00:35:33,239 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-19 00:35:44,318 [INFO] 🤖 Бот запущен!
+2025-03-19 00:35:44,319 [INFO] Start polling
+2025-03-19 00:35:44,604 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-19 00:36:20,050 [INFO] 👤 667217727 начал создание сессии
+2025-03-19 00:36:20,050 [INFO] Update id=677740566 is handled. Duration 274 ms by bot id=7852439023
+2025-03-19 00:36:33,081 [INFO] Update id=677740567 is handled. Duration 221 ms by bot id=7852439023
+2025-03-19 00:36:35,998 [INFO] Update id=677740568 is handled. Duration 99 ms by bot id=7852439023
+2025-03-19 00:36:39,700 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 00:36:39,759 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:36:40,067 [INFO] 📨 Попытка отправки кода на +380664266109...
+2025-03-19 00:36:40,284 [INFO] ✅ Код успешно отправлен на +380664266109
+2025-03-19 00:36:40,284 [INFO] Update id=677740569 is handled. Duration 589 ms by bot id=7852439023
+2025-03-19 00:40:07,924 [INFO] Polling stopped
+2025-03-19 00:40:08,160 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-19 00:40:17,217 [INFO] 🤖 Бот запущен!
+2025-03-19 00:40:17,217 [INFO] Start polling
+2025-03-19 00:40:17,508 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-19 00:42:10,251 [INFO] 👤 667217727 начал создание сессии
+2025-03-19 00:42:10,251 [INFO] Update id=677740570 is handled. Duration 329 ms by bot id=7852439023
+2025-03-19 00:42:12,642 [INFO] Update id=677740571 is handled. Duration 148 ms by bot id=7852439023
+2025-03-19 00:42:16,027 [INFO] Update id=677740572 is handled. Duration 107 ms by bot id=7852439023
+2025-03-19 00:42:23,098 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 00:42:23,161 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:42:23,525 [INFO] 📨 Попытка отправки кода на +380664266109...
+2025-03-19 00:42:23,613 [INFO] 📩 Код отправлен! `phone_code_hash`: 703f7ce89624e930a7
+2025-03-19 00:42:23,723 [INFO] Update id=677740573 is handled. Duration 629 ms by bot id=7852439023
+2025-03-19 00:44:06,364 [INFO] 👤 7444003086 начал создание сессии
+2025-03-19 00:44:06,366 [INFO] Update id=677740574 is handled. Duration 206 ms by bot id=7852439023
+2025-03-19 00:44:08,076 [INFO] Update id=677740575 is handled. Duration 89 ms by bot id=7852439023
+2025-03-19 00:44:26,307 [INFO] Update id=677740576 is handled. Duration 121 ms by bot id=7852439023
+2025-03-19 00:44:40,898 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 00:44:40,958 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:44:41,490 [INFO] 📨 Попытка отправки кода на +380664266109...
+2025-03-19 00:44:41,582 [INFO] 📩 Код отправлен! `phone_code_hash`: 703f7ce89624e930a7
+2025-03-19 00:44:41,669 [INFO] Update id=677740577 is handled. Duration 776 ms by bot id=7852439023
+2025-03-19 00:45:40,976 [INFO] 👤 7444003086 начал создание сессии
+2025-03-19 00:45:40,977 [INFO] Update id=677740578 is handled. Duration 153 ms by bot id=7852439023
+2025-03-19 00:45:45,984 [INFO] Update id=677740579 is handled. Duration 115 ms by bot id=7852439023
+2025-03-19 00:45:50,275 [INFO] Update id=677740580 is handled. Duration 149 ms by bot id=7852439023
+2025-03-19 00:45:53,688 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 00:45:53,767 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:45:54,079 [INFO] 📨 Попытка отправки кода на +380638667495...
+2025-03-19 00:45:54,207 [INFO] 📩 Код отправлен! `phone_code_hash`: 60c67a04f2684ce283
+2025-03-19 00:45:54,299 [INFO] Update id=677740581 is handled. Duration 618 ms by bot id=7852439023
+2025-03-19 00:46:06,036 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 00:46:06,109 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:46:06,408 [INFO] 📨 Попытка входа: phone=+380638667495, code=90456, phone_code_hash=60c67a04f2684ce283
+2025-03-19 00:46:06,831 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-19 00:46:06,831 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:46:06,837 [INFO] Update id=677740582 is handled. Duration 805 ms by bot id=7852439023
+2025-03-19 00:47:11,376 [INFO] 👤 7444003086 начал создание сессии
+2025-03-19 00:47:11,377 [INFO] Update id=677740583 is handled. Duration 95 ms by bot id=7852439023
+2025-03-19 00:47:16,874 [INFO] Update id=677740584 is handled. Duration 93 ms by bot id=7852439023
+2025-03-19 00:47:23,755 [INFO] Update id=677740585 is handled. Duration 83 ms by bot id=7852439023
+2025-03-19 00:48:54,631 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 00:48:54,706 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:48:55,166 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-19 00:48:55,167 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:48:55,173 [INFO] Update id=677740586 is handled. Duration 548 ms by bot id=7852439023
+2025-03-19 00:49:03,149 [INFO] Update id=677740587 is handled. Duration 132 ms by bot id=7852439023
+2025-03-19 00:49:20,528 [INFO] select pg_catalog.version()
+2025-03-19 00:49:20,529 [INFO] [raw sql] ()
+2025-03-19 00:49:20,535 [INFO] select current_schema()
+2025-03-19 00:49:20,535 [INFO] [raw sql] ()
+2025-03-19 00:49:20,539 [INFO] show standard_conforming_strings
+2025-03-19 00:49:20,540 [INFO] [raw sql] ()
+2025-03-19 00:49:20,542 [INFO] BEGIN (implicit)
+2025-03-19 00:49:20,555 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-19 00:49:20,556 [INFO] [generated in 0.00166s] ()
+2025-03-19 00:49:20,647 [INFO] 👤 7444003086 запустил рассылку: ///
+2025-03-19 00:49:20,648 [INFO] Update id=677740588 is handled. Duration 285 ms by bot id=7852439023
+2025-03-19 00:49:20,652 [INFO] ROLLBACK
+2025-03-19 00:49:27,673 [INFO] BEGIN (implicit)
+2025-03-19 00:49:27,676 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-19 00:49:27,677 [INFO] [generated in 0.00183s] (7444003086,)
+2025-03-19 00:49:27,686 [INFO] ROLLBACK
+2025-03-19 00:49:27,768 [INFO] Update id=677740589 is handled. Duration 97 ms by bot id=7852439023
+2025-03-19 00:49:47,982 [INFO] Polling stopped
+2025-03-19 00:49:48,242 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-19 00:50:14,435 [INFO] 🤖 Бот запущен!
+2025-03-19 00:50:14,436 [INFO] Start polling
+2025-03-19 00:50:14,744 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-19 00:52:36,330 [INFO] Polling stopped
+2025-03-19 00:52:36,588 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-19 00:52:46,512 [INFO] 🤖 Бот запущен!
+2025-03-19 00:52:46,513 [INFO] Start polling
+2025-03-19 00:52:46,825 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-19 00:52:50,009 [INFO] 👤 7444003086 начал создание сессии
+2025-03-19 00:52:50,010 [INFO] Update id=677740590 is handled. Duration 266 ms by bot id=7852439023
+2025-03-19 00:52:52,362 [INFO] Update id=677740591 is handled. Duration 85 ms by bot id=7852439023
+2025-03-19 00:53:00,048 [INFO] Update id=677740592 is handled. Duration 95 ms by bot id=7852439023
+2025-03-19 00:53:08,254 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 00:53:09,972 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:53:10,281 [INFO] 📨 Попытка отправки кода на +380638667495...
+2025-03-19 00:53:10,402 [INFO] 📩 Код отправлен! `phone_code_hash`: 5287190be2143f95b6
+2025-03-19 00:53:10,539 [INFO] Update id=677740593 is handled. Duration 2336 ms by bot id=7852439023
+2025-03-19 00:53:35,913 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 00:53:35,978 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:53:36,240 [INFO] 📨 Попытка входа: phone=+380638667495, code=12801, phone_code_hash=5287190be2143f95b6
+2025-03-19 00:53:36,452 [WARNING] ❌ Код истёк для +380638667495, запрашиваю новый...
+2025-03-19 00:53:36,678 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-19 00:53:36,679 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:53:36,692 [INFO] Update id=677740594 is handled. Duration 786 ms by bot id=7852439023
+2025-03-19 00:53:44,862 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 00:53:44,922 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:53:45,150 [INFO] 📨 Попытка входа: phone=+380638667495, code=36825, phone_code_hash=9784e8b2654a32bb95
+2025-03-19 00:53:45,699 [INFO] select pg_catalog.version()
+2025-03-19 00:53:45,701 [INFO] [raw sql] ()
+2025-03-19 00:53:45,705 [INFO] select current_schema()
+2025-03-19 00:53:45,708 [INFO] [raw sql] ()
+2025-03-19 00:53:45,712 [INFO] show standard_conforming_strings
+2025-03-19 00:53:45,712 [INFO] [raw sql] ()
+2025-03-19 00:53:45,715 [INFO] BEGIN (implicit)
+2025-03-19 00:53:45,730 [INFO] SELECT users.id, users.telegram_id, users.username 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-19 00:53:45,731 [INFO] [generated in 0.00095s] (7444003086,)
+2025-03-19 00:53:45,741 [INFO] INSERT INTO users (id, telegram_id, username) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR)
+2025-03-19 00:53:45,742 [INFO] [generated in 0.00109s] (7444003086, 7444003086, None)
+2025-03-19 00:53:45,747 [INFO] COMMIT
+2025-03-19 00:53:45,749 [INFO] BEGIN (implicit)
+2025-03-19 00:53:45,752 [INFO] INSERT INTO telegram_sessions (user_id, api_id, api_hash, session_file) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR, $4::VARCHAR) RETURNING telegram_sessions.id
+2025-03-19 00:53:45,752 [INFO] [generated in 0.00076s] (7444003086, 26028258, 'e7a00ec7dee4d25034478bd9c08d27ba', '380638667495.session')
+2025-03-19 00:53:45,762 [INFO] COMMIT
+2025-03-19 00:53:45,764 [INFO] 🔹 Сессия создана для +380638667495
+2025-03-19 00:53:45,764 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-19 00:53:45,765 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:53:45,770 [INFO] Update id=677740595 is handled. Duration 913 ms by bot id=7852439023
+2025-03-19 00:53:53,453 [INFO] Update id=677740596 is handled. Duration 91 ms by bot id=7852439023
+2025-03-19 00:53:56,030 [INFO] Update id=677740597 is handled. Duration 95 ms by bot id=7852439023
+2025-03-19 00:53:57,197 [INFO] BEGIN (implicit)
+2025-03-19 00:53:57,203 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-19 00:53:57,204 [INFO] [generated in 0.00092s] (667217727,)
+2025-03-19 00:53:57,207 [INFO] ROLLBACK
+2025-03-19 00:53:57,468 [INFO] Update id=677740598 is handled. Duration 301 ms by bot id=7852439023
+2025-03-19 00:53:58,549 [INFO] 👤 667217727 начал создание сессии
+2025-03-19 00:53:58,550 [INFO] Update id=677740599 is handled. Duration 102 ms by bot id=7852439023
+2025-03-19 00:54:10,495 [INFO] BEGIN (implicit)
+2025-03-19 00:54:10,498 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-19 00:54:10,499 [INFO] [generated in 0.00100s] ()
+2025-03-19 00:54:10,503 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 00:54:10,559 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:54:44,698 [INFO] Cannot get difference since the account is not logged in: AuthKeyUnregisteredError
+2025-03-19 00:54:44,699 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-19 00:54:44,706 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-19 00:54:58,989 [INFO] ROLLBACK
+2025-03-19 00:54:59,301 [INFO] 👤 7444003086 запустил рассылку: ....
+2025-03-19 00:54:59,307 [INFO] Update id=677740600 is handled. Duration 48815 ms by bot id=7852439023
+2025-03-19 00:55:04,782 [INFO] Polling stopped
+2025-03-19 00:55:05,043 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
