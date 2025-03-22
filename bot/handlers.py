@@ -11,7 +11,7 @@ from bot.spam import start_spam
 from bot.logger import logger
 import random
 import asyncio
-
+from bot.admin_panel import router as admin_router
 router = Router()
 
 class BotStates(StatesGroup):
@@ -30,7 +30,7 @@ main_keyboard = ReplyKeyboardMarkup(
         [KeyboardButton(text="➕ Создать сессию"), KeyboardButton(text="📂 Мои сессии")],
         [KeyboardButton(text="📩 Подписаться на группу"), KeyboardButton(text="🚫 Выйти из группы")],
         [KeyboardButton(text="📢 Проверить подписку"), KeyboardButton(text="📨 Начать рассылку")],
-        [KeyboardButton(text="🌐 Управление прокси")]
+        [KeyboardButton(text="🛠 Админ-панель")],[KeyboardButton(text="🌐 Управление прокси")]
     ],
     resize_keyboard=True
 )

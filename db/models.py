@@ -1,4 +1,4 @@
-from sqlalchemy import Column, BigInteger, String, ForeignKey
+from sqlalchemy import Column, BigInteger, String, ForeignKey,Boolean
 from sqlalchemy.orm import declarative_base, relationship
 
 Base = declarative_base()
@@ -9,7 +9,7 @@ class User(Base):
     id = Column(BigInteger, primary_key=True, index=True)  # ✅ ИСПРАВЛЕНО НА BigInteger
     telegram_id = Column(BigInteger, unique=True, nullable=False)
     username = Column(String, nullable=True)
-
+    is_admin = Column(Boolean, default=False)
     sessions = relationship("TelegramSession", back_populates="user")
 
 class TelegramSession(Base):
