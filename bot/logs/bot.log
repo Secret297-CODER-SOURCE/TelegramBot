@@ -1,0 +1,177 @@
+2025-03-19 01:02:06,356 [INFO] 🤖 Бот запущен!
+2025-03-19 01:02:06,356 [INFO] Start polling
+2025-03-19 01:02:06,518 [INFO] Run polling for bot @efbhfehb_2323_bot id=7821876298 - 'Бот'
+2025-03-19 01:02:31,228 [INFO] 🤖 Бот запущен!
+2025-03-19 01:02:31,229 [INFO] Start polling
+2025-03-19 01:02:31,385 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-19 01:02:37,610 [INFO] 👤 1756925931 открыл меню
+2025-03-19 01:02:37,610 [INFO] Update id=279382066 is handled. Duration 162 ms by bot id=7168399023
+2025-03-19 01:02:38,599 [INFO] 👤 1756925931 начал создание сессии
+2025-03-19 01:02:38,599 [INFO] Update id=279382067 is handled. Duration 71 ms by bot id=7168399023
+2025-03-19 01:02:44,584 [INFO] Update id=279382068 is handled. Duration 65 ms by bot id=7168399023
+2025-03-19 01:02:51,458 [INFO] Update id=279382069 is handled. Duration 89 ms by bot id=7168399023
+2025-03-19 01:02:55,302 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 01:02:56,572 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 01:02:56,764 [INFO] 📨 Попытка отправки кода на +380638667495...
+2025-03-19 01:02:56,848 [INFO] 📩 Код отправлен! `phone_code_hash`: 8587fc3cb7047eac88
+2025-03-19 01:02:56,910 [INFO] Update id=279382070 is handled. Duration 1644 ms by bot id=7168399023
+2025-03-19 01:03:06,200 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 01:03:06,245 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 01:03:06,399 [INFO] 📨 Попытка входа: phone=+380638667495, code=77381, phone_code_hash=8587fc3cb7047eac88
+2025-03-19 01:03:06,504 [WARNING] ❌ Код истёк для +380638667495, запрашиваю новый...
+2025-03-19 01:03:06,674 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-19 01:03:06,674 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-19 01:03:06,679 [INFO] Update id=279382071 is handled. Duration 481 ms by bot id=7168399023
+2025-03-19 01:03:14,813 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 01:03:14,859 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 01:03:15,018 [INFO] 📨 Попытка входа: phone=+380638667495, code=35637, phone_code_hash=989c127529a0155dbe
+2025-03-19 01:03:15,130 [WARNING] ❌ Код истёк для +380638667495, запрашиваю новый...
+2025-03-19 01:03:15,284 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-19 01:03:15,284 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-19 01:03:15,289 [INFO] Update id=279382072 is handled. Duration 477 ms by bot id=7168399023
+2025-03-19 01:03:21,659 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 01:03:21,702 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 01:03:21,864 [INFO] 📨 Попытка входа: phone=+380638667495, code=30416, phone_code_hash=5e7d4a9696f11f777f
+2025-03-19 01:03:21,957 [WARNING] ❌ Код истёк для +380638667495, запрашиваю новый...
+2025-03-19 01:03:22,155 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-19 01:03:22,155 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-19 01:03:22,161 [INFO] Update id=279382073 is handled. Duration 503 ms by bot id=7168399023
+2025-03-19 01:03:30,359 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 01:03:30,401 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 01:03:30,546 [ERROR] ❌ Ошибка входа: 'NoneType' object has no attribute 'strip'
+2025-03-19 01:03:30,614 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-19 01:03:30,614 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-19 01:03:30,619 [INFO] Update id=279382074 is handled. Duration 261 ms by bot id=7168399023
+2025-03-19 01:03:45,476 [INFO] Update id=279382075 is not handled. Duration 0 ms by bot id=7168399023
+2025-03-19 01:03:46,978 [INFO] Update id=279382076 is not handled. Duration 1 ms by bot id=7168399023
+2025-03-19 01:04:05,580 [INFO] 🤖 Бот запущен!
+2025-03-19 01:04:05,580 [INFO] Start polling
+2025-03-19 01:04:05,726 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-19 01:04:06,662 [INFO] 👤 1756925931 открыл меню
+2025-03-19 01:04:06,662 [INFO] Update id=279382077 is handled. Duration 209 ms by bot id=7168399023
+2025-03-19 01:04:07,629 [INFO] 👤 1756925931 начал создание сессии
+2025-03-19 01:04:07,630 [INFO] Update id=279382078 is handled. Duration 61 ms by bot id=7168399023
+2025-03-19 01:04:14,316 [INFO] Update id=279382079 is handled. Duration 65 ms by bot id=7168399023
+2025-03-19 01:04:22,138 [INFO] Update id=279382080 is handled. Duration 58 ms by bot id=7168399023
+2025-03-19 01:04:24,937 [INFO] Update id=279382081 is not handled. Duration 1 ms by bot id=7168399023
+2025-03-19 01:04:24,937 [ERROR] Cause exception while process update id=279382081 by bot id=7168399023
+AttributeError: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\Downloads\AyuGram Desktop\TelegramBot (5)\TelegramBot\.venv1\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\quake\OneDrive\Документы\GitHub\TelegramBot\bot\session_manager.py", line 53, in get_phone_number
+    phone = message.text.strip()
+            ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2025-03-19 01:04:33,371 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 01:04:34,385 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 01:04:34,593 [INFO] 📨 Попытка отправки кода на +380638667495...
+2025-03-19 01:04:34,692 [INFO] 📩 Код отправлен! `phone_code_hash`: 7a82d222bebfd31c52
+2025-03-19 01:04:34,755 [INFO] Update id=279382082 is handled. Duration 1416 ms by bot id=7168399023
+2025-03-19 01:04:37,460 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 01:04:37,503 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 01:04:37,653 [ERROR] ❌ Ошибка входа: 'NoneType' object has no attribute 'strip'
+2025-03-19 01:04:37,716 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-19 01:04:37,716 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-19 01:04:37,722 [INFO] Update id=279382083 is handled. Duration 263 ms by bot id=7168399023
+2025-03-19 01:04:40,627 [INFO] 👤 1756925931 начал создание сессии
+2025-03-19 01:04:40,627 [INFO] Update id=279382084 is handled. Duration 58 ms by bot id=7168399023
+2025-03-19 01:04:57,202 [INFO] Update id=279382085 is handled. Duration 138 ms by bot id=7168399023
+2025-03-19 01:05:01,488 [INFO] Update id=279382086 is handled. Duration 76 ms by bot id=7168399023
+2025-03-19 01:05:03,863 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-19 01:05:05,547 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-19 01:05:05,833 [INFO] 📨 Попытка отправки кода на +5583996004385...
+2025-03-19 01:05:05,887 [INFO] Phone migrated to 1
+2025-03-19 01:05:05,887 [INFO] Reconnecting to new data center 1
+2025-03-19 01:05:05,944 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-19 01:05:05,945 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-19 01:05:05,945 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-19 01:05:07,528 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-19 01:05:08,276 [INFO] 📩 Код отправлен! `phone_code_hash`: 4e307aab4350f6efbf
+2025-03-19 01:05:08,344 [INFO] Update id=279382087 is handled. Duration 4514 ms by bot id=7168399023
+2025-03-19 01:05:32,696 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-19 01:05:32,831 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-19 01:05:33,257 [INFO] 📨 Попытка входа: phone=+5583996004385, code=96264, phone_code_hash=4e307aab4350f6efbf
+2025-03-19 01:05:33,828 [INFO] select pg_catalog.version()
+2025-03-19 01:05:33,828 [INFO] [raw sql] ()
+2025-03-19 01:05:33,830 [INFO] select current_schema()
+2025-03-19 01:05:33,830 [INFO] [raw sql] ()
+2025-03-19 01:05:33,830 [INFO] show standard_conforming_strings
+2025-03-19 01:05:33,831 [INFO] [raw sql] ()
+2025-03-19 01:05:33,831 [INFO] BEGIN (implicit)
+2025-03-19 01:05:33,836 [INFO] SELECT users.id, users.telegram_id, users.username 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-19 01:05:33,836 [INFO] [generated in 0.00025s] (1756925931,)
+2025-03-19 01:05:33,839 [INFO] INSERT INTO users (id, telegram_id, username) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR)
+2025-03-19 01:05:33,839 [INFO] [generated in 0.00028s] (1756925931, 1756925931, None)
+2025-03-19 01:05:33,840 [INFO] ROLLBACK
+2025-03-19 01:05:33,840 [ERROR] ❌ Ошибка входа: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "users_telegram_id_key"
+DETAIL:  Key (telegram_id)=(1756925931) already exists.
+[SQL: INSERT INTO users (id, telegram_id, username) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR)]
+[parameters: (1756925931, 1756925931, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-03-19 01:05:33,925 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-19 01:05:33,925 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-19 01:05:33,930 [INFO] Update id=279382088 is handled. Duration 1235 ms by bot id=7168399023
+2025-03-19 01:05:36,493 [INFO] Update id=279382089 is not handled. Duration 0 ms by bot id=7168399023
+2025-03-19 01:07:01,016 [INFO] 🤖 Бот запущен!
+2025-03-19 01:07:01,017 [INFO] Start polling
+2025-03-19 01:07:01,191 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'

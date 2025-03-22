@@ -34,8 +34,8 @@ async def request_api_id(message: types.Message, state: FSMContext):
 
 @router.message(StateFilter(SessionStates.waiting_for_api_id))
 async def get_api_id(message: types.Message, state: FSMContext):
-    if not message.text.isdigit():
-        await message.answer("❌ Введите корректный API ID (только число).")
+    if not message.text or not message.text.isdigit():
+        await message.answer("Введите корректное число для API_ID.")
         return
     await state.update_data(api_id=int(message.text.strip()))
     await state.set_state(SessionStates.waiting_for_api_hash)
