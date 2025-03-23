@@ -8746,3 +8746,713 @@ FROM telegram_sessions
 2025-03-22 02:59:37,104 [INFO] Update id=279382516 is not handled. Duration 70769 ms by bot id=7168399023
 2025-03-22 02:59:37,104 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
 2025-03-22 02:59:37,105 [INFO] ROLLBACK
+2025-03-22 22:45:08,861 [INFO] 🤖 Бот запущен!
+2025-03-22 22:45:08,862 [INFO] Start polling
+2025-03-22 22:45:09,088 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 22:45:09,148 [INFO] Update id=279382517 is not handled. Duration 1 ms by bot id=7168399023
+2025-03-22 22:45:25,587 [INFO] 👤 1756925931 открыл меню
+2025-03-22 22:45:25,587 [INFO] Update id=279382518 is handled. Duration 231 ms by bot id=7168399023
+2025-03-22 22:45:33,913 [INFO] select pg_catalog.version()
+2025-03-22 22:45:33,914 [INFO] [raw sql] ()
+2025-03-22 22:45:33,920 [INFO] select current_schema()
+2025-03-22 22:45:33,921 [INFO] [raw sql] ()
+2025-03-22 22:45:33,924 [INFO] show standard_conforming_strings
+2025-03-22 22:45:33,924 [INFO] [raw sql] ()
+2025-03-22 22:45:33,926 [INFO] BEGIN (implicit)
+2025-03-22 22:45:33,932 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-22 22:45:33,933 [INFO] [generated in 0.00054s] (1756925931,)
+2025-03-22 22:45:33,939 [INFO] ROLLBACK
+2025-03-22 22:45:33,954 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-22 22:45:34,092 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-22 22:45:34,846 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-22 22:45:34,847 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-22 22:45:34,852 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-22 22:45:34,899 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-22 22:45:35,156 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-22 22:45:35,157 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-22 22:45:35,278 [INFO] Update id=279382519 is handled. Duration 1511 ms by bot id=7168399023
+2025-03-22 22:46:51,962 [INFO] Update id=279382520 is handled. Duration 59 ms by bot id=7168399023
+2025-03-22 22:47:20,767 [INFO] Update id=279382521 is handled. Duration 59 ms by bot id=7168399023
+2025-03-22 22:47:24,016 [INFO] Update id=279382522 is handled. Duration 58 ms by bot id=7168399023
+2025-03-22 22:47:37,369 [INFO] Update id=279382523 is not handled. Duration 1 ms by bot id=7168399023
+2025-03-22 22:47:37,369 [ERROR] Cause exception while process update id=279382523 by bot id=7168399023
+TypeError: join_group() got an unexpected keyword argument 'random_range'
+Traceback (most recent call last):
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\quake\OneDrive\Документы\GitHub\TelegramBot\bot\handlers.py", line 91, in process_subscribe_random_range
+    await join_group(message, group_link=group_link, interval=interval, random_range=random_range)
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: join_group() got an unexpected keyword argument 'random_range'
+2025-03-22 22:51:12,725 [INFO] Polling stopped
+2025-03-22 22:51:12,979 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 22:51:16,978 [INFO] 🤖 Бот запущен!
+2025-03-22 22:51:16,979 [INFO] Start polling
+2025-03-22 22:51:17,500 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 22:51:27,782 [INFO] 👤 1756925931 открыл меню
+2025-03-22 22:51:27,782 [INFO] Update id=279382524 is handled. Duration 175 ms by bot id=7168399023
+2025-03-22 22:51:29,202 [INFO] Update id=279382525 is handled. Duration 64 ms by bot id=7168399023
+2025-03-22 22:51:34,657 [INFO] Update id=279382526 is handled. Duration 62 ms by bot id=7168399023
+2025-03-22 22:51:37,395 [INFO] select pg_catalog.version()
+2025-03-22 22:51:37,396 [INFO] [raw sql] ()
+2025-03-22 22:51:37,397 [INFO] select current_schema()
+2025-03-22 22:51:37,397 [INFO] [raw sql] ()
+2025-03-22 22:51:37,398 [INFO] show standard_conforming_strings
+2025-03-22 22:51:37,399 [INFO] [raw sql] ()
+2025-03-22 22:51:37,399 [INFO] BEGIN (implicit)
+2025-03-22 22:51:37,405 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-22 22:51:37,405 [INFO] [generated in 0.00045s] ()
+2025-03-22 22:51:37,409 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-22 22:51:37,551 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-22 22:51:38,674 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-22 22:51:38,675 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-22 22:53:54,656 [INFO] Polling stopped
+2025-03-22 22:53:54,912 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 22:53:54,912 [INFO] Update id=279382527 is not handled. Duration 137701 ms by bot id=7168399023
+2025-03-22 22:53:54,913 [INFO] ROLLBACK
+2025-03-22 22:56:18,203 [INFO] 🤖 Бот запущен!
+2025-03-22 22:56:18,204 [INFO] Start polling
+2025-03-22 22:56:18,365 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 22:56:26,965 [INFO] 👤 1756925931 открыл меню
+2025-03-22 22:56:26,966 [INFO] Update id=279382528 is handled. Duration 180 ms by bot id=7168399023
+2025-03-22 22:56:28,433 [INFO] Update id=279382529 is handled. Duration 76 ms by bot id=7168399023
+2025-03-22 22:56:32,756 [INFO] Update id=279382530 is handled. Duration 59 ms by bot id=7168399023
+2025-03-22 22:56:35,576 [INFO] select pg_catalog.version()
+2025-03-22 22:56:35,576 [INFO] [raw sql] ()
+2025-03-22 22:56:35,578 [INFO] select current_schema()
+2025-03-22 22:56:35,578 [INFO] [raw sql] ()
+2025-03-22 22:56:35,579 [INFO] show standard_conforming_strings
+2025-03-22 22:56:35,579 [INFO] [raw sql] ()
+2025-03-22 22:56:35,580 [INFO] BEGIN (implicit)
+2025-03-22 22:56:35,585 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-22 22:56:35,585 [INFO] [generated in 0.00038s] ()
+2025-03-22 22:56:35,589 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-22 22:56:35,734 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-22 22:56:36,726 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-22 22:56:36,727 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-22 22:56:48,675 [INFO] Polling stopped
+2025-03-22 22:56:48,934 [INFO] Update id=279382531 is not handled. Duration 13544 ms by bot id=7168399023
+2025-03-22 22:56:48,935 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 22:56:48,935 [INFO] ROLLBACK
+2025-03-22 23:02:01,594 [INFO] 🤖 Бот запущен!
+2025-03-22 23:02:01,594 [INFO] Start polling
+2025-03-22 23:02:01,786 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 23:02:05,687 [INFO] 👤 1756925931 открыл меню
+2025-03-22 23:02:05,688 [INFO] Update id=279382532 is handled. Duration 517 ms by bot id=7168399023
+2025-03-22 23:02:10,713 [INFO] Update id=279382533 is handled. Duration 74 ms by bot id=7168399023
+2025-03-22 23:02:14,239 [INFO] select pg_catalog.version()
+2025-03-22 23:02:14,239 [INFO] [raw sql] ()
+2025-03-22 23:02:14,240 [INFO] select current_schema()
+2025-03-22 23:02:14,241 [INFO] [raw sql] ()
+2025-03-22 23:02:14,242 [INFO] show standard_conforming_strings
+2025-03-22 23:02:14,242 [INFO] [raw sql] ()
+2025-03-22 23:02:14,243 [INFO] BEGIN (implicit)
+2025-03-22 23:02:14,248 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-22 23:02:14,249 [INFO] [generated in 0.00049s] ()
+2025-03-22 23:02:14,252 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-22 23:02:14,396 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:02:15,385 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-22 23:02:15,386 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:02:15,392 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-22 23:02:15,431 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-22 23:02:15,798 [INFO] ROLLBACK
+2025-03-22 23:02:15,863 [INFO] Update id=279382534 is handled. Duration 1683 ms by bot id=7168399023
+2025-03-22 23:02:21,964 [INFO] Update id=279382535 is handled. Duration 64 ms by bot id=7168399023
+2025-03-22 23:02:26,002 [INFO] Update id=279382536 is handled. Duration 60 ms by bot id=7168399023
+2025-03-22 23:02:41,642 [INFO] BEGIN (implicit)
+2025-03-22 23:02:41,643 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-22 23:02:41,643 [INFO] [cached since 27.39s ago] ()
+2025-03-22 23:02:41,645 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-22 23:02:41,793 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:02:42,787 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-22 23:02:42,787 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:02:42,792 [INFO] ROLLBACK
+2025-03-22 23:02:42,920 [INFO] Update id=279382537 is handled. Duration 1478 ms by bot id=7168399023
+2025-03-22 23:03:18,207 [INFO] Polling stopped
+2025-03-22 23:03:18,464 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 23:03:53,473 [INFO] 🤖 Бот запущен!
+2025-03-22 23:03:53,474 [INFO] Start polling
+2025-03-22 23:03:53,626 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 23:05:33,874 [INFO] Update id=279382538 is handled. Duration 171 ms by bot id=7168399023
+2025-03-22 23:05:38,440 [INFO] Update id=279382539 is handled. Duration 111 ms by bot id=7168399023
+2025-03-22 23:05:41,391 [INFO] select pg_catalog.version()
+2025-03-22 23:05:41,391 [INFO] [raw sql] ()
+2025-03-22 23:05:41,392 [INFO] select current_schema()
+2025-03-22 23:05:41,393 [INFO] [raw sql] ()
+2025-03-22 23:05:41,394 [INFO] show standard_conforming_strings
+2025-03-22 23:05:41,394 [INFO] [raw sql] ()
+2025-03-22 23:05:41,395 [INFO] BEGIN (implicit)
+2025-03-22 23:05:41,399 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-22 23:05:41,400 [INFO] [generated in 0.00055s] ()
+2025-03-22 23:05:41,406 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-22 23:05:41,557 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:05:42,296 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-22 23:05:42,297 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:06:07,869 [INFO] BEGIN (implicit)
+2025-03-22 23:06:07,871 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-22 23:06:07,872 [INFO] [generated in 0.00054s] (1756925931,)
+2025-03-22 23:06:07,875 [INFO] ROLLBACK
+2025-03-22 23:06:07,876 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-22 23:06:08,013 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:06:08,740 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-22 23:06:08,741 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:06:08,747 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-22 23:06:08,791 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-22 23:06:09,058 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-22 23:06:09,059 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-22 23:06:09,144 [INFO] Update id=279382541 is handled. Duration 1326 ms by bot id=7168399023
+2025-03-22 23:06:18,010 [INFO] Update id=279382542 is handled. Duration 80 ms by bot id=7168399023
+2025-03-22 23:06:21,695 [INFO] BEGIN (implicit)
+2025-03-22 23:06:21,696 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-22 23:06:21,696 [INFO] [cached since 40.3s ago] ()
+2025-03-22 23:06:21,698 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-22 23:06:21,833 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:06:22,645 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-22 23:06:22,646 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:06:40,053 [INFO] Polling stopped
+2025-03-22 23:06:40,312 [INFO] Update id=279382540 is not handled. Duration 59107 ms by bot id=7168399023
+2025-03-22 23:06:40,313 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 23:06:40,313 [INFO] Update id=279382543 is not handled. Duration 18881 ms by bot id=7168399023
+2025-03-22 23:06:40,314 [INFO] ROLLBACK
+2025-03-22 23:06:40,314 [INFO] ROLLBACK
+2025-03-22 23:06:47,247 [INFO] 🤖 Бот запущен!
+2025-03-22 23:06:47,248 [INFO] Start polling
+2025-03-22 23:06:47,402 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 23:06:51,812 [INFO] 👤 1756925931 открыл меню
+2025-03-22 23:06:51,813 [INFO] Update id=279382544 is handled. Duration 162 ms by bot id=7168399023
+2025-03-22 23:06:53,820 [INFO] Update id=279382545 is handled. Duration 63 ms by bot id=7168399023
+2025-03-22 23:08:20,154 [INFO] Polling stopped
+2025-03-22 23:08:20,419 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 23:08:35,268 [INFO] 🤖 Бот запущен!
+2025-03-22 23:08:35,269 [INFO] Start polling
+2025-03-22 23:08:35,426 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 23:08:40,443 [INFO] 👤 1756925931 открыл меню
+2025-03-22 23:08:40,443 [INFO] Update id=279382546 is handled. Duration 257 ms by bot id=7168399023
+2025-03-22 23:08:44,213 [INFO] Update id=279382547 is handled. Duration 61 ms by bot id=7168399023
+2025-03-22 23:08:45,749 [INFO] Update id=279382548 is handled. Duration 59 ms by bot id=7168399023
+2025-03-22 23:08:49,146 [INFO] select pg_catalog.version()
+2025-03-22 23:08:49,147 [INFO] [raw sql] ()
+2025-03-22 23:08:49,148 [INFO] select current_schema()
+2025-03-22 23:08:49,148 [INFO] [raw sql] ()
+2025-03-22 23:08:49,149 [INFO] show standard_conforming_strings
+2025-03-22 23:08:49,149 [INFO] [raw sql] ()
+2025-03-22 23:08:49,150 [INFO] BEGIN (implicit)
+2025-03-22 23:08:49,155 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-22 23:08:49,156 [INFO] [generated in 0.00048s] ()
+2025-03-22 23:08:49,159 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-22 23:08:49,296 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:08:50,177 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-22 23:08:50,178 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:09:50,197 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-22 23:09:50,244 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-22 23:09:50,690 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-22 23:09:50,691 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-22 23:10:50,707 [INFO] ROLLBACK
+2025-03-22 23:10:50,775 [INFO] Подписка завершена: 0 успешных, 2 ошибок
+2025-03-22 23:10:50,776 [INFO] Update id=279382549 is handled. Duration 122069 ms by bot id=7168399023
+2025-03-22 23:11:57,737 [ERROR] Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-22 23:11:57,737 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7168399023)
+2025-03-22 23:12:02,873 [ERROR] Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-22 23:12:02,873 [WARNING] Sleep for 1.396220 seconds and try again... (tryings = 1, bot id = 7168399023)
+2025-03-22 23:12:06,913 [INFO] Connection established (tryings = 2, bot id = 7168399023)
+2025-03-22 23:12:06,975 [INFO] 👤 1756925931 открыл меню
+2025-03-22 23:12:06,975 [INFO] Update id=279382550 is handled. Duration 61 ms by bot id=7168399023
+2025-03-22 23:12:08,211 [INFO] Update id=279382551 is handled. Duration 73 ms by bot id=7168399023
+2025-03-22 23:12:08,507 [ERROR] Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-22 23:12:08,507 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7168399023)
+2025-03-22 23:12:13,405 [INFO] Connection established (tryings = 1, bot id = 7168399023)
+2025-03-22 23:12:13,472 [INFO] Update id=279382552 is handled. Duration 65 ms by bot id=7168399023
+2025-03-22 23:12:14,199 [ERROR] Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-22 23:12:14,199 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7168399023)
+2025-03-22 23:12:19,323 [ERROR] Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-22 23:12:19,324 [WARNING] Sleep for 1.143043 seconds and try again... (tryings = 1, bot id = 7168399023)
+2025-03-22 23:12:24,892 [ERROR] Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-22 23:12:24,893 [WARNING] Sleep for 1.399612 seconds and try again... (tryings = 2, bot id = 7168399023)
+2025-03-22 23:12:31,054 [ERROR] Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-22 23:12:31,054 [WARNING] Sleep for 1.922198 seconds and try again... (tryings = 3, bot id = 7168399023)
+2025-03-22 23:12:38,102 [ERROR] Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-22 23:12:38,103 [WARNING] Sleep for 2.492844 seconds and try again... (tryings = 4, bot id = 7168399023)
+2025-03-22 23:12:50,658 [INFO] Connection established (tryings = 5, bot id = 7168399023)
+2025-03-22 23:20:13,482 [INFO] Polling stopped
+2025-03-22 23:20:13,743 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 23:44:12,484 [INFO] 🤖 Бот запущен!
+2025-03-22 23:44:12,484 [INFO] Start polling
+2025-03-22 23:44:12,628 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 23:44:19,513 [INFO] 👤 1756925931 открыл меню
+2025-03-22 23:44:19,514 [INFO] Update id=279382554 is handled. Duration 449 ms by bot id=7168399023
+2025-03-22 23:44:21,301 [INFO] Update id=279382555 is handled. Duration 58 ms by bot id=7168399023
+2025-03-22 23:46:37,633 [INFO] Update id=279382556 is handled. Duration 64 ms by bot id=7168399023
+2025-03-22 23:46:42,191 [INFO] select pg_catalog.version()
+2025-03-22 23:46:42,191 [INFO] [raw sql] ()
+2025-03-22 23:46:42,193 [INFO] select current_schema()
+2025-03-22 23:46:42,193 [INFO] [raw sql] ()
+2025-03-22 23:46:42,194 [INFO] show standard_conforming_strings
+2025-03-22 23:46:42,194 [INFO] [raw sql] ()
+2025-03-22 23:46:42,195 [INFO] BEGIN (implicit)
+2025-03-22 23:46:42,201 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-22 23:46:42,202 [INFO] [generated in 0.00046s] ()
+2025-03-22 23:46:42,205 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-22 23:46:42,362 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:46:43,391 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-22 23:46:43,392 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:50:03,404 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-22 23:50:03,445 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-22 23:50:03,920 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-22 23:50:03,920 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-22 23:53:23,929 [INFO] ROLLBACK
+2025-03-22 23:53:24,013 [INFO] Подписка завершена: 2 успешных, 0 ошибок
+2025-03-22 23:56:14,059 [INFO] BEGIN (implicit)
+2025-03-22 23:56:14,061 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-22 23:56:14,061 [INFO] [generated in 0.00057s] (1756925931,)
+2025-03-22 23:56:14,063 [INFO] ROLLBACK
+2025-03-22 23:56:14,064 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-22 23:56:14,210 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:56:14,975 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-22 23:56:14,975 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:56:14,981 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-22 23:56:15,022 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-22 23:56:15,568 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-22 23:56:15,569 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-22 23:56:15,639 [INFO] Update id=279382558 is handled. Duration 1581 ms by bot id=7168399023
+2025-03-22 23:56:44,105 [INFO] BEGIN (implicit)
+2025-03-22 23:56:44,105 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-22 23:56:44,106 [INFO] [cached since 601.9s ago] ()
+2025-03-22 23:56:44,107 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-22 23:56:44,243 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:56:45,193 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-22 23:56:45,194 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-22 23:57:00,119 [INFO] Polling stopped
+2025-03-22 23:57:00,381 [INFO] Update id=279382557 is not handled. Duration 618399 ms by bot id=7168399023
+2025-03-22 23:57:00,381 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-22 23:57:00,382 [INFO] ROLLBACK
+2025-03-23 00:15:46,974 [INFO] 🤖 Бот запущен!
+2025-03-23 00:15:46,974 [INFO] Start polling
+2025-03-23 00:15:47,123 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 00:15:54,794 [INFO] 👤 1756925931 открыл меню
+2025-03-23 00:15:54,795 [INFO] Update id=279382559 is handled. Duration 178 ms by bot id=7168399023
+2025-03-23 00:41:41,963 [INFO] Polling stopped
+2025-03-23 00:41:42,221 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 00:43:31,570 [INFO] 🤖 Бот запущен!
+2025-03-23 00:43:31,570 [INFO] Start polling
+2025-03-23 00:43:31,728 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 00:43:37,102 [INFO] 👤 1756925931 открыл меню
+2025-03-23 00:43:37,102 [INFO] Update id=279382560 is handled. Duration 199 ms by bot id=7168399023
+2025-03-23 00:43:41,487 [INFO] Update id=279382561 is not handled. Duration 0 ms by bot id=7168399023
+2025-03-23 00:43:47,918 [INFO] Update id=279382562 is handled. Duration 65 ms by bot id=7168399023
+2025-03-23 00:43:49,061 [INFO] select pg_catalog.version()
+2025-03-23 00:43:49,062 [INFO] [raw sql] ()
+2025-03-23 00:43:49,063 [INFO] select current_schema()
+2025-03-23 00:43:49,063 [INFO] [raw sql] ()
+2025-03-23 00:43:49,064 [INFO] show standard_conforming_strings
+2025-03-23 00:43:49,064 [INFO] [raw sql] ()
+2025-03-23 00:43:49,065 [INFO] BEGIN (implicit)
+2025-03-23 00:43:49,071 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-23 00:43:49,071 [INFO] [generated in 0.00038s] (1756925931,)
+2025-03-23 00:43:49,074 [INFO] ROLLBACK
+2025-03-23 00:43:49,076 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-23 00:43:49,220 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-23 00:43:50,002 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-23 00:43:50,002 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-23 00:43:50,008 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-23 00:43:50,048 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-23 00:43:50,346 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-23 00:43:50,347 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-23 00:43:50,407 [INFO] Update id=279382563 is handled. Duration 1403 ms by bot id=7168399023
+2025-03-23 00:51:35,636 [INFO] Polling stopped
+2025-03-23 00:51:35,899 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 00:51:43,259 [INFO] 🤖 Бот запущен!
+2025-03-23 00:51:43,260 [INFO] Start polling
+2025-03-23 00:51:43,421 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 00:51:48,149 [INFO] 👤 1756925931 открыл меню
+2025-03-23 00:51:48,150 [INFO] Update id=279382564 is handled. Duration 172 ms by bot id=7168399023
+2025-03-23 00:54:24,597 [INFO] Polling stopped
+2025-03-23 00:54:24,853 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 00:54:28,875 [INFO] 🤖 Бот запущен!
+2025-03-23 00:54:28,875 [INFO] Start polling
+2025-03-23 00:54:29,050 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 00:54:32,318 [INFO] 👤 1756925931 открыл меню
+2025-03-23 00:54:32,319 [INFO] Update id=279382565 is handled. Duration 161 ms by bot id=7168399023
+2025-03-23 00:54:33,316 [INFO] select pg_catalog.version()
+2025-03-23 00:54:33,316 [INFO] [raw sql] ()
+2025-03-23 00:54:33,318 [INFO] select current_schema()
+2025-03-23 00:54:33,318 [INFO] [raw sql] ()
+2025-03-23 00:54:33,319 [INFO] show standard_conforming_strings
+2025-03-23 00:54:33,319 [INFO] [raw sql] ()
+2025-03-23 00:54:33,320 [INFO] BEGIN (implicit)
+2025-03-23 00:54:33,324 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-23 00:54:33,324 [INFO] [generated in 0.00025s] (1756925931,)
+2025-03-23 00:54:33,328 [INFO] ROLLBACK
+2025-03-23 00:54:33,387 [INFO] Update id=279382566 is handled. Duration 130 ms by bot id=7168399023
+2025-03-23 00:54:42,842 [INFO] Update id=279382567 is handled. Duration 61 ms by bot id=7168399023
+2025-03-23 00:55:12,486 [INFO] BEGIN (implicit)
+2025-03-23 00:55:12,487 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.telegram_id = $1::BIGINT
+2025-03-23 00:55:12,488 [INFO] [generated in 0.00041s] (5476099221,)
+2025-03-23 00:55:12,550 [INFO] ROLLBACK
+2025-03-23 00:55:12,551 [INFO] Update id=279382568 is handled. Duration 65 ms by bot id=7168399023
+2025-03-23 00:56:33,232 [INFO] Polling stopped
+2025-03-23 00:56:33,486 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 01:03:27,952 [INFO] 🤖 Бот запущен!
+2025-03-23 01:03:27,952 [INFO] Start polling
+2025-03-23 01:03:28,113 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 01:03:31,315 [INFO] 👤 1756925931 открыл меню
+2025-03-23 01:03:31,316 [INFO] Update id=279382569 is handled. Duration 374 ms by bot id=7168399023
+2025-03-23 01:03:36,389 [INFO] Update id=279382570 is handled. Duration 58 ms by bot id=7168399023
+2025-03-23 01:04:22,076 [INFO] Update id=279382571 is handled. Duration 72 ms by bot id=7168399023
+2025-03-23 01:04:25,912 [INFO] 👤 1756925931 открыл меню
+2025-03-23 01:04:25,912 [INFO] Update id=279382572 is handled. Duration 102 ms by bot id=7168399023
+2025-03-23 01:04:27,164 [INFO] Update id=279382573 is handled. Duration 102 ms by bot id=7168399023
+2025-03-23 01:04:33,989 [INFO] select pg_catalog.version()
+2025-03-23 01:04:33,990 [INFO] [raw sql] ()
+2025-03-23 01:04:33,991 [INFO] select current_schema()
+2025-03-23 01:04:33,991 [INFO] [raw sql] ()
+2025-03-23 01:04:33,992 [INFO] show standard_conforming_strings
+2025-03-23 01:04:33,992 [INFO] [raw sql] ()
+2025-03-23 01:04:33,993 [INFO] BEGIN (implicit)
+2025-03-23 01:04:33,998 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-23 01:04:33,998 [INFO] [generated in 0.00040s] ()
+2025-03-23 01:04:34,003 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-23 01:04:34,152 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:04:35,308 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-23 01:04:35,309 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:04:35,315 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-23 01:04:35,368 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:04:35,671 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-23 01:04:35,671 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:04:35,735 [INFO] ROLLBACK
+2025-03-23 01:04:35,817 [INFO] Update id=279382574 is handled. Duration 1988 ms by bot id=7168399023
+2025-03-23 01:04:42,595 [INFO] Update id=279382575 is handled. Duration 60 ms by bot id=7168399023
+2025-03-23 01:06:04,138 [INFO] Polling stopped
+2025-03-23 01:06:04,397 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 01:06:09,671 [INFO] 🤖 Бот запущен!
+2025-03-23 01:06:09,671 [INFO] Start polling
+2025-03-23 01:06:09,821 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 01:06:12,865 [INFO] 👤 1756925931 открыл меню
+2025-03-23 01:06:12,865 [INFO] Update id=279382576 is handled. Duration 167 ms by bot id=7168399023
+2025-03-23 01:06:13,769 [INFO] Update id=279382577 is handled. Duration 60 ms by bot id=7168399023
+2025-03-23 01:06:18,119 [INFO] select pg_catalog.version()
+2025-03-23 01:06:18,120 [INFO] [raw sql] ()
+2025-03-23 01:06:18,121 [INFO] select current_schema()
+2025-03-23 01:06:18,121 [INFO] [raw sql] ()
+2025-03-23 01:06:18,122 [INFO] show standard_conforming_strings
+2025-03-23 01:06:18,122 [INFO] [raw sql] ()
+2025-03-23 01:06:18,123 [INFO] BEGIN (implicit)
+2025-03-23 01:06:18,127 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-23 01:06:18,127 [INFO] [generated in 0.00025s] ()
+2025-03-23 01:06:18,130 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-23 01:06:18,262 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:06:18,966 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-23 01:06:18,966 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:06:18,972 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-23 01:06:19,017 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:06:19,265 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-23 01:06:19,266 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:06:19,350 [INFO] ROLLBACK
+2025-03-23 01:06:19,450 [INFO] Update id=279382578 is handled. Duration 1490 ms by bot id=7168399023
+2025-03-23 01:06:35,803 [INFO] Update id=279382579 is handled. Duration 75 ms by bot id=7168399023
+2025-03-23 01:06:37,779 [INFO] Update id=279382580 is handled. Duration 64 ms by bot id=7168399023
+2025-03-23 01:06:44,470 [INFO] BEGIN (implicit)
+2025-03-23 01:06:44,471 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-23 01:06:44,471 [INFO] [cached since 26.34s ago] ()
+2025-03-23 01:06:44,473 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-23 01:06:44,623 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:06:45,702 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-23 01:06:45,702 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:06:45,774 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-23 01:06:45,816 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:06:46,426 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-23 01:06:46,427 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:06:46,433 [INFO] ROLLBACK
+2025-03-23 01:06:46,575 [INFO] Update id=279382581 is handled. Duration 2176 ms by bot id=7168399023
+2025-03-23 01:07:10,923 [INFO] Polling stopped
+2025-03-23 01:07:11,179 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 01:07:17,220 [INFO] 🤖 Бот запущен!
+2025-03-23 01:07:17,221 [INFO] Start polling
+2025-03-23 01:07:17,607 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 01:07:25,242 [INFO] 👤 1756925931 открыл меню
+2025-03-23 01:07:25,242 [INFO] Update id=279382582 is handled. Duration 178 ms by bot id=7168399023
+2025-03-23 01:07:26,235 [INFO] Update id=279382583 is handled. Duration 60 ms by bot id=7168399023
+2025-03-23 01:07:30,884 [INFO] Update id=279382584 is handled. Duration 88 ms by bot id=7168399023
+2025-03-23 01:07:34,793 [INFO] select pg_catalog.version()
+2025-03-23 01:07:34,794 [INFO] [raw sql] ()
+2025-03-23 01:07:34,795 [INFO] select current_schema()
+2025-03-23 01:07:34,795 [INFO] [raw sql] ()
+2025-03-23 01:07:34,796 [INFO] show standard_conforming_strings
+2025-03-23 01:07:34,797 [INFO] [raw sql] ()
+2025-03-23 01:07:34,797 [INFO] BEGIN (implicit)
+2025-03-23 01:07:34,803 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-23 01:07:34,803 [INFO] [generated in 0.00056s] ()
+2025-03-23 01:07:34,807 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-23 01:07:34,943 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:07:35,987 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-23 01:07:35,987 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:11:35,999 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-23 01:11:36,044 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:11:36,468 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-23 01:11:36,469 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:11:44,759 [INFO] Update id=279382586 is handled. Duration 68 ms by bot id=7168399023
+2025-03-23 01:11:50,134 [INFO] 👤 1756925931 открыл меню
+2025-03-23 01:11:50,135 [INFO] Update id=279382587 is handled. Duration 71 ms by bot id=7168399023
+2025-03-23 01:11:51,816 [INFO] Update id=279382588 is handled. Duration 106 ms by bot id=7168399023
+2025-03-23 01:11:55,296 [INFO] BEGIN (implicit)
+2025-03-23 01:11:55,297 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-23 01:11:55,297 [INFO] [cached since 260.5s ago] ()
+2025-03-23 01:11:55,300 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-23 01:11:55,436 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:11:56,333 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-23 01:11:56,333 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:11:56,339 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-23 01:11:56,379 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:11:56,710 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-23 01:11:56,711 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:11:56,773 [INFO] ROLLBACK
+2025-03-23 01:11:56,832 [INFO] Update id=279382589 is handled. Duration 1592 ms by bot id=7168399023
+2025-03-23 01:12:00,953 [INFO] Update id=279382590 is handled. Duration 70 ms by bot id=7168399023
+2025-03-23 01:12:02,368 [INFO] Update id=279382591 is not handled. Duration 1 ms by bot id=7168399023
+2025-03-23 01:12:44,140 [INFO] Polling stopped
+2025-03-23 01:12:44,400 [INFO] Update id=279382585 is not handled. Duration 309728 ms by bot id=7168399023
+2025-03-23 01:12:44,400 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 01:12:44,401 [INFO] ROLLBACK
+2025-03-23 01:23:00,044 [INFO] 🤖 Бот запущен!
+2025-03-23 01:23:00,045 [INFO] Start polling
+2025-03-23 01:23:00,211 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 01:23:06,700 [INFO] 👤 1756925931 открыл меню
+2025-03-23 01:23:06,701 [INFO] Update id=279382592 is handled. Duration 509 ms by bot id=7168399023
+2025-03-23 01:23:07,752 [INFO] Update id=279382593 is handled. Duration 63 ms by bot id=7168399023
+2025-03-23 01:23:11,256 [INFO] select pg_catalog.version()
+2025-03-23 01:23:11,257 [INFO] [raw sql] ()
+2025-03-23 01:23:11,258 [INFO] select current_schema()
+2025-03-23 01:23:11,258 [INFO] [raw sql] ()
+2025-03-23 01:23:11,259 [INFO] show standard_conforming_strings
+2025-03-23 01:23:11,259 [INFO] [raw sql] ()
+2025-03-23 01:23:11,260 [INFO] BEGIN (implicit)
+2025-03-23 01:23:11,265 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-23 01:23:11,266 [INFO] [generated in 0.00038s] ()
+2025-03-23 01:23:11,269 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-23 01:23:11,414 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:23:12,378 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-23 01:23:12,379 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:23:12,385 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-23 01:23:12,426 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:23:12,859 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-23 01:23:12,859 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:23:12,923 [INFO] ROLLBACK
+2025-03-23 01:23:12,984 [INFO] Update id=279382594 is handled. Duration 1789 ms by bot id=7168399023
+2025-03-23 01:23:17,880 [INFO] Update id=279382595 is handled. Duration 72 ms by bot id=7168399023
+2025-03-23 01:23:19,208 [INFO] Update id=279382596 is handled. Duration 58 ms by bot id=7168399023
+2025-03-23 01:24:12,520 [INFO] Polling stopped
+2025-03-23 01:24:12,772 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 01:24:17,001 [INFO] 🤖 Бот запущен!
+2025-03-23 01:24:17,001 [INFO] Start polling
+2025-03-23 01:24:17,139 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 01:25:36,115 [INFO] 👤 1756925931 открыл меню
+2025-03-23 01:25:36,115 [INFO] Update id=279382597 is handled. Duration 198 ms by bot id=7168399023
+2025-03-23 01:25:55,291 [INFO] Update id=279382598 is handled. Duration 62 ms by bot id=7168399023
+2025-03-23 01:26:00,486 [INFO] select pg_catalog.version()
+2025-03-23 01:26:00,487 [INFO] [raw sql] ()
+2025-03-23 01:26:00,488 [INFO] select current_schema()
+2025-03-23 01:26:00,488 [INFO] [raw sql] ()
+2025-03-23 01:26:00,489 [INFO] show standard_conforming_strings
+2025-03-23 01:26:00,489 [INFO] [raw sql] ()
+2025-03-23 01:26:00,490 [INFO] BEGIN (implicit)
+2025-03-23 01:26:00,496 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-23 01:26:00,496 [INFO] [generated in 0.00053s] ()
+2025-03-23 01:26:00,500 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-23 01:26:00,640 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:26:01,346 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-23 01:26:01,347 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:26:01,353 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-23 01:26:01,398 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:26:01,672 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-23 01:26:01,672 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:26:01,761 [INFO] ROLLBACK
+2025-03-23 01:26:01,820 [INFO] Update id=279382599 is handled. Duration 1387 ms by bot id=7168399023
+2025-03-23 01:26:04,630 [INFO] Update id=279382600 is handled. Duration 63 ms by bot id=7168399023
+2025-03-23 01:26:06,008 [INFO] BEGIN (implicit)
+2025-03-23 01:26:06,009 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-23 01:26:06,010 [INFO] [cached since 5.514s ago] ()
+2025-03-23 01:26:06,011 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-23 01:26:06,160 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:26:07,269 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-23 01:26:07,269 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-23 01:34:07,285 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-23 01:34:07,330 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:34:07,933 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-23 01:34:07,934 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-23 01:34:07,938 [INFO] ROLLBACK
+2025-03-23 01:34:08,110 [INFO] Update id=279382601 is handled. Duration 482170 ms by bot id=7168399023
+2025-03-23 01:36:20,257 [INFO] Polling stopped
+2025-03-23 01:36:20,523 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 01:37:15,731 [INFO] 🤖 Бот запущен!
+2025-03-23 01:37:15,732 [INFO] Start polling
+2025-03-23 01:37:15,892 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 01:37:21,112 [INFO] 👤 1756925931 открыл меню
+2025-03-23 01:37:21,112 [INFO] Update id=279382602 is handled. Duration 174 ms by bot id=7168399023
+2025-03-23 01:38:49,488 [INFO] select pg_catalog.version()
+2025-03-23 01:38:49,489 [INFO] [raw sql] ()
+2025-03-23 01:38:49,490 [INFO] select current_schema()
+2025-03-23 01:38:49,490 [INFO] [raw sql] ()
+2025-03-23 01:38:49,491 [INFO] show standard_conforming_strings
+2025-03-23 01:38:49,491 [INFO] [raw sql] ()
+2025-03-23 01:38:49,493 [INFO] BEGIN (implicit)
+2025-03-23 01:38:49,498 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-23 01:38:49,499 [INFO] [generated in 0.00045s] (1756925931,)
+2025-03-23 01:38:49,502 [INFO] ROLLBACK
+2025-03-23 01:38:49,563 [INFO] Update id=279382603 is handled. Duration 130 ms by bot id=7168399023
+2025-03-23 01:38:52,056 [INFO] Update id=279382604 is handled. Duration 61 ms by bot id=7168399023
+2025-03-23 01:38:53,444 [INFO] Update id=279382605 is not handled. Duration 1 ms by bot id=7168399023
+2025-03-23 01:38:56,382 [INFO] Update id=279382606 is handled. Duration 70 ms by bot id=7168399023
+2025-03-23 01:38:57,442 [INFO] Update id=279382607 is not handled. Duration 1 ms by bot id=7168399023
+2025-03-23 01:38:57,442 [ERROR] Cause exception while process update id=279382607 by bot id=7168399023
+AttributeError: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\quake\OneDrive\Документы\GitHub\TelegramBot\bot\handlers.py", line 62, in process_group_join
+    group_link = message.text.strip()
+                 ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'

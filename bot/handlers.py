@@ -12,13 +12,14 @@ from bot.logger import logger
 import random
 import asyncio
 from bot.admin_panel import router as admin_router
+
 router = Router()
 
 class BotStates(StatesGroup):
     waiting_for_subscription_link = State()
-    waiting_for_subscription_interval = State()
+    waiting_for_subscription_interval_range = State()
     waiting_for_unsubscription_link = State()
-    waiting_for_unsubscribe_interval = State()
+    waiting_for_unsubscribe_interval_range = State()
     waiting_for_unsubscribe_count = State()
     waiting_for_randomization_choice = State()
     waiting_for_random_range = State()
@@ -60,20 +61,23 @@ async def request_group_join(message: types.Message, state: FSMContext):
 async def process_group_join(message: types.Message, state: FSMContext):
     group_link = message.text.strip()
     await state.update_data(group_link=group_link)
-    await state.set_state(BotStates.waiting_for_subscription_interval)
-    await message.answer("⏳ Введите интервал между подписками (в минутах):")
+    await state.set_state(BotStates.waiting_for_subscription_interval_range)
+    await message.answer("⏳ Введите диапазон интервалов между подписками (в формате 'мин-мах', в минутах):")
 
-@router.message(StateFilter(BotStates.waiting_for_subscription_interval))
-async def process_subscription_interval(message: types.Message, state: FSMContext):
+@router.message(StateFilter(BotStates.waiting_for_subscription_interval_range))
+async def process_subscription_interval_range(message: types.Message, state: FSMContext):
     try:
-        interval = int(message.text) * 60  # интервал в секундах
+        min_interval, max_interval = map(int, message.text.split('-'))
+        if min_interval > max_interval:
+            raise ValueError
     except ValueError:
-        await message.answer("Введите корректное число для интервала.")
+        await message.answer("Введите корректный диапазон в формате 'мин-мах', где мин <= мах.")
         return
     data = await state.get_data()
     group_link = data.get("group_link")
+    interval = random.randint(min_interval, max_interval) * 60  # интервал в секундах
     await join_group(message, group_link=group_link, interval=interval)
-    await message.answer(f"✅ Подписка на {group_link} запущена с интервалом {interval // 60} минут.")
+    await message.answer(f"✅ Подписка на {group_link} запущена с интервалом {interval // 60} минут (случайное значение из диапазона).")
     await state.clear()
 
 @router.message(F.text == "🚫 Выйти из группы")
@@ -87,16 +91,20 @@ async def process_unsubscribe_link(message: types.Message, state: FSMContext):
     group_link = message.text.strip()
     await state.update_data(group_link=group_link)
     await show_unsubscribe_info(message)
-    await message.answer("⏳ Введите интервал между отписками (в минутах):")
-    await state.set_state(BotStates.waiting_for_unsubscribe_interval)
+    await message.answer("⏳ Введите диапазон интервалов между отписками (в формате 'мин-мах', в минутах):")
+    await state.set_state(BotStates.waiting_for_unsubscribe_interval_range)
 
-@router.message(StateFilter(BotStates.waiting_for_unsubscribe_interval))
-async def process_unsubscribe_interval(message: types.Message, state: FSMContext):
+@router.message(StateFilter(BotStates.waiting_for_unsubscribe_interval_range))
+async def process_unsubscribe_interval_range(message: types.Message, state: FSMContext):
     try:
-        interval = int(message.text) * 60  # интервал в секундах
+        min_interval, max_interval = map(int, message.text.split('-'))
+        if min_interval > max_interval:
+            raise ValueError
     except ValueError:
-        await message.answer("Введите корректное число для интервала.")
+        await message.answer("Введите корректный диапазон в формате 'мин-мах', где мин ≤ мах.")
         return
+
+    interval = random.randint(min_interval, max_interval) * 60  # перевод в секунды
     await state.update_data(interval=interval)
     await message.answer("📊 Введите количество аккаунтов для отписки:")
     await state.set_state(BotStates.waiting_for_unsubscribe_count)
@@ -104,28 +112,23 @@ async def process_unsubscribe_interval(message: types.Message, state: FSMContext
 @router.message(StateFilter(BotStates.waiting_for_unsubscribe_count))
 async def process_unsubscribe_count(message: types.Message, state: FSMContext):
     try:
-        count = int(message.text)
+        count = int(message.text.strip())
+        if count <= 0:
+            raise ValueError
     except ValueError:
-        await message.answer("Введите корректное число для количества.")
+        await message.answer("Введите корректное количество аккаунтов (положительное число).")
         return
-    await state.update_data(count=count)
-    await message.answer("🎲 Укажите разброс времени для рандомизации (в минутах):")
-    await state.set_state(BotStates.waiting_for_random_range)
 
-@router.message(StateFilter(BotStates.waiting_for_random_range))
-async def process_random_range(message: types.Message, state: FSMContext):
-    try:
-        random_range = int(message.text) * 60  # в секундах
-    except ValueError:
-        await message.answer("Введите корректное число.")
-        return
     data = await state.get_data()
     group_link = data.get("group_link")
-    count = data.get("count")
     interval = data.get("interval")
-    await unsubscribe_group(message, count, interval, randomize=True, random_range=random_range, group_link=group_link)
-    await message.answer(f"✅ Отписано {count} аккаунтов от {group_link}.")
+
+    # Вызываем функцию отписки без рандомизации
+    await unsubscribe_group(message, count, interval, randomize=False, random_range=0, group_link=group_link)
+    await message.answer(f"✅ Отписано {count} аккаунтов от группы {group_link}.")
     await state.clear()
+
+
 
 @router.message(F.text == "📢 Проверить подписку")
 async def request_check_subscription(message: types.Message, state: FSMContext):
