@@ -9456,3 +9456,236 @@ Traceback (most recent call last):
     group_link = message.text.strip()
                  ^^^^^^^^^^^^^^^^^^
 AttributeError: 'NoneType' object has no attribute 'strip'
+2025-03-23 16:39:38,089 [INFO] 🤖 Бот запущен!
+2025-03-23 16:39:38,091 [INFO] Start polling
+2025-03-23 16:39:39,239 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 16:39:42,843 [INFO] 👤 1756925931 открыл меню
+2025-03-23 16:39:42,843 [INFO] Update id=279382608 is handled. Duration 510 ms by bot id=7168399023
+2025-03-23 16:39:44,966 [INFO] Update id=279382609 is not handled. Duration 1 ms by bot id=7168399023
+2025-03-23 16:40:18,720 [INFO] Update id=279382610 is handled. Duration 107 ms by bot id=7168399023
+2025-03-23 16:40:21,304 [INFO] Update id=279382611 is handled. Duration 136 ms by bot id=7168399023
+2025-03-23 16:40:24,137 [INFO] Update id=279382612 is handled. Duration 70 ms by bot id=7168399023
+2025-03-23 16:40:25,746 [INFO] Update id=279382613 is handled. Duration 83 ms by bot id=7168399023
+2025-03-23 16:43:56,429 [INFO] Polling stopped
+2025-03-23 16:43:56,692 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2775)
+2025-03-23 16:43:56,692 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7168399023)
+2025-03-23 16:43:56,693 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 16:44:00,634 [INFO] 🤖 Бот запущен!
+2025-03-23 16:44:00,635 [INFO] Start polling
+2025-03-23 16:44:00,794 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 16:44:26,770 [INFO] Update id=279382614 is handled. Duration 516 ms by bot id=7168399023
+2025-03-23 16:44:28,908 [INFO] Update id=279382615 is handled. Duration 146 ms by bot id=7168399023
+2025-03-23 16:44:30,761 [INFO] Update id=279382616 is handled. Duration 95 ms by bot id=7168399023
+2025-03-23 16:46:19,283 [INFO] Polling stopped
+2025-03-23 16:46:19,535 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 16:46:23,066 [INFO] 🤖 Бот запущен!
+2025-03-23 16:46:23,066 [INFO] Start polling
+2025-03-23 16:46:23,253 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 16:46:31,771 [INFO] 👤 1756925931 открыл меню
+2025-03-23 16:46:31,772 [INFO] Update id=279382617 is handled. Duration 505 ms by bot id=7168399023
+2025-03-23 16:46:33,947 [INFO] Update id=279382618 is handled. Duration 72 ms by bot id=7168399023
+2025-03-23 16:46:36,074 [INFO] Update id=279382619 is handled. Duration 324 ms by bot id=7168399023
+2025-03-23 16:46:37,207 [INFO] Update id=279382620 is handled. Duration 66 ms by bot id=7168399023
+2025-03-23 16:46:38,744 [INFO] Update id=279382621 is handled. Duration 121 ms by bot id=7168399023
+2025-03-23 16:54:20,753 [INFO] Polling stopped
+2025-03-23 16:54:21,007 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 16:54:31,292 [INFO] 🤖 Бот запущен!
+2025-03-23 16:54:31,292 [INFO] Start polling
+2025-03-23 16:54:31,461 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 16:54:37,812 [INFO] 👤 1756925931 открыл меню
+2025-03-23 16:54:37,813 [INFO] Update id=279382622 is handled. Duration 522 ms by bot id=7168399023
+2025-03-23 16:54:39,942 [INFO] Update id=279382623 is handled. Duration 373 ms by bot id=7168399023
+2025-03-23 16:54:47,315 [INFO] Update id=279382624 is handled. Duration 92 ms by bot id=7168399023
+2025-03-23 16:54:52,567 [INFO] 👤 1756925931 открыл меню
+2025-03-23 16:54:52,568 [INFO] Update id=279382625 is handled. Duration 66 ms by bot id=7168399023
+2025-03-23 16:54:54,446 [INFO] Update id=279382626 is handled. Duration 117 ms by bot id=7168399023
+2025-03-23 16:58:01,078 [INFO] Polling stopped
+2025-03-23 16:58:01,329 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 16:59:42,511 [INFO] 🤖 Бот запущен!
+2025-03-23 16:59:42,511 [INFO] Start polling
+2025-03-23 16:59:42,678 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 16:59:47,372 [INFO] 👤 1756925931 открыл меню
+2025-03-23 16:59:47,372 [INFO] Update id=279382627 is handled. Duration 752 ms by bot id=7168399023
+2025-03-23 16:59:49,737 [INFO] Update id=279382628 is handled. Duration 70 ms by bot id=7168399023
+2025-03-23 16:59:53,450 [INFO] Update id=279382629 is handled. Duration 74 ms by bot id=7168399023
+2025-03-23 16:59:54,184 [INFO] Update id=279382630 is handled. Duration 63 ms by bot id=7168399023
+2025-03-23 16:59:54,793 [INFO] Update id=279382631 is handled. Duration 73 ms by bot id=7168399023
+2025-03-23 17:00:25,215 [INFO] Polling stopped
+2025-03-23 17:00:25,467 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:00:28,695 [INFO] 🤖 Бот запущен!
+2025-03-23 17:00:28,695 [INFO] Start polling
+2025-03-23 17:00:28,861 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:00:31,274 [INFO] 👤 1756925931 открыл меню
+2025-03-23 17:00:31,274 [INFO] Update id=279382632 is handled. Duration 186 ms by bot id=7168399023
+2025-03-23 17:00:32,058 [INFO] Update id=279382633 is handled. Duration 79 ms by bot id=7168399023
+2025-03-23 17:00:36,325 [INFO] Update id=279382634 is handled. Duration 82 ms by bot id=7168399023
+2025-03-23 17:06:09,008 [INFO] Polling stopped
+2025-03-23 17:06:09,269 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:06:13,251 [INFO] 🤖 Бот запущен!
+2025-03-23 17:06:13,251 [INFO] Start polling
+2025-03-23 17:06:13,424 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:06:18,148 [INFO] 👤 1756925931 открыл меню
+2025-03-23 17:06:18,148 [INFO] Update id=279382635 is handled. Duration 471 ms by bot id=7168399023
+2025-03-23 17:06:20,102 [INFO] Update id=279382636 is handled. Duration 74 ms by bot id=7168399023
+2025-03-23 17:06:22,016 [INFO] Update id=279382637 is handled. Duration 75 ms by bot id=7168399023
+2025-03-23 17:06:23,314 [INFO] Update id=279382638 is handled. Duration 78 ms by bot id=7168399023
+2025-03-23 17:06:24,441 [INFO] Update id=279382639 is handled. Duration 79 ms by bot id=7168399023
+2025-03-23 17:06:28,173 [INFO] Update id=279382640 is handled. Duration 152 ms by bot id=7168399023
+2025-03-23 17:06:32,134 [INFO] Update id=279382641 is handled. Duration 105 ms by bot id=7168399023
+2025-03-23 17:07:22,607 [INFO] Polling stopped
+2025-03-23 17:07:22,862 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:07:26,333 [INFO] 🤖 Бот запущен!
+2025-03-23 17:07:26,333 [INFO] Start polling
+2025-03-23 17:07:26,484 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:07:29,375 [INFO] 👤 1756925931 открыл меню
+2025-03-23 17:07:29,376 [INFO] Update id=279382642 is handled. Duration 513 ms by bot id=7168399023
+2025-03-23 17:07:30,634 [INFO] Update id=279382643 is handled. Duration 105 ms by bot id=7168399023
+2025-03-23 17:07:37,779 [INFO] Update id=279382644 is handled. Duration 69 ms by bot id=7168399023
+2025-03-23 17:07:39,855 [INFO] Update id=279382645 is handled. Duration 83 ms by bot id=7168399023
+2025-03-23 17:07:43,199 [INFO] Update id=279382646 is handled. Duration 61 ms by bot id=7168399023
+2025-03-23 17:07:45,440 [INFO] Update id=279382647 is handled. Duration 75 ms by bot id=7168399023
+2025-03-23 17:07:46,943 [INFO] Update id=279382648 is handled. Duration 83 ms by bot id=7168399023
+2025-03-23 17:07:48,789 [INFO] Update id=279382649 is handled. Duration 189 ms by bot id=7168399023
+2025-03-23 17:07:51,321 [INFO] Update id=279382650 is handled. Duration 67 ms by bot id=7168399023
+2025-03-23 17:10:24,068 [INFO] Polling stopped
+2025-03-23 17:10:24,331 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:10:27,482 [INFO] 🤖 Бот запущен!
+2025-03-23 17:10:27,482 [INFO] Start polling
+2025-03-23 17:10:27,683 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:10:31,517 [INFO] 👤 1756925931 открыл меню
+2025-03-23 17:10:31,517 [INFO] Update id=279382651 is handled. Duration 188 ms by bot id=7168399023
+2025-03-23 17:10:32,711 [INFO] Update id=279382652 is handled. Duration 84 ms by bot id=7168399023
+2025-03-23 17:10:36,133 [INFO] Update id=279382653 is handled. Duration 105 ms by bot id=7168399023
+2025-03-23 17:10:38,520 [INFO] Update id=279382654 is handled. Duration 214 ms by bot id=7168399023
+2025-03-23 17:12:45,498 [INFO] Polling stopped
+2025-03-23 17:12:45,752 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:12:48,773 [INFO] 🤖 Бот запущен!
+2025-03-23 17:12:48,774 [INFO] Start polling
+2025-03-23 17:12:48,926 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:12:53,592 [INFO] 👤 1756925931 открыл меню
+2025-03-23 17:12:53,592 [INFO] Update id=279382655 is handled. Duration 192 ms by bot id=7168399023
+2025-03-23 17:12:54,581 [INFO] Update id=279382656 is handled. Duration 77 ms by bot id=7168399023
+2025-03-23 17:13:06,224 [INFO] Update id=279382657 is handled. Duration 70 ms by bot id=7168399023
+2025-03-23 17:13:09,506 [INFO] Update id=279382658 is handled. Duration 76 ms by bot id=7168399023
+2025-03-23 17:13:55,187 [INFO] Polling stopped
+2025-03-23 17:13:55,451 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:13:59,221 [INFO] 🤖 Бот запущен!
+2025-03-23 17:13:59,221 [INFO] Start polling
+2025-03-23 17:13:59,389 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:14:02,015 [INFO] 👤 1756925931 открыл меню
+2025-03-23 17:14:02,016 [INFO] Update id=279382659 is handled. Duration 315 ms by bot id=7168399023
+2025-03-23 17:14:02,776 [INFO] Update id=279382660 is handled. Duration 71 ms by bot id=7168399023
+2025-03-23 17:16:11,916 [INFO] Polling stopped
+2025-03-23 17:16:12,174 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:16:19,322 [INFO] 🤖 Бот запущен!
+2025-03-23 17:16:19,323 [INFO] Start polling
+2025-03-23 17:16:19,513 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:16:19,753 [INFO] 👤 1756925931 открыл меню
+2025-03-23 17:16:19,753 [INFO] Update id=279382661 is handled. Duration 183 ms by bot id=7168399023
+2025-03-23 17:16:22,830 [INFO] Update id=279382662 is handled. Duration 1406 ms by bot id=7168399023
+2025-03-23 17:16:25,295 [INFO] Update id=279382663 is handled. Duration 203 ms by bot id=7168399023
+2025-03-23 17:16:27,622 [INFO] Update id=279382664 is handled. Duration 68 ms by bot id=7168399023
+2025-03-23 17:16:29,097 [INFO] Update id=279382665 is handled. Duration 61 ms by bot id=7168399023
+2025-03-23 17:16:31,351 [INFO] Update id=279382666 is handled. Duration 78 ms by bot id=7168399023
+2025-03-23 17:16:32,644 [INFO] Update id=279382667 is handled. Duration 72 ms by bot id=7168399023
+2025-03-23 17:16:34,136 [INFO] Update id=279382668 is handled. Duration 66 ms by bot id=7168399023
+2025-03-23 17:16:36,638 [INFO] Update id=279382669 is handled. Duration 154 ms by bot id=7168399023
+2025-03-23 17:16:40,387 [INFO] Update id=279382670 is handled. Duration 62 ms by bot id=7168399023
+2025-03-23 17:16:41,839 [INFO] Update id=279382671 is handled. Duration 85 ms by bot id=7168399023
+2025-03-23 17:16:43,567 [INFO] Update id=279382672 is handled. Duration 66 ms by bot id=7168399023
+2025-03-23 17:16:44,716 [INFO] Update id=279382673 is handled. Duration 63 ms by bot id=7168399023
+2025-03-23 17:18:37,286 [INFO] Polling stopped
+2025-03-23 17:18:37,542 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:18:44,156 [INFO] 🤖 Бот запущен!
+2025-03-23 17:18:44,156 [INFO] Start polling
+2025-03-23 17:18:44,319 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:18:52,826 [INFO] 👤 1756925931 открыл меню
+2025-03-23 17:18:52,827 [INFO] Update id=279382674 is handled. Duration 202 ms by bot id=7168399023
+2025-03-23 17:18:54,339 [INFO] Update id=279382675 is handled. Duration 101 ms by bot id=7168399023
+2025-03-23 17:18:55,908 [INFO] Update id=279382676 is handled. Duration 127 ms by bot id=7168399023
+2025-03-23 17:18:57,743 [INFO] Update id=279382677 is handled. Duration 75 ms by bot id=7168399023
+2025-03-23 17:19:01,467 [INFO] select pg_catalog.version()
+2025-03-23 17:19:01,468 [INFO] [raw sql] ()
+2025-03-23 17:19:01,474 [INFO] select current_schema()
+2025-03-23 17:19:01,474 [INFO] [raw sql] ()
+2025-03-23 17:19:01,477 [INFO] show standard_conforming_strings
+2025-03-23 17:19:01,477 [INFO] [raw sql] ()
+2025-03-23 17:19:01,479 [INFO] BEGIN (implicit)
+2025-03-23 17:19:01,485 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-23 17:19:01,485 [INFO] [generated in 0.00039s] (1756925931,)
+2025-03-23 17:19:01,492 [INFO] ROLLBACK
+2025-03-23 17:19:01,505 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-23 17:19:01,651 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-23 17:19:02,467 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-23 17:19:02,467 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-23 17:19:02,474 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-23 17:19:02,524 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-23 17:19:02,807 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-23 17:19:02,808 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-23 17:19:02,888 [INFO] Update id=279382678 is handled. Duration 1537 ms by bot id=7168399023
+2025-03-23 17:19:03,826 [INFO] Update id=279382679 is handled. Duration 66 ms by bot id=7168399023
+2025-03-23 17:19:05,907 [INFO] Update id=279382680 is handled. Duration 70 ms by bot id=7168399023
+2025-03-23 17:19:10,433 [INFO] Update id=279382681 is handled. Duration 178 ms by bot id=7168399023
+2025-03-23 17:19:12,791 [INFO] Update id=279382682 is handled. Duration 72 ms by bot id=7168399023
+2025-03-23 17:19:13,734 [INFO] BEGIN (implicit)
+2025-03-23 17:19:13,735 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-23 17:19:13,736 [INFO] [generated in 0.00029s] (1756925931,)
+2025-03-23 17:19:13,740 [INFO] ROLLBACK
+2025-03-23 17:19:13,803 [INFO] Update id=279382683 is handled. Duration 69 ms by bot id=7168399023
+2025-03-23 17:19:15,321 [INFO] Update id=279382684 is handled. Duration 108 ms by bot id=7168399023
+2025-03-23 17:19:16,429 [INFO] Update id=279382685 is handled. Duration 118 ms by bot id=7168399023
+2025-03-23 17:19:17,889 [INFO] Update id=279382686 is handled. Duration 161 ms by bot id=7168399023
+2025-03-23 17:19:20,214 [INFO] Update id=279382687 is handled. Duration 102 ms by bot id=7168399023
+2025-03-23 17:19:22,650 [INFO] Update id=279382688 is handled. Duration 90 ms by bot id=7168399023
+2025-03-23 17:19:25,590 [INFO] Update id=279382689 is handled. Duration 63 ms by bot id=7168399023
+2025-03-23 17:19:26,696 [INFO] Update id=279382690 is handled. Duration 131 ms by bot id=7168399023
+2025-03-23 17:19:28,275 [INFO] Update id=279382691 is handled. Duration 81 ms by bot id=7168399023
+2025-03-23 17:22:16,611 [INFO] Polling stopped
+2025-03-23 17:22:16,878 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:22:20,412 [INFO] 🤖 Бот запущен!
+2025-03-23 17:22:20,413 [INFO] Start polling
+2025-03-23 17:22:20,570 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-23 17:22:33,629 [INFO] 👤 1756925931 открыл меню
+2025-03-23 17:22:33,630 [INFO] Update id=279382692 is handled. Duration 192 ms by bot id=7168399023
+2025-03-23 17:22:35,157 [INFO] Update id=279382693 is handled. Duration 71 ms by bot id=7168399023
+2025-03-23 17:22:36,422 [INFO] Update id=279382694 is handled. Duration 77 ms by bot id=7168399023
+2025-03-23 17:22:38,187 [INFO] select pg_catalog.version()
+2025-03-23 17:22:38,188 [INFO] [raw sql] ()
+2025-03-23 17:22:38,189 [INFO] select current_schema()
+2025-03-23 17:22:38,189 [INFO] [raw sql] ()
+2025-03-23 17:22:38,190 [INFO] show standard_conforming_strings
+2025-03-23 17:22:38,190 [INFO] [raw sql] ()
+2025-03-23 17:22:38,191 [INFO] BEGIN (implicit)
+2025-03-23 17:22:38,195 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-23 17:22:38,196 [INFO] [generated in 0.00040s] (1756925931,)
+2025-03-23 17:22:38,198 [INFO] ROLLBACK
+2025-03-23 17:22:38,200 [INFO] Connecting to 149.154.175.52:443/TcpFull...
+2025-03-23 17:22:38,344 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
+2025-03-23 17:22:39,085 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
+2025-03-23 17:22:39,086 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
+2025-03-23 17:22:39,091 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-23 17:22:39,138 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-23 17:22:39,649 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-23 17:22:39,649 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-23 17:22:39,735 [INFO] Update id=279382695 is handled. Duration 1599 ms by bot id=7168399023
+2025-03-23 17:22:42,798 [INFO] Update id=279382696 is handled. Duration 83 ms by bot id=7168399023
+2025-03-23 17:22:44,632 [INFO] Update id=279382697 is handled. Duration 135 ms by bot id=7168399023
+2025-03-23 17:22:46,541 [INFO] Update id=279382698 is handled. Duration 80 ms by bot id=7168399023
+2025-03-23 17:22:49,918 [INFO] BEGIN (implicit)
+2025-03-23 17:22:49,919 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-23 17:22:49,919 [INFO] [generated in 0.00040s] (1756925931,)
+2025-03-23 17:22:49,923 [INFO] ROLLBACK
+2025-03-23 17:22:49,988 [INFO] Update id=279382699 is handled. Duration 71 ms by bot id=7168399023
+2025-03-23 17:22:51,872 [INFO] Update id=279382700 is handled. Duration 111 ms by bot id=7168399023
+2025-03-23 17:22:53,120 [INFO] Update id=279382701 is handled. Duration 132 ms by bot id=7168399023
+2025-03-23 17:22:54,860 [INFO] Update id=279382702 is handled. Duration 97 ms by bot id=7168399023
+2025-03-23 17:23:28,953 [INFO] Polling stopped
+2025-03-23 17:23:29,217 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
