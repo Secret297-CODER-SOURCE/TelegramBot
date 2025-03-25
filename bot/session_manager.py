@@ -149,7 +149,7 @@ async def verify_code(message: types.Message, state: FSMContext):
             )
             db.add(session)
             await db.commit()
-
+            await db.close()
         logger.info(f"🔹 Сессия создана для {phone}")
         await state.clear()
 
@@ -203,7 +203,7 @@ async def get_password(message: types.Message, state: FSMContext):
             )
             db.add(session)
             await db.commit()
-
+            await db.close()
         logger.info(f"🔹 Сессия с паролем создана для {phone}")
         await state.clear()
 

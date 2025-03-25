@@ -11,6 +11,8 @@ from bot.spam import start_spam
 from bot.logger import logger
 from bot.admin_panel import router as admin_router
 import random
+from bot import proxy_manager
+
 
 router = Router()
 
@@ -24,7 +26,8 @@ class BotStates(StatesGroup):
     waiting_for_check_subscription_link = State()
     waiting_for_spam_message = State()
     confirmation_of_fsm_stop = State()
-
+    waiting_for_proxy_data = State()
+    waiting_for_proxy_deletion_id = State()
 # Список всех кнопок главного меню
 MAIN_ACTION_BUTTONS = [
     "➕ Создать сессию",
@@ -168,17 +171,10 @@ async def admin_panel(message: types.Message, state: FSMContext):
     await message.answer("🔧 Админ-панель: выберите действие...", reply_markup=main_keyboard)
 command_handlers["🛠 Админ-панель"] = admin_panel
 
-@router.message(F.text == "🌐 Управление прокси")
-async def manage_proxy(message: types.Message, state: FSMContext):
-    if await fsm_conflict_check(message, state, MAIN_ACTION_BUTTONS):
-        command_handlers["🌐 Управление прокси"] = manage_proxy
-        return
-    await state.set_state(BotStates.neutral)
-    # Логика управления прокси – пример вывода меню
-    await message.answer("🌐 Меню управления прокси:\n1️⃣ Добавить прокси\n2️⃣ Показать список прокси\n3️⃣ Удалить прокси\nВведите команду:", reply_markup=main_keyboard)
-command_handlers["🌐 Управление прокси"] = manage_proxy
 
-# Далее идут обработчики для продолжения диалога, например:
+
+
+#Далее идут обработчики для продолжения диалога, например:
 @router.message(StateFilter(BotStates.waiting_for_subscription_link))
 async def process_group_join(message: types.Message, state: FSMContext):
     group_link = message.text.strip()

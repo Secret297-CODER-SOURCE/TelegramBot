@@ -6,6 +6,8 @@ from bot.session_manager import router as session_router
 from bot.logger import logger
 from bot.admin_panel import router as admin_router
 import os
+from bot.proxy_manager import router as proxy_router
+
 
 TOKEN = os.getenv("BOT_TOKEN")  # ✅ Бот получает токен из .env
 
@@ -16,10 +18,9 @@ async def main():
     bot = Bot(token=TOKEN)
     dp = Dispatcher(storage=MemoryStorage())
     dp.include_router(admin_router)
-
     dp.include_router(router)
     dp.include_router(session_router)
-
+    dp.include_router(proxy_router)
     logger.info("🤖 Бот запущен!")
     await dp.start_polling(bot)
 
