@@ -10333,3 +10333,72 @@ WHERE proxy_settings.user_id = $1::BIGINT
 2025-03-26 02:12:20,758 [INFO] Update id=677740759 is handled. Duration 82 ms by bot id=7852439023
 2025-03-26 02:12:31,650 [INFO] Update id=677740760 is handled. Duration 89 ms by bot id=7852439023
 2025-03-26 02:12:36,314 [INFO] Update id=677740761 is handled. Duration 80 ms by bot id=7852439023
+2025-03-26 22:04:57,936 [INFO] 🤖 Бот запущен!
+2025-03-26 22:04:57,937 [INFO] Start polling
+2025-03-26 22:04:58,298 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-26 22:07:37,962 [INFO] Update id=677740762 is handled. Duration 302 ms by bot id=7852439023
+2025-03-26 22:07:39,887 [INFO] Update id=677740763 is handled. Duration 116 ms by bot id=7852439023
+2025-03-26 22:08:45,692 [INFO] Update id=677740764 is handled. Duration 98 ms by bot id=7852439023
+2025-03-26 22:08:54,775 [INFO] Update id=677740765 is handled. Duration 97 ms by bot id=7852439023
+2025-03-26 22:09:04,551 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-26 22:09:06,146 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-26 22:09:06,476 [INFO] 📨 Попытка отправки кода на +380665662638...
+2025-03-26 22:09:06,625 [INFO] 📩 Код отправлен! `phone_code_hash`: e77c67697189df4d9f
+2025-03-26 22:09:06,751 [INFO] Update id=677740766 is handled. Duration 2275 ms by bot id=7852439023
+2025-03-26 22:09:25,377 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-26 22:09:25,442 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-26 22:09:25,528 [INFO] System clock is wrong, set time offset to 7204s
+2025-03-26 22:09:25,636 [WARNING] Server resent the older message 7486243832514911233, ignoring
+2025-03-26 22:09:25,776 [INFO] 📨 Попытка входа: phone=+380665662638, code=81991, phone_code_hash=e77c67697189df4d9f
+2025-03-26 22:09:26,468 [INFO] select pg_catalog.version()
+2025-03-26 22:09:26,468 [INFO] [raw sql] ()
+2025-03-26 22:09:26,476 [INFO] select current_schema()
+2025-03-26 22:09:26,478 [INFO] [raw sql] ()
+2025-03-26 22:09:26,484 [INFO] show standard_conforming_strings
+2025-03-26 22:09:26,485 [INFO] [raw sql] ()
+2025-03-26 22:09:26,487 [INFO] BEGIN (implicit)
+2025-03-26 22:09:26,507 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-26 22:09:26,511 [INFO] [generated in 0.00370s] (7444003086,)
+2025-03-26 22:09:26,527 [INFO] INSERT INTO telegram_sessions (user_id, api_id, api_hash, session_file) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR, $4::VARCHAR) RETURNING telegram_sessions.id
+2025-03-26 22:09:26,528 [INFO] [generated in 0.00068s] (7444003086, 3882903, '040e4e7cf86962d4c670f2d97aab0fd8', '380665662638.session')
+2025-03-26 22:09:26,549 [INFO] COMMIT
+2025-03-26 22:09:26,552 [INFO] 🔹 Сессия создана для +380665662638
+2025-03-26 22:09:26,553 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-26 22:09:26,554 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-26 22:09:26,559 [INFO] Update id=677740767 is handled. Duration 1196 ms by bot id=7852439023
+2025-03-26 22:09:38,461 [INFO] Update id=677740768 is handled. Duration 96 ms by bot id=7852439023
+2025-03-26 22:09:39,548 [INFO] Update id=677740769 is handled. Duration 115 ms by bot id=7852439023
+2025-03-26 22:09:41,389 [INFO] Update id=677740770 is handled. Duration 97 ms by bot id=7852439023
+2025-03-26 22:10:34,966 [INFO] Update id=677740771 is handled. Duration 92 ms by bot id=7852439023
+2025-03-26 22:10:38,316 [INFO] Update id=677740772 is handled. Duration 93 ms by bot id=7852439023
+2025-03-26 22:10:39,824 [INFO] BEGIN (implicit)
+2025-03-26 22:10:39,827 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-26 22:10:39,831 [INFO] [generated in 0.00450s] (7444003086,)
+2025-03-26 22:10:39,837 [INFO] ROLLBACK
+2025-03-26 22:10:39,887 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-26 22:10:41,318 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-26 22:10:41,745 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-26 22:10:41,747 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-26 22:10:41,757 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-26 22:10:41,832 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-26 22:10:41,918 [INFO] System clock is wrong, set time offset to 7205s
+2025-03-26 22:10:42,424 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-26 22:10:42,426 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-26 22:10:42,550 [INFO] Update id=677740773 is handled. Duration 2733 ms by bot id=7852439023
+2025-03-26 22:10:47,012 [INFO] Update id=677740774 is handled. Duration 111 ms by bot id=7852439023
+2025-03-26 22:10:48,308 [INFO] Update id=677740775 is handled. Duration 162 ms by bot id=7852439023
+2025-03-26 22:10:56,311 [INFO] Update id=677740776 is handled. Duration 103 ms by bot id=7852439023
+2025-03-26 22:10:59,182 [INFO] Update id=677740777 is handled. Duration 86 ms by bot id=7852439023
+2025-03-26 22:11:01,745 [INFO] BEGIN (implicit)
+2025-03-26 22:11:01,746 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-26 22:11:01,747 [INFO] [cached since 95.24s ago] (7444003086,)
+2025-03-26 22:11:01,753 [INFO] ROLLBACK
+2025-03-26 22:11:01,827 [INFO] Update id=677740778 is handled. Duration 83 ms by bot id=7852439023
+2025-03-26 22:17:05,299 [INFO] Polling stopped
+2025-03-26 22:17:05,521 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
