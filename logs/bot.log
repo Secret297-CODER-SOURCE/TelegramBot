@@ -9689,1718 +9689,647 @@ WHERE users.id = $1::BIGINT
 2025-03-23 17:22:54,860 [INFO] Update id=279382702 is handled. Duration 97 ms by bot id=7168399023
 2025-03-23 17:23:28,953 [INFO] Polling stopped
 2025-03-23 17:23:29,217 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 21:05:27,307 [INFO] 🤖 Бот запущен!
-2025-03-24 21:05:27,308 [INFO] Start polling
-2025-03-24 21:05:27,476 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 21:05:38,133 [INFO] 👤 1756925931 открыл меню
-2025-03-24 21:05:38,134 [INFO] Update id=279382703 is handled. Duration 311 ms by bot id=7168399023
-2025-03-24 21:05:39,829 [INFO] Update id=279382704 is handled. Duration 68 ms by bot id=7168399023
-2025-03-24 21:05:45,027 [INFO] Update id=279382705 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-24 21:05:50,519 [INFO] Update id=279382706 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-24 21:05:51,266 [INFO] Update id=279382707 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-24 21:07:09,246 [INFO] Polling stopped
-2025-03-24 21:07:09,510 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 21:57:51,147 [INFO] 🤖 Бот запущен!
-2025-03-24 21:57:51,148 [INFO] Start polling
-2025-03-24 21:57:51,314 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 21:57:56,405 [INFO] 👤 1756925931 открыл меню
-2025-03-24 21:57:56,406 [INFO] Update id=279382708 is handled. Duration 203 ms by bot id=7168399023
-2025-03-24 21:57:57,744 [INFO] Update id=279382709 is handled. Duration 64 ms by bot id=7168399023
-2025-03-24 21:58:06,799 [INFO] Update id=279382710 is handled. Duration 59 ms by bot id=7168399023
-2025-03-24 21:58:08,729 [INFO] Update id=279382711 is handled. Duration 80 ms by bot id=7168399023
-2025-03-24 21:58:11,316 [INFO] Update id=279382712 is handled. Duration 69 ms by bot id=7168399023
-2025-03-24 21:58:14,073 [INFO] Update id=279382713 is handled. Duration 62 ms by bot id=7168399023
-2025-03-24 21:58:17,036 [INFO] Update id=279382714 is handled. Duration 65 ms by bot id=7168399023
-2025-03-24 21:58:24,929 [INFO] Update id=279382715 is handled. Duration 137 ms by bot id=7168399023
-2025-03-24 21:58:26,812 [INFO] Update id=279382716 is handled. Duration 61 ms by bot id=7168399023
-2025-03-24 21:58:30,360 [INFO] Update id=279382717 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-24 22:26:36,678 [INFO] Polling stopped
-2025-03-24 22:26:36,939 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:26:52,302 [INFO] 🤖 Бот запущен!
-2025-03-24 22:26:52,302 [INFO] Start polling
-2025-03-24 22:26:52,477 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:26:58,808 [INFO] 👤 1756925931 открыл меню
-2025-03-24 22:26:58,809 [INFO] Update id=279382718 is handled. Duration 166 ms by bot id=7168399023
-2025-03-24 22:27:00,389 [INFO] Update id=279382719 is handled. Duration 67 ms by bot id=7168399023
-2025-03-24 22:27:04,624 [INFO] Update id=279382720 is handled. Duration 83 ms by bot id=7168399023
-2025-03-24 22:27:08,504 [INFO] Update id=279382721 is handled. Duration 162 ms by bot id=7168399023
-2025-03-24 22:27:10,243 [INFO] Update id=279382722 is handled. Duration 110 ms by bot id=7168399023
-2025-03-24 22:27:14,318 [INFO] select pg_catalog.version()
-2025-03-24 22:27:14,318 [INFO] [raw sql] ()
-2025-03-24 22:27:14,324 [INFO] select current_schema()
-2025-03-24 22:27:14,324 [INFO] [raw sql] ()
-2025-03-24 22:27:14,327 [INFO] show standard_conforming_strings
-2025-03-24 22:27:14,327 [INFO] [raw sql] ()
-2025-03-24 22:27:14,329 [INFO] BEGIN (implicit)
-2025-03-24 22:27:14,334 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+2025-03-26 01:18:01,369 [INFO] 🤖 Бот запущен!
+2025-03-26 01:18:01,370 [INFO] Start polling
+2025-03-26 01:18:01,601 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-26 01:18:14,762 [INFO] 👤 1756925931 открыл меню
+2025-03-26 01:18:14,763 [INFO] Update id=279383313 is handled. Duration 288 ms by bot id=7168399023
+2025-03-26 01:18:19,491 [INFO] Update id=279383314 is handled. Duration 71 ms by bot id=7168399023
+2025-03-26 01:18:38,334 [WARNING] Received SIGINT signal
+2025-03-26 01:18:38,335 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-26 01:18:38,340 [INFO] Polling stopped
+2025-03-26 01:18:45,775 [INFO] 🤖 Бот запущен!
+2025-03-26 01:18:45,776 [INFO] Start polling
+2025-03-26 01:18:45,972 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-26 01:18:51,675 [INFO] 👤 1756925931 открыл меню
+2025-03-26 01:18:51,675 [INFO] Update id=279383315 is handled. Duration 247 ms by bot id=7168399023
+2025-03-26 01:18:55,122 [INFO] Update id=279383316 is handled. Duration 70 ms by bot id=7168399023
+2025-03-26 01:19:07,835 [WARNING] Received SIGINT signal
+2025-03-26 01:19:07,836 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
+2025-03-26 01:19:07,836 [INFO] Polling stopped
+2025-03-26 01:46:24,651 [INFO] 🤖 Бот запущен!
+2025-03-26 01:46:24,652 [INFO] Start polling
+2025-03-26 01:46:24,929 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-26 01:46:44,636 [INFO] 👤 7444003086 открыл меню
+2025-03-26 01:46:44,637 [INFO] Update id=677740722 is handled. Duration 261 ms by bot id=7852439023
+2025-03-26 01:46:51,061 [INFO] Update id=677740723 is handled. Duration 108 ms by bot id=7852439023
+2025-03-26 01:46:53,232 [INFO] Update id=677740724 is handled. Duration 81 ms by bot id=7852439023
+2025-03-26 01:47:04,054 [INFO] select pg_catalog.version()
+2025-03-26 01:47:04,056 [INFO] [raw sql] ()
+2025-03-26 01:47:04,061 [INFO] select current_schema()
+2025-03-26 01:47:04,062 [INFO] [raw sql] ()
+2025-03-26 01:47:04,065 [INFO] show standard_conforming_strings
+2025-03-26 01:47:04,066 [INFO] [raw sql] ()
+2025-03-26 01:47:04,069 [INFO] BEGIN (implicit)
+2025-03-26 01:47:04,085 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-26 01:47:04,086 [INFO] [generated in 0.00092s] (7444003086,)
+2025-03-26 01:47:04,108 [INFO] Update id=677740725 is not handled. Duration 354 ms by bot id=7852439023
+2025-03-26 01:47:04,109 [ERROR] Cause exception while process update id=677740725 by bot id=7852439023
+ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedColumnError'>: столбец users.is_admin не существует
+[SQL: SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT]
+[parameters: (7444003086,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 521, in _prepare_and_execute
+    prepared_stmt, attributes = await adapt_connection._prepare(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        operation, self._invalidate_schema_cache_asof
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 768, in _prepare
+    prepared_stmt = await self._connection.prepare(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        operation, name=self._prepared_statement_name_func()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\asyncpg\connection.py", line 635, in prepare
+    return await self._prepare(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\asyncpg\connection.py", line 653, in _prepare
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedColumnError: столбец users.is_admin не существует
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._prepare_and_execute(operation, parameters)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.ProgrammingError: <class 'asyncpg.exceptions.UndefinedColumnError'>: столбец users.is_admin не существует
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\Music\TelegramBot (2)\bot\admin_panel.py", line 27, in admin_panel_menu
+    if not await is_admin_user(message.from_user.id):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\Music\TelegramBot (2)\bot\admin_panel.py", line 20, in is_admin_user
+    result = await db.execute(select(User).where(User.id == user_id))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 463, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\orm\context.py", line 305, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._prepare_and_execute(operation, parameters)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedColumnError'>: столбец users.is_admin не существует
+[SQL: SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT]
+[parameters: (7444003086,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-26 01:47:04,584 [INFO] ROLLBACK
+2025-03-26 01:47:26,594 [INFO] Update id=677740726 is handled. Duration 86 ms by bot id=7852439023
+2025-03-26 01:47:33,929 [INFO] Update id=677740727 is handled. Duration 104 ms by bot id=7852439023
+2025-03-26 01:47:48,500 [INFO] Update id=677740728 is handled. Duration 104 ms by bot id=7852439023
+2025-03-26 01:47:49,999 [INFO] BEGIN (implicit)
+2025-03-26 01:47:50,000 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-26 01:47:50,002 [INFO] [cached since 45.92s ago] (7444003086,)
+2025-03-26 01:47:50,006 [INFO] Update id=677740729 is not handled. Duration 10 ms by bot id=7852439023
+2025-03-26 01:47:50,013 [ERROR] Cause exception while process update id=677740729 by bot id=7852439023
+ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedColumnError'>: столбец users.is_admin не существует
+[SQL: SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT]
+[parameters: (7444003086,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 521, in _prepare_and_execute
+    prepared_stmt, attributes = await adapt_connection._prepare(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        operation, self._invalidate_schema_cache_asof
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 768, in _prepare
+    prepared_stmt = await self._connection.prepare(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        operation, name=self._prepared_statement_name_func()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\asyncpg\connection.py", line 635, in prepare
+    return await self._prepare(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\asyncpg\connection.py", line 653, in _prepare
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedColumnError: столбец users.is_admin не существует
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._prepare_and_execute(operation, parameters)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.ProgrammingError: <class 'asyncpg.exceptions.UndefinedColumnError'>: столбец users.is_admin не существует
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\Music\TelegramBot (2)\bot\admin_panel.py", line 27, in admin_panel_menu
+    if not await is_admin_user(message.from_user.id):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\Music\TelegramBot (2)\bot\admin_panel.py", line 20, in is_admin_user
+    result = await db.execute(select(User).where(User.id == user_id))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 463, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\orm\context.py", line 305, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._prepare_and_execute(operation, parameters)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedColumnError'>: столбец users.is_admin не существует
+[SQL: SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT]
+[parameters: (7444003086,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-26 01:47:50,083 [INFO] ROLLBACK
+2025-03-26 01:48:09,085 [INFO] Update id=677740730 is handled. Duration 86 ms by bot id=7852439023
+2025-03-26 01:48:12,099 [INFO] Update id=677740731 is handled. Duration 90 ms by bot id=7852439023
+2025-03-26 01:48:18,088 [INFO] Update id=677740732 is handled. Duration 77 ms by bot id=7852439023
+2025-03-26 01:48:20,712 [INFO] Update id=677740733 is handled. Duration 90 ms by bot id=7852439023
+2025-03-26 01:48:24,067 [INFO] Update id=677740734 is handled. Duration 74 ms by bot id=7852439023
+2025-03-26 01:48:26,749 [INFO] Update id=677740735 is handled. Duration 88 ms by bot id=7852439023
+2025-03-26 01:48:29,355 [INFO] Update id=677740736 is handled. Duration 83 ms by bot id=7852439023
+2025-03-26 01:50:38,204 [INFO] Polling stopped
+2025-03-26 01:50:38,472 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-26 01:50:51,329 [INFO] 🤖 Бот запущен!
+2025-03-26 01:50:51,330 [INFO] Start polling
+2025-03-26 01:50:51,610 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-26 01:51:10,529 [INFO] Polling stopped
+2025-03-26 01:51:10,790 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-26 01:59:41,092 [INFO] 🤖 Бот запущен!
+2025-03-26 01:59:41,099 [INFO] Start polling
+2025-03-26 01:59:41,371 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-26 01:59:55,409 [INFO] Update id=677740737 is handled. Duration 247 ms by bot id=7852439023
+2025-03-26 02:00:11,608 [INFO] Update id=677740738 is not handled. Duration 10 ms by bot id=7852439023
+2025-03-26 02:00:18,580 [INFO] Update id=677740739 is handled. Duration 82 ms by bot id=7852439023
+2025-03-26 02:00:23,707 [INFO] select pg_catalog.version()
+2025-03-26 02:00:23,707 [INFO] [raw sql] ()
+2025-03-26 02:00:23,712 [INFO] select current_schema()
+2025-03-26 02:00:23,712 [INFO] [raw sql] ()
+2025-03-26 02:00:23,716 [INFO] show standard_conforming_strings
+2025-03-26 02:00:23,718 [INFO] [raw sql] ()
+2025-03-26 02:00:23,720 [INFO] BEGIN (implicit)
+2025-03-26 02:00:23,735 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
 FROM telegram_sessions 
 WHERE telegram_sessions.user_id = $1::BIGINT
-2025-03-24 22:27:14,334 [INFO] [generated in 0.00026s] (1756925931,)
-2025-03-24 22:27:14,342 [INFO] ROLLBACK
-2025-03-24 22:27:14,344 [INFO] Connecting to 149.154.175.52:443/TcpFull...
-2025-03-24 22:27:14,480 [INFO] Connection to 149.154.175.52:443/TcpFull complete!
-2025-03-24 22:27:15,205 [INFO] Disconnecting from 149.154.175.52:443/TcpFull...
-2025-03-24 22:27:15,205 [INFO] Disconnection from 149.154.175.52:443/TcpFull complete!
-2025-03-24 22:27:15,214 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-24 22:27:15,253 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-24 22:27:15,519 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
-2025-03-24 22:27:15,519 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
-2025-03-24 22:27:15,669 [INFO] Update id=279382723 is handled. Duration 1594 ms by bot id=7168399023
-2025-03-24 22:27:19,490 [INFO] Update id=279382724 is handled. Duration 199 ms by bot id=7168399023
-2025-03-24 22:29:55,597 [INFO] Polling stopped
-2025-03-24 22:29:55,859 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:30:18,452 [INFO] 🤖 Бот запущен!
-2025-03-24 22:30:18,452 [INFO] Start polling
-2025-03-24 22:30:18,612 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:30:22,899 [INFO] 👤 1756925931 открыл меню
-2025-03-24 22:30:22,900 [INFO] Update id=279382725 is handled. Duration 220 ms by bot id=7168399023
-2025-03-24 22:30:24,108 [INFO] Update id=279382726 is handled. Duration 99 ms by bot id=7168399023
-2025-03-24 22:30:34,766 [INFO] Update id=279382727 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-24 22:30:43,291 [INFO] Update id=279382728 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-24 22:30:56,528 [INFO] 👤 1756925931 открыл меню
-2025-03-24 22:30:56,528 [INFO] Update id=279382729 is handled. Duration 74 ms by bot id=7168399023
-2025-03-24 22:31:02,575 [INFO] Update id=279382730 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-24 22:31:04,279 [INFO] select pg_catalog.version()
-2025-03-24 22:31:04,280 [INFO] [raw sql] ()
-2025-03-24 22:31:04,281 [INFO] select current_schema()
-2025-03-24 22:31:04,281 [INFO] [raw sql] ()
-2025-03-24 22:31:04,282 [INFO] show standard_conforming_strings
-2025-03-24 22:31:04,282 [INFO] [raw sql] ()
-2025-03-24 22:31:04,283 [INFO] BEGIN (implicit)
-2025-03-24 22:31:04,288 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+2025-03-26 02:00:23,736 [INFO] [generated in 0.00083s] (7444003086,)
+2025-03-26 02:00:23,745 [INFO] ROLLBACK
+2025-03-26 02:00:23,790 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-26 02:00:25,639 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-26 02:00:25,943 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-26 02:00:25,945 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-26 02:00:26,037 [INFO] Update id=677740740 is handled. Duration 2615 ms by bot id=7852439023
+2025-03-26 02:00:30,384 [INFO] Update id=677740741 is handled. Duration 98 ms by bot id=7852439023
+2025-03-26 02:00:35,136 [INFO] BEGIN (implicit)
+2025-03-26 02:00:35,138 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
 FROM users 
 WHERE users.id = $1::BIGINT
-2025-03-24 22:31:04,289 [INFO] [generated in 0.00047s] (1756925931,)
-2025-03-24 22:31:04,293 [INFO] ROLLBACK
-2025-03-24 22:31:04,379 [INFO] Update id=279382731 is handled. Duration 153 ms by bot id=7168399023
-2025-03-24 22:31:07,569 [INFO] Update id=279382732 is handled. Duration 107 ms by bot id=7168399023
-2025-03-24 22:31:09,101 [INFO] Update id=279382733 is handled. Duration 88 ms by bot id=7168399023
-2025-03-24 22:31:11,947 [INFO] Update id=279382734 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-24 22:31:26,558 [INFO] Polling stopped
-2025-03-24 22:31:26,817 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:31:30,230 [INFO] 🤖 Бот запущен!
-2025-03-24 22:31:30,231 [INFO] Start polling
-2025-03-24 22:31:30,384 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:31:35,917 [INFO] 👤 1756925931 открыл меню
-2025-03-24 22:31:35,918 [INFO] Update id=279382735 is handled. Duration 235 ms by bot id=7168399023
-2025-03-24 22:31:37,291 [INFO] Update id=279382736 is handled. Duration 162 ms by bot id=7168399023
-2025-03-24 22:32:24,273 [INFO] Update id=279382737 is handled. Duration 73 ms by bot id=7168399023
-2025-03-24 22:35:12,339 [INFO] Polling stopped
-2025-03-24 22:35:12,594 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:35:16,211 [INFO] 🤖 Бот запущен!
-2025-03-24 22:35:16,211 [INFO] Start polling
-2025-03-24 22:35:16,399 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:35:18,998 [INFO] 👤 1756925931 открыл меню
-2025-03-24 22:35:18,999 [INFO] Update id=279382738 is handled. Duration 157 ms by bot id=7168399023
-2025-03-24 22:35:20,532 [INFO] Update id=279382739 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-24 22:35:28,092 [INFO] 👤 1756925931 открыл меню
-2025-03-24 22:35:28,092 [INFO] Update id=279382740 is handled. Duration 76 ms by bot id=7168399023
-2025-03-24 22:36:00,598 [INFO] Polling stopped
-2025-03-24 22:36:00,850 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:36:04,494 [INFO] 🤖 Бот запущен!
-2025-03-24 22:36:04,495 [INFO] Start polling
-2025-03-24 22:36:04,632 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:36:09,220 [INFO] 👤 1756925931 открыл меню
-2025-03-24 22:36:09,221 [INFO] Update id=279382741 is handled. Duration 407 ms by bot id=7168399023
-2025-03-24 22:36:10,827 [INFO] Update id=279382742 is handled. Duration 66 ms by bot id=7168399023
-2025-03-24 22:38:47,460 [INFO] Polling stopped
-2025-03-24 22:38:47,713 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:38:51,110 [INFO] 🤖 Бот запущен!
-2025-03-24 22:38:51,111 [INFO] Start polling
-2025-03-24 22:38:51,253 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:38:51,505 [INFO] 👤 1756925931 открыл меню
-2025-03-24 22:38:51,506 [INFO] Update id=279382743 is handled. Duration 184 ms by bot id=7168399023
-2025-03-24 22:38:52,876 [INFO] Update id=279382744 is not handled. Duration 2 ms by bot id=7168399023
-2025-03-24 22:41:01,205 [INFO] Polling stopped
-2025-03-24 22:41:01,457 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:41:05,418 [INFO] 🤖 Бот запущен!
-2025-03-24 22:41:05,419 [INFO] Start polling
-2025-03-24 22:41:05,616 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:41:07,844 [INFO] 👤 1756925931 открыл меню
-2025-03-24 22:41:07,845 [INFO] Update id=279382745 is handled. Duration 169 ms by bot id=7168399023
-2025-03-24 22:41:09,127 [INFO] Update id=279382746 is handled. Duration 66 ms by bot id=7168399023
-2025-03-24 22:41:15,547 [INFO] Update id=279382747 is not handled. Duration 0 ms by bot id=7168399023
-2025-03-24 22:41:18,582 [INFO] Update id=279382748 is not handled. Duration 0 ms by bot id=7168399023
-2025-03-24 22:41:19,950 [INFO] Update id=279382749 is not handled. Duration 0 ms by bot id=7168399023
-2025-03-24 22:41:20,322 [INFO] Update id=279382750 is not handled. Duration 0 ms by bot id=7168399023
-2025-03-24 22:41:21,327 [INFO] Update id=279382751 is not handled. Duration 0 ms by bot id=7168399023
-2025-03-24 22:42:09,773 [INFO] Polling stopped
-2025-03-24 22:42:10,027 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:42:13,599 [INFO] 🤖 Бот запущен!
-2025-03-24 22:42:13,600 [INFO] Start polling
-2025-03-24 22:42:13,740 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:42:16,417 [INFO] 👤 1756925931 открыл меню
-2025-03-24 22:42:16,418 [INFO] Update id=279382752 is handled. Duration 193 ms by bot id=7168399023
-2025-03-24 22:42:17,792 [INFO] Update id=279382753 is handled. Duration 80 ms by bot id=7168399023
-2025-03-24 22:42:30,466 [INFO] Polling stopped
-2025-03-24 22:42:30,727 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:42:34,319 [INFO] 🤖 Бот запущен!
-2025-03-24 22:42:34,319 [INFO] Start polling
-2025-03-24 22:42:34,481 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 22:42:34,710 [INFO] 👤 1756925931 открыл меню
-2025-03-24 22:42:34,710 [INFO] Update id=279382754 is handled. Duration 170 ms by bot id=7168399023
-2025-03-24 22:42:35,584 [INFO] Update id=279382755 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-24 22:46:00,541 [INFO] Polling stopped
-2025-03-24 22:46:00,795 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 23:31:54,111 [INFO] 🤖 Бот запущен!
-2025-03-24 23:31:54,112 [INFO] Start polling
-2025-03-24 23:31:54,303 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 23:31:56,966 [INFO] 👤 1756925931 открыл меню
-2025-03-24 23:31:56,966 [INFO] Update id=279382756 is handled. Duration 190 ms by bot id=7168399023
-2025-03-24 23:31:58,175 [INFO] Update id=279382757 is handled. Duration 61 ms by bot id=7168399023
-2025-03-24 23:32:00,042 [INFO] Update id=279382758 is handled. Duration 82 ms by bot id=7168399023
-2025-03-24 23:54:01,648 [INFO] Update id=279382759 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-24 23:54:01,649 [ERROR] Cause exception while process update id=279382759 by bot id=7168399023
-TypeError: check_and_save_proxy() missing 1 required positional argument: 'session'
-Traceback (most recent call last):
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<7 lines>...
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-                 ~~~~~~~^^
-TypeError: check_and_save_proxy() missing 1 required positional argument: 'session'
-2025-03-24 23:54:19,592 [INFO] Polling stopped
-2025-03-24 23:54:19,856 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 23:57:20,818 [INFO] 🤖 Бот запущен!
-2025-03-24 23:57:20,818 [INFO] Start polling
-2025-03-24 23:57:21,002 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-24 23:57:24,448 [INFO] 👤 1756925931 открыл меню
-2025-03-24 23:57:24,449 [INFO] Update id=279382760 is handled. Duration 183 ms by bot id=7168399023
-2025-03-24 23:57:25,829 [INFO] Update id=279382761 is handled. Duration 92 ms by bot id=7168399023
-2025-03-24 23:57:26,855 [INFO] Update id=279382762 is handled. Duration 80 ms by bot id=7168399023
-2025-03-24 23:57:36,291 [INFO] Update id=279382763 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-24 23:57:36,291 [ERROR] Cause exception while process update id=279382763 by bot id=7168399023
-TypeError: check_and_save_proxy() missing 1 required positional argument: 'session'
-Traceback (most recent call last):
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<7 lines>...
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-                 ~~~~~~~^^
-TypeError: check_and_save_proxy() missing 1 required positional argument: 'session'
-2025-03-25 00:18:26,417 [INFO] Polling stopped
-2025-03-25 00:18:26,678 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 00:45:18,162 [INFO] 🤖 Бот запущен!
-2025-03-25 00:45:18,163 [INFO] Start polling
-2025-03-25 00:45:18,317 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 00:45:31,390 [INFO] 👤 1756925931 открыл меню
-2025-03-25 00:45:31,391 [INFO] Update id=279382764 is handled. Duration 175 ms by bot id=7168399023
-2025-03-25 00:45:33,504 [INFO] Update id=279382765 is handled. Duration 73 ms by bot id=7168399023
-2025-03-25 01:31:47,414 [INFO] Polling stopped
-2025-03-25 01:31:47,680 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 01:44:28,864 [INFO] 🤖 Бот запущен!
-2025-03-25 01:44:28,865 [INFO] Start polling
-2025-03-25 01:44:29,078 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 01:44:35,211 [INFO] 👤 1756925931 открыл меню
-2025-03-25 01:44:35,211 [INFO] Update id=279382766 is handled. Duration 188 ms by bot id=7168399023
-2025-03-25 01:44:36,250 [INFO] Update id=279382767 is handled. Duration 65 ms by bot id=7168399023
-2025-03-25 01:44:44,030 [INFO] Update id=279382768 is handled. Duration 65 ms by bot id=7168399023
-2025-03-25 01:44:47,592 [INFO] Update id=279382769 is handled. Duration 64 ms by bot id=7168399023
-2025-03-25 01:44:52,089 [INFO] Update id=279382770 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 01:46:43,103 [INFO] Polling stopped
-2025-03-25 01:46:43,362 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 01:47:59,585 [INFO] 🤖 Бот запущен!
-2025-03-25 01:47:59,585 [INFO] Start polling
-2025-03-25 01:47:59,763 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 01:48:02,230 [INFO] 👤 1756925931 открыл меню
-2025-03-25 01:48:02,230 [INFO] Update id=279382771 is handled. Duration 158 ms by bot id=7168399023
-2025-03-25 01:48:03,495 [INFO] Update id=279382772 is handled. Duration 82 ms by bot id=7168399023
-2025-03-25 01:48:04,566 [INFO] Update id=279382773 is handled. Duration 61 ms by bot id=7168399023
-2025-03-25 01:48:11,030 [INFO] Update id=279382774 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 01:48:21,999 [INFO] Polling stopped
-2025-03-25 01:48:22,266 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 01:50:26,224 [INFO] 🤖 Бот запущен!
-2025-03-25 01:50:26,225 [INFO] Start polling
-2025-03-25 01:50:26,402 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 01:50:29,930 [INFO] 👤 1756925931 открыл меню
-2025-03-25 01:50:29,931 [INFO] Update id=279382775 is handled. Duration 174 ms by bot id=7168399023
-2025-03-25 01:50:34,826 [INFO] Update id=279382776 is handled. Duration 58 ms by bot id=7168399023
-2025-03-25 01:50:38,592 [INFO] Update id=279382777 is handled. Duration 69 ms by bot id=7168399023
-2025-03-25 01:50:42,480 [INFO] Update id=279382778 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 01:51:48,038 [INFO] Update id=279382779 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 01:51:51,458 [INFO] Update id=279382780 is handled. Duration 72 ms by bot id=7168399023
-2025-03-25 01:51:52,341 [INFO] Update id=279382781 is not handled. Duration 2 ms by bot id=7168399023
-2025-03-25 01:51:52,342 [ERROR] Cause exception while process update id=279382781 by bot id=7168399023
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-Traceback (most recent call last):
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<7 lines>...
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-                 ~~~~~~~^^
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-2025-03-25 01:51:52,906 [INFO] Update id=279382782 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 01:51:52,906 [ERROR] Cause exception while process update id=279382782 by bot id=7168399023
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-Traceback (most recent call last):
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<7 lines>...
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-                 ~~~~~~~^^
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-2025-03-25 01:51:53,093 [INFO] Update id=279382783 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 01:51:53,093 [ERROR] Cause exception while process update id=279382783 by bot id=7168399023
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-Traceback (most recent call last):
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<7 lines>...
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-                 ~~~~~~~^^
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-2025-03-25 01:51:53,291 [INFO] Update id=279382784 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 01:51:53,291 [ERROR] Cause exception while process update id=279382784 by bot id=7168399023
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-Traceback (most recent call last):
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<7 lines>...
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-                 ~~~~~~~^^
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-2025-03-25 01:51:53,454 [INFO] Update id=279382785 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 01:51:53,454 [ERROR] Cause exception while process update id=279382785 by bot id=7168399023
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-Traceback (most recent call last):
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<7 lines>...
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-                 ~~~~~~~^^
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-2025-03-25 01:51:53,653 [INFO] Update id=279382786 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 01:51:53,653 [ERROR] Cause exception while process update id=279382786 by bot id=7168399023
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-Traceback (most recent call last):
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<7 lines>...
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-                 ~~~~~~~^^
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-2025-03-25 01:51:54,798 [INFO] Update id=279382787 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 01:51:54,798 [ERROR] Cause exception while process update id=279382787 by bot id=7168399023
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-Traceback (most recent call last):
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<7 lines>...
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-                 ~~~~~~~^^
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-2025-03-25 01:51:54,926 [INFO] Update id=279382788 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 01:51:54,926 [ERROR] Cause exception while process update id=279382788 by bot id=7168399023
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-Traceback (most recent call last):
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<7 lines>...
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-                 ~~~~~~~^^
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-2025-03-25 01:51:55,049 [INFO] Update id=279382789 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 01:51:55,050 [ERROR] Cause exception while process update id=279382789 by bot id=7168399023
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-Traceback (most recent call last):
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<7 lines>...
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        observer=observer, update_type=update_type, event=telegram_event, **data
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\quake\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-                 ~~~~~~~^^
-TypeError: delete_proxy() missing 1 required positional argument: 'session'
-2025-03-25 01:51:57,113 [INFO] 👤 1756925931 открыл меню
-2025-03-25 01:51:57,114 [INFO] Update id=279382790 is handled. Duration 59 ms by bot id=7168399023
-2025-03-25 01:51:58,016 [INFO] Update id=279382791 is handled. Duration 69 ms by bot id=7168399023
-2025-03-25 01:51:59,089 [INFO] Update id=279382792 is handled. Duration 58 ms by bot id=7168399023
-2025-03-25 01:52:00,872 [INFO] Update id=279382793 is handled. Duration 62 ms by bot id=7168399023
-2025-03-25 01:52:03,665 [INFO] Update id=279382794 is handled. Duration 60 ms by bot id=7168399023
-2025-03-25 01:52:06,133 [INFO] Update id=279382795 is handled. Duration 65 ms by bot id=7168399023
-2025-03-25 01:52:08,382 [INFO] Update id=279382796 is handled. Duration 60 ms by bot id=7168399023
-2025-03-25 01:52:13,254 [INFO] Update id=279382797 is handled. Duration 61 ms by bot id=7168399023
-2025-03-25 01:52:14,727 [INFO] select pg_catalog.version()
-2025-03-25 01:52:14,728 [INFO] [raw sql] ()
-2025-03-25 01:52:14,729 [INFO] select current_schema()
-2025-03-25 01:52:14,729 [INFO] [raw sql] ()
-2025-03-25 01:52:14,730 [INFO] show standard_conforming_strings
-2025-03-25 01:52:14,730 [INFO] [raw sql] ()
-2025-03-25 01:52:14,730 [INFO] BEGIN (implicit)
-2025-03-25 01:52:14,737 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
-FROM telegram_sessions 
-WHERE telegram_sessions.user_id = $1::BIGINT
-2025-03-25 01:52:14,738 [INFO] [generated in 0.00033s] (1756925931,)
-2025-03-25 01:52:14,853 [INFO] ROLLBACK
-2025-03-25 01:52:14,854 [INFO] Update id=279382798 is handled. Duration 209 ms by bot id=7168399023
-2025-03-25 01:59:09,021 [INFO] Polling stopped
-2025-03-25 01:59:09,278 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 01:59:16,222 [INFO] 🤖 Бот запущен!
-2025-03-25 01:59:16,222 [INFO] Start polling
-2025-03-25 01:59:16,388 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 01:59:23,404 [INFO] 👤 1756925931 открыл меню
-2025-03-25 01:59:23,405 [INFO] Update id=279382799 is handled. Duration 524 ms by bot id=7168399023
-2025-03-25 01:59:25,479 [INFO] Update id=279382800 is handled. Duration 82 ms by bot id=7168399023
-2025-03-25 01:59:26,278 [INFO] Update id=279382801 is handled. Duration 58 ms by bot id=7168399023
-2025-03-25 01:59:33,150 [INFO] Update id=279382802 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 01:59:58,684 [INFO] Polling stopped
-2025-03-25 01:59:58,942 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:01:47,707 [INFO] 🤖 Бот запущен!
-2025-03-25 02:01:47,707 [INFO] Start polling
-2025-03-25 02:01:47,844 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:01:50,670 [INFO] 👤 1756925931 открыл меню
-2025-03-25 02:01:50,670 [INFO] Update id=279382803 is handled. Duration 160 ms by bot id=7168399023
-2025-03-25 02:01:51,871 [INFO] Update id=279382804 is handled. Duration 59 ms by bot id=7168399023
-2025-03-25 02:01:52,865 [INFO] Update id=279382805 is handled. Duration 60 ms by bot id=7168399023
-2025-03-25 02:02:18,732 [INFO] Update id=279382806 is not handled. Duration 2 ms by bot id=7168399023
-2025-03-25 02:03:19,957 [INFO] Polling stopped
-2025-03-25 02:03:20,217 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:06:44,886 [INFO] 🤖 Бот запущен!
-2025-03-25 02:06:44,887 [INFO] Start polling
-2025-03-25 02:06:45,055 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:06:45,113 [INFO] Update id=279382808 is not handled. Duration 3 ms by bot id=7168399023
-2025-03-25 02:06:45,265 [INFO] 👤 1756925931 открыл меню
-2025-03-25 02:06:45,266 [INFO] Update id=279382807 is handled. Duration 156 ms by bot id=7168399023
-2025-03-25 02:06:47,502 [INFO] Update id=279382809 is handled. Duration 58 ms by bot id=7168399023
-2025-03-25 02:07:26,923 [INFO] Update id=279382810 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 02:07:28,282 [INFO] Update id=279382811 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 02:07:28,833 [INFO] Update id=279382812 is not handled. Duration 2 ms by bot id=7168399023
-2025-03-25 02:07:34,176 [INFO] Update id=279382813 is not handled. Duration 2 ms by bot id=7168399023
-2025-03-25 02:16:53,263 [INFO] Polling stopped
-2025-03-25 02:16:53,524 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:41:22,604 [INFO] 🤖 Бот запущен!
-2025-03-25 02:41:22,605 [INFO] Start polling
-2025-03-25 02:41:22,746 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:41:29,391 [INFO] 👤 1756925931 открыл меню
-2025-03-25 02:41:29,392 [INFO] Update id=279382814 is handled. Duration 177 ms by bot id=7168399023
-2025-03-25 02:41:30,109 [INFO] select pg_catalog.version()
-2025-03-25 02:41:30,110 [INFO] [raw sql] ()
-2025-03-25 02:41:30,111 [INFO] select current_schema()
-2025-03-25 02:41:30,112 [INFO] [raw sql] ()
-2025-03-25 02:41:30,113 [INFO] show standard_conforming_strings
-2025-03-25 02:41:30,113 [INFO] [raw sql] ()
-2025-03-25 02:41:30,115 [INFO] BEGIN (implicit)
-2025-03-25 02:41:30,121 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
-FROM users 
-WHERE users.id = $1::BIGINT
-2025-03-25 02:41:30,121 [INFO] [generated in 0.00055s] (1756925931,)
-2025-03-25 02:41:30,127 [INFO] ROLLBACK
-2025-03-25 02:41:30,182 [INFO] Update id=279382815 is handled. Duration 237 ms by bot id=7168399023
-2025-03-25 02:41:31,451 [INFO] Update id=279382816 is handled. Duration 65 ms by bot id=7168399023
-2025-03-25 02:41:32,525 [INFO] Update id=279382817 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 02:43:51,458 [INFO] Polling stopped
-2025-03-25 02:43:51,721 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:43:55,998 [INFO] 🤖 Бот запущен!
-2025-03-25 02:43:55,999 [INFO] Start polling
-2025-03-25 02:43:56,136 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:44:00,719 [INFO] 👤 1756925931 открыл меню
-2025-03-25 02:44:00,719 [INFO] Update id=279382818 is handled. Duration 161 ms by bot id=7168399023
-2025-03-25 02:44:01,890 [INFO] Update id=279382819 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 02:44:23,849 [INFO] Update id=279382820 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 02:44:24,810 [INFO] Update id=279382821 is handled. Duration 57 ms by bot id=7168399023
-2025-03-25 02:44:26,661 [INFO] Update id=279382822 is handled. Duration 57 ms by bot id=7168399023
-2025-03-25 02:45:55,552 [INFO] Polling stopped
-2025-03-25 02:45:55,817 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:47:37,904 [INFO] 🤖 Бот запущен!
-2025-03-25 02:47:37,905 [INFO] Start polling
-2025-03-25 02:47:38,055 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:47:40,850 [INFO] 👤 1756925931 открыл меню
-2025-03-25 02:47:40,850 [INFO] Update id=279382823 is handled. Duration 151 ms by bot id=7168399023
-2025-03-25 02:47:42,238 [INFO] Update id=279382824 is handled. Duration 60 ms by bot id=7168399023
-2025-03-25 02:47:44,589 [INFO] Update id=279382825 is handled. Duration 67 ms by bot id=7168399023
-2025-03-25 02:47:51,838 [INFO] Update id=279382826 is handled. Duration 61 ms by bot id=7168399023
-2025-03-25 02:48:19,669 [INFO] Update id=279382827 is not handled. Duration 2 ms by bot id=7168399023
-2025-03-25 02:48:32,344 [INFO] Update id=279382828 is not handled. Duration 2 ms by bot id=7168399023
-2025-03-25 02:48:36,928 [INFO] Polling stopped
-2025-03-25 02:48:37,189 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:48:48,581 [INFO] 🤖 Бот запущен!
-2025-03-25 02:48:48,582 [INFO] Start polling
-2025-03-25 02:48:48,735 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:48:48,976 [INFO] 👤 1756925931 открыл меню
-2025-03-25 02:48:48,976 [INFO] Update id=279382829 is handled. Duration 182 ms by bot id=7168399023
-2025-03-25 02:48:51,111 [INFO] Update id=279382830 is handled. Duration 61 ms by bot id=7168399023
-2025-03-25 02:48:53,086 [INFO] Update id=279382831 is handled. Duration 59 ms by bot id=7168399023
-2025-03-25 02:48:57,119 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 02:48:57,181 [INFO] Update id=279382832 is handled. Duration 97 ms by bot id=7168399023
-2025-03-25 02:49:26,590 [INFO] Polling stopped
-2025-03-25 02:49:26,845 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:50:52,652 [INFO] 🤖 Бот запущен!
-2025-03-25 02:50:52,653 [INFO] Start polling
-2025-03-25 02:50:52,841 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:50:59,966 [INFO] 👤 1756925931 открыл меню
-2025-03-25 02:50:59,966 [INFO] Update id=279382833 is handled. Duration 159 ms by bot id=7168399023
-2025-03-25 02:51:02,031 [INFO] Update id=279382834 is handled. Duration 69 ms by bot id=7168399023
-2025-03-25 02:51:03,250 [INFO] Update id=279382835 is handled. Duration 70 ms by bot id=7168399023
-2025-03-25 02:51:06,439 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 02:51:06,503 [INFO] Update id=279382836 is handled. Duration 66 ms by bot id=7168399023
-2025-03-25 02:51:16,384 [INFO] Polling stopped
-2025-03-25 02:51:16,486 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2775)
-2025-03-25 02:51:16,486 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7168399023)
-2025-03-25 02:51:16,639 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:52:01,482 [INFO] 🤖 Бот запущен!
-2025-03-25 02:52:01,482 [INFO] Start polling
-2025-03-25 02:52:01,624 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:52:14,294 [INFO] 👤 1756925931 открыл меню
-2025-03-25 02:52:14,294 [INFO] Update id=279382837 is handled. Duration 156 ms by bot id=7168399023
-2025-03-25 02:52:15,414 [INFO] Update id=279382838 is handled. Duration 59 ms by bot id=7168399023
-2025-03-25 02:52:16,213 [INFO] Update id=279382839 is handled. Duration 78 ms by bot id=7168399023
-2025-03-25 02:52:22,819 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 02:52:24,023 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 02:52:24,324 [INFO] Update id=279382840 is handled. Duration 1506 ms by bot id=7168399023
-2025-03-25 02:57:28,771 [INFO] Polling stopped
-2025-03-25 02:57:29,031 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:57:33,539 [INFO] 🤖 Бот запущен!
-2025-03-25 02:57:33,540 [INFO] Start polling
-2025-03-25 02:57:33,824 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:57:36,167 [INFO] 👤 1756925931 открыл меню
-2025-03-25 02:57:36,167 [INFO] Update id=279382841 is handled. Duration 164 ms by bot id=7168399023
-2025-03-25 02:57:37,432 [INFO] Update id=279382842 is handled. Duration 59 ms by bot id=7168399023
-2025-03-25 02:57:38,305 [INFO] Update id=279382843 is handled. Duration 67 ms by bot id=7168399023
-2025-03-25 02:57:41,981 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 02:57:42,022 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 02:57:42,301 [INFO] Update id=279382844 is handled. Duration 322 ms by bot id=7168399023
-2025-03-25 02:59:14,609 [INFO] Polling stopped
-2025-03-25 02:59:14,868 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:59:51,883 [INFO] 🤖 Бот запущен!
-2025-03-25 02:59:51,884 [INFO] Start polling
-2025-03-25 02:59:52,028 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 02:59:56,598 [INFO] 👤 1756925931 открыл меню
-2025-03-25 02:59:56,599 [INFO] Update id=279382845 is handled. Duration 173 ms by bot id=7168399023
-2025-03-25 02:59:57,798 [INFO] Update id=279382846 is handled. Duration 62 ms by bot id=7168399023
-2025-03-25 02:59:58,943 [INFO] Update id=279382847 is handled. Duration 204 ms by bot id=7168399023
-2025-03-25 03:00:02,576 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:00:02,617 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:00:02,901 [INFO] Update id=279382848 is handled. Duration 328 ms by bot id=7168399023
-2025-03-25 03:02:06,316 [INFO] Polling stopped
-2025-03-25 03:02:06,568 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:02:56,058 [INFO] 🤖 Бот запущен!
-2025-03-25 03:02:56,058 [INFO] Start polling
-2025-03-25 03:02:56,225 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:03:02,685 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:03:02,685 [INFO] Update id=279382849 is handled. Duration 158 ms by bot id=7168399023
-2025-03-25 03:03:03,731 [INFO] Update id=279382850 is handled. Duration 69 ms by bot id=7168399023
-2025-03-25 03:03:05,034 [INFO] Update id=279382851 is handled. Duration 61 ms by bot id=7168399023
-2025-03-25 03:03:08,997 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:03:09,039 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:03:09,338 [INFO] Update id=279382852 is handled. Duration 344 ms by bot id=7168399023
-2025-03-25 03:05:41,855 [INFO] Polling stopped
-2025-03-25 03:05:42,127 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:06:46,064 [INFO] 🤖 Бот запущен!
-2025-03-25 03:06:46,064 [INFO] Start polling
-2025-03-25 03:06:46,201 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:06:53,954 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:06:53,955 [INFO] Update id=279382853 is handled. Duration 156 ms by bot id=7168399023
-2025-03-25 03:06:58,881 [INFO] Update id=279382854 is handled. Duration 59 ms by bot id=7168399023
-2025-03-25 03:06:59,843 [INFO] Update id=279382855 is handled. Duration 57 ms by bot id=7168399023
-2025-03-25 03:07:02,524 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:07:02,566 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:07:02,859 [INFO] Update id=279382856 is handled. Duration 340 ms by bot id=7168399023
-2025-03-25 03:10:54,830 [INFO] Polling stopped
-2025-03-25 03:10:55,084 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:10:59,420 [INFO] 🤖 Бот запущен!
-2025-03-25 03:10:59,421 [INFO] Start polling
-2025-03-25 03:10:59,599 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:11:03,633 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:11:03,634 [INFO] Update id=279382857 is handled. Duration 368 ms by bot id=7168399023
-2025-03-25 03:11:04,100 [INFO] select pg_catalog.version()
-2025-03-25 03:11:04,100 [INFO] [raw sql] ()
-2025-03-25 03:11:04,102 [INFO] select current_schema()
-2025-03-25 03:11:04,102 [INFO] [raw sql] ()
-2025-03-25 03:11:04,102 [INFO] show standard_conforming_strings
-2025-03-25 03:11:04,103 [INFO] [raw sql] ()
-2025-03-25 03:11:04,103 [INFO] BEGIN (implicit)
-2025-03-25 03:11:04,108 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
-FROM users 
-WHERE users.id = $1::BIGINT
-2025-03-25 03:11:04,108 [INFO] [generated in 0.00029s] (1756925931,)
-2025-03-25 03:11:04,112 [INFO] ROLLBACK
-2025-03-25 03:11:04,175 [INFO] Update id=279382858 is handled. Duration 233 ms by bot id=7168399023
-2025-03-25 03:11:05,605 [INFO] Update id=279382859 is handled. Duration 71 ms by bot id=7168399023
-2025-03-25 03:11:06,385 [INFO] Update id=279382860 is handled. Duration 65 ms by bot id=7168399023
-2025-03-25 03:11:07,499 [INFO] Update id=279382861 is handled. Duration 73 ms by bot id=7168399023
-2025-03-25 03:11:11,542 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:11:11,585 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:11:11,877 [INFO] Update id=279382862 is handled. Duration 337 ms by bot id=7168399023
-2025-03-25 03:13:21,752 [INFO] Polling stopped
-2025-03-25 03:13:22,011 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:13:33,271 [INFO] 🤖 Бот запущен!
-2025-03-25 03:13:33,272 [INFO] Start polling
-2025-03-25 03:13:33,415 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:13:36,137 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:13:36,137 [INFO] Update id=279382863 is handled. Duration 164 ms by bot id=7168399023
-2025-03-25 03:13:37,350 [INFO] Update id=279382864 is handled. Duration 58 ms by bot id=7168399023
-2025-03-25 03:13:38,108 [INFO] Update id=279382865 is handled. Duration 62 ms by bot id=7168399023
-2025-03-25 03:13:41,352 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:13:41,394 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:13:41,678 [INFO] Update id=279382866 is handled. Duration 329 ms by bot id=7168399023
-2025-03-25 03:18:43,386 [INFO] Polling stopped
-2025-03-25 03:18:43,648 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:18:58,989 [INFO] 🤖 Бот запущен!
-2025-03-25 03:18:58,989 [INFO] Start polling
-2025-03-25 03:18:59,154 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:19:12,290 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:19:12,291 [INFO] Update id=279382867 is handled. Duration 191 ms by bot id=7168399023
-2025-03-25 03:19:13,660 [INFO] Update id=279382868 is handled. Duration 72 ms by bot id=7168399023
-2025-03-25 03:19:15,574 [INFO] Update id=279382869 is handled. Duration 74 ms by bot id=7168399023
-2025-03-25 03:19:20,079 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:19:20,123 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:19:20,429 [INFO] Update id=279382870 is handled. Duration 352 ms by bot id=7168399023
-2025-03-25 03:19:31,160 [INFO] Update id=279382871 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 03:19:52,732 [INFO] Polling stopped
-2025-03-25 03:19:52,988 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:21:06,341 [INFO] 🤖 Бот запущен!
-2025-03-25 03:21:06,342 [INFO] Start polling
-2025-03-25 03:21:06,500 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:21:06,731 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:21:06,732 [INFO] Update id=279382872 is handled. Duration 168 ms by bot id=7168399023
-2025-03-25 03:21:06,733 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:21:06,733 [INFO] Update id=279382873 is handled. Duration 169 ms by bot id=7168399023
-2025-03-25 03:21:08,253 [INFO] Update id=279382874 is handled. Duration 139 ms by bot id=7168399023
-2025-03-25 03:21:09,061 [INFO] Update id=279382875 is handled. Duration 178 ms by bot id=7168399023
-2025-03-25 03:21:11,639 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:21:11,685 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:21:11,924 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
-2025-03-25 03:21:11,924 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:21:11,988 [INFO] select pg_catalog.version()
-2025-03-25 03:21:11,988 [INFO] [raw sql] ()
-2025-03-25 03:21:11,989 [INFO] select current_schema()
-2025-03-25 03:21:11,990 [INFO] [raw sql] ()
-2025-03-25 03:21:11,990 [INFO] show standard_conforming_strings
-2025-03-25 03:21:11,990 [INFO] [raw sql] ()
-2025-03-25 03:21:11,992 [INFO] BEGIN (implicit)
-2025-03-25 03:21:11,993 [INFO] INSERT INTO proxy_settings (user_id, proxy_type, proxy_host, proxy_port, proxy_login, proxy_password) VALUES ($1::BIGINT, $2::VARCHAR, $3::VARCHAR, $4::BIGINT, $5::VARCHAR, $6::VARCHAR) RETURNING proxy_settings.id
-2025-03-25 03:21:11,993 [INFO] [generated in 0.00027s] (1756925931, 'socks4', '64.43.122.246', 50101, 'maks47turbo', 'cMAEUDRxWa')
-2025-03-25 03:21:12,091 [INFO] COMMIT
-2025-03-25 03:21:12,153 [INFO] Update id=279382876 is handled. Duration 517 ms by bot id=7168399023
-2025-03-25 03:21:19,962 [INFO] BEGIN (implicit)
-2025-03-25 03:21:19,964 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
+2025-03-26 02:00:35,139 [INFO] [generated in 0.00094s] (7444003086,)
+2025-03-26 02:00:35,157 [INFO] ROLLBACK
+2025-03-26 02:00:35,264 [INFO] Update id=677740742 is handled. Duration 130 ms by bot id=7852439023
+2025-03-26 02:05:59,062 [INFO] Polling stopped
+2025-03-26 02:05:59,277 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-26 02:06:12,010 [INFO] 🤖 Бот запущен!
+2025-03-26 02:06:12,010 [INFO] Start polling
+2025-03-26 02:06:12,251 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-26 02:06:23,730 [INFO] 👤 7444003086 открыл меню
+2025-03-26 02:06:23,731 [INFO] Update id=677740743 is handled. Duration 251 ms by bot id=7852439023
+2025-03-26 02:06:27,278 [INFO] Update id=677740744 is handled. Duration 92 ms by bot id=7852439023
+2025-03-26 02:06:34,898 [INFO] Update id=677740745 is not handled. Duration 11 ms by bot id=7852439023
+2025-03-26 02:06:39,936 [INFO] Update id=677740746 is not handled. Duration 8 ms by bot id=7852439023
+2025-03-26 02:06:41,050 [INFO] Update id=677740747 is not handled. Duration 6 ms by bot id=7852439023
+2025-03-26 02:06:41,874 [INFO] Update id=677740748 is not handled. Duration 10 ms by bot id=7852439023
+2025-03-26 02:06:42,547 [INFO] Update id=677740749 is not handled. Duration 6 ms by bot id=7852439023
+2025-03-26 02:09:17,015 [INFO] Polling stopped
+2025-03-26 02:09:17,270 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-26 02:09:32,881 [INFO] 🤖 Бот запущен!
+2025-03-26 02:09:32,882 [INFO] Start polling
+2025-03-26 02:09:33,161 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-26 02:09:37,585 [INFO] Update id=677740750 is not handled. Duration 9 ms by bot id=7852439023
+2025-03-26 02:09:43,638 [INFO] 👤 7444003086 открыл меню
+2025-03-26 02:09:43,638 [INFO] Update id=677740751 is handled. Duration 275 ms by bot id=7852439023
+2025-03-26 02:09:45,766 [INFO] Update id=677740752 is handled. Duration 79 ms by bot id=7852439023
+2025-03-26 02:09:47,172 [INFO] select pg_catalog.version()
+2025-03-26 02:09:47,173 [INFO] [raw sql] ()
+2025-03-26 02:09:47,176 [INFO] select current_schema()
+2025-03-26 02:09:47,177 [INFO] [raw sql] ()
+2025-03-26 02:09:47,180 [INFO] show standard_conforming_strings
+2025-03-26 02:09:47,181 [INFO] [raw sql] ()
+2025-03-26 02:09:47,184 [INFO] BEGIN (implicit)
+2025-03-26 02:09:47,200 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
 FROM proxy_settings 
 WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:21:19,964 [INFO] [generated in 0.00042s] (1756925931,)
-2025-03-25 03:21:20,033 [INFO] ROLLBACK
-2025-03-25 03:21:20,035 [INFO] Update id=279382877 is handled. Duration 75 ms by bot id=7168399023
-2025-03-25 03:21:22,442 [INFO] BEGIN (implicit)
-2025-03-25 03:21:22,443 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:21:22,443 [INFO] [cached since 2.479s ago] (1756925931,)
-2025-03-25 03:21:22,508 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:21:22,554 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:21:22,841 [INFO] ROLLBACK
-2025-03-25 03:21:22,842 [INFO] Update id=279382878 is handled. Duration 402 ms by bot id=7168399023
-2025-03-25 03:21:33,746 [INFO] BEGIN (implicit)
-2025-03-25 03:21:33,747 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:21:33,748 [INFO] [cached since 13.78s ago] (1756925931,)
-2025-03-25 03:21:33,846 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:21:33,887 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:21:34,177 [INFO] ROLLBACK
-2025-03-25 03:21:34,178 [INFO] Update id=279382879 is handled. Duration 434 ms by bot id=7168399023
-2025-03-25 03:21:40,099 [INFO] BEGIN (implicit)
-2025-03-25 03:21:40,100 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:21:40,100 [INFO] [cached since 20.14s ago] (1756925931,)
-2025-03-25 03:21:40,160 [INFO] ROLLBACK
-2025-03-25 03:21:40,161 [INFO] Update id=279382880 is handled. Duration 64 ms by bot id=7168399023
-2025-03-25 03:21:51,244 [INFO] Update id=279382881 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 03:22:43,929 [INFO] Polling stopped
-2025-03-25 03:22:44,195 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:24:19,860 [INFO] 🤖 Бот запущен!
-2025-03-25 03:24:19,860 [INFO] Start polling
-2025-03-25 03:24:20,054 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:24:23,661 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:24:23,661 [INFO] Update id=279382882 is handled. Duration 168 ms by bot id=7168399023
-2025-03-25 03:24:24,906 [INFO] Update id=279382883 is handled. Duration 72 ms by bot id=7168399023
-2025-03-25 03:24:29,995 [INFO] Update id=279382884 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 03:24:32,651 [INFO] Update id=279382885 is handled. Duration 68 ms by bot id=7168399023
-2025-03-25 03:24:35,843 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:24:35,892 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:24:36,283 [INFO] Update id=279382886 is handled. Duration 442 ms by bot id=7168399023
-2025-03-25 03:24:41,455 [INFO] select pg_catalog.version()
-2025-03-25 03:24:41,456 [INFO] [raw sql] ()
-2025-03-25 03:24:41,457 [INFO] select current_schema()
-2025-03-25 03:24:41,457 [INFO] [raw sql] ()
-2025-03-25 03:24:41,458 [INFO] show standard_conforming_strings
-2025-03-25 03:24:41,458 [INFO] [raw sql] ()
-2025-03-25 03:24:41,459 [INFO] BEGIN (implicit)
-2025-03-25 03:24:41,465 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:24:41,466 [INFO] [generated in 0.00050s] (1756925931,)
-2025-03-25 03:24:41,540 [INFO] ROLLBACK
-2025-03-25 03:24:41,541 [INFO] Update id=279382887 is handled. Duration 142 ms by bot id=7168399023
-2025-03-25 03:24:43,446 [INFO] BEGIN (implicit)
-2025-03-25 03:24:43,447 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:24:43,447 [INFO] [cached since 1.982s ago] (1756925931,)
-2025-03-25 03:24:43,505 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:24:43,549 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:24:43,857 [INFO] ROLLBACK
-2025-03-25 03:24:43,858 [INFO] Update id=279382888 is handled. Duration 414 ms by bot id=7168399023
-2025-03-25 03:24:46,116 [INFO] Update id=279382889 is handled. Duration 63 ms by bot id=7168399023
-2025-03-25 03:24:49,697 [INFO] Update id=279382890 is handled. Duration 74 ms by bot id=7168399023
-2025-03-25 03:24:59,666 [INFO] Update id=279382891 is not handled. Duration 2 ms by bot id=7168399023
-2025-03-25 03:27:52,279 [INFO] Polling stopped
-2025-03-25 03:27:52,546 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:28:25,287 [INFO] 🤖 Бот запущен!
-2025-03-25 03:28:25,288 [INFO] Start polling
-2025-03-25 03:28:25,434 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:28:32,312 [INFO] Update id=279382892 is handled. Duration 176 ms by bot id=7168399023
-2025-03-25 03:28:35,347 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:28:35,388 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:28:35,676 [INFO] Update id=279382893 is handled. Duration 332 ms by bot id=7168399023
-2025-03-25 03:28:37,860 [INFO] select pg_catalog.version()
-2025-03-25 03:28:37,861 [INFO] [raw sql] ()
-2025-03-25 03:28:37,863 [INFO] select current_schema()
-2025-03-25 03:28:37,863 [INFO] [raw sql] ()
-2025-03-25 03:28:37,864 [INFO] show standard_conforming_strings
-2025-03-25 03:28:37,864 [INFO] [raw sql] ()
-2025-03-25 03:28:37,865 [INFO] BEGIN (implicit)
-2025-03-25 03:28:37,871 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:28:37,871 [INFO] [generated in 0.00053s] (1756925931,)
-2025-03-25 03:28:37,933 [INFO] ROLLBACK
-2025-03-25 03:28:37,933 [INFO] Update id=279382894 is handled. Duration 130 ms by bot id=7168399023
-2025-03-25 03:28:38,804 [INFO] BEGIN (implicit)
-2025-03-25 03:28:38,804 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:28:38,805 [INFO] [cached since 0.9338s ago] (1756925931,)
-2025-03-25 03:28:38,868 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:28:38,910 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:28:39,192 [INFO] ROLLBACK
-2025-03-25 03:28:39,193 [INFO] Update id=279382895 is handled. Duration 392 ms by bot id=7168399023
-2025-03-25 03:28:49,055 [INFO] Polling stopped
-2025-03-25 03:28:49,311 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:28:53,566 [INFO] 🤖 Бот запущен!
-2025-03-25 03:28:53,566 [INFO] Start polling
-2025-03-25 03:28:53,707 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:28:53,934 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:28:53,935 [INFO] Update id=279382896 is handled. Duration 172 ms by bot id=7168399023
-2025-03-25 03:28:55,442 [INFO] Update id=279382897 is handled. Duration 59 ms by bot id=7168399023
-2025-03-25 03:28:56,234 [INFO] Update id=279382898 is handled. Duration 78 ms by bot id=7168399023
-2025-03-25 03:29:03,120 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:29:03,162 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:29:03,431 [INFO] Update id=279382899 is handled. Duration 313 ms by bot id=7168399023
-2025-03-25 03:29:43,379 [INFO] Polling stopped
-2025-03-25 03:29:43,638 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:30:05,426 [INFO] 🤖 Бот запущен!
-2025-03-25 03:30:05,427 [INFO] Start polling
-2025-03-25 03:30:05,646 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:30:07,949 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:30:07,949 [INFO] Update id=279382900 is handled. Duration 171 ms by bot id=7168399023
-2025-03-25 03:30:09,097 [INFO] Update id=279382901 is handled. Duration 59 ms by bot id=7168399023
-2025-03-25 03:30:09,734 [INFO] Update id=279382902 is handled. Duration 68 ms by bot id=7168399023
-2025-03-25 03:30:13,963 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:30:14,006 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:30:14,280 [INFO] Update id=279382903 is handled. Duration 319 ms by bot id=7168399023
-2025-03-25 03:30:16,435 [INFO] Update id=279382904 is handled. Duration 73 ms by bot id=7168399023
-2025-03-25 03:30:29,487 [INFO] select pg_catalog.version()
-2025-03-25 03:30:29,487 [INFO] [raw sql] ()
-2025-03-25 03:30:29,488 [INFO] select current_schema()
-2025-03-25 03:30:29,489 [INFO] [raw sql] ()
-2025-03-25 03:30:29,490 [INFO] show standard_conforming_strings
-2025-03-25 03:30:29,490 [INFO] [raw sql] ()
-2025-03-25 03:30:29,491 [INFO] BEGIN (implicit)
-2025-03-25 03:30:29,496 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:30:29,497 [INFO] [generated in 0.00043s] (1756925931,)
-2025-03-25 03:30:29,572 [INFO] ROLLBACK
-2025-03-25 03:30:29,573 [INFO] Update id=279382905 is handled. Duration 144 ms by bot id=7168399023
-2025-03-25 03:30:31,611 [INFO] Update id=279382906 is handled. Duration 68 ms by bot id=7168399023
-2025-03-25 03:30:34,707 [INFO] BEGIN (implicit)
-2025-03-25 03:30:34,708 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:30:34,708 [INFO] [cached since 5.212s ago] (1756925931,)
-2025-03-25 03:30:34,770 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:30:34,815 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:30:35,098 [INFO] ROLLBACK
-2025-03-25 03:30:35,099 [INFO] Update id=279382907 is handled. Duration 394 ms by bot id=7168399023
-2025-03-25 03:30:37,471 [INFO] Update id=279382908 is handled. Duration 57 ms by bot id=7168399023
-2025-03-25 03:30:38,830 [INFO] BEGIN (implicit)
-2025-03-25 03:30:38,831 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT AND proxy_settings.id = $2::BIGINT
-2025-03-25 03:30:38,831 [INFO] [generated in 0.00025s] (1756925931, 1)
-2025-03-25 03:30:38,838 [INFO] DELETE FROM proxy_settings WHERE proxy_settings.id = $1::BIGINT
-2025-03-25 03:30:38,838 [INFO] [generated in 0.00028s] (1,)
-2025-03-25 03:30:38,845 [INFO] COMMIT
-2025-03-25 03:30:38,917 [INFO] Update id=279382909 is handled. Duration 89 ms by bot id=7168399023
-2025-03-25 03:30:41,356 [INFO] Update id=279382910 is handled. Duration 63 ms by bot id=7168399023
-2025-03-25 03:30:46,267 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:30:46,307 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:30:46,700 [INFO] Update id=279382911 is handled. Duration 435 ms by bot id=7168399023
-2025-03-25 03:31:05,557 [INFO] Polling stopped
-2025-03-25 03:31:05,815 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:31:29,857 [INFO] 🤖 Бот запущен!
-2025-03-25 03:31:29,857 [INFO] Start polling
-2025-03-25 03:31:30,309 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:31:30,528 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:31:30,529 [INFO] Update id=279382912 is handled. Duration 160 ms by bot id=7168399023
-2025-03-25 03:31:30,538 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:31:30,539 [INFO] Update id=279382913 is handled. Duration 170 ms by bot id=7168399023
-2025-03-25 03:31:31,688 [INFO] Update id=279382914 is handled. Duration 65 ms by bot id=7168399023
-2025-03-25 03:31:33,210 [INFO] Update id=279382915 is handled. Duration 69 ms by bot id=7168399023
-2025-03-25 03:31:36,783 [INFO] Connecting to 149.154.167.51:443/TcpFull...
-2025-03-25 03:31:36,825 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:31:37,046 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
-2025-03-25 03:31:37,047 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
-2025-03-25 03:31:37,133 [INFO] select pg_catalog.version()
-2025-03-25 03:31:37,134 [INFO] [raw sql] ()
-2025-03-25 03:31:37,135 [INFO] select current_schema()
-2025-03-25 03:31:37,135 [INFO] [raw sql] ()
-2025-03-25 03:31:37,136 [INFO] show standard_conforming_strings
-2025-03-25 03:31:37,136 [INFO] [raw sql] ()
-2025-03-25 03:31:37,137 [INFO] BEGIN (implicit)
-2025-03-25 03:31:37,139 [INFO] INSERT INTO proxy_settings (user_id, proxy_type, proxy_host, proxy_port, proxy_login, proxy_password) VALUES ($1::BIGINT, $2::VARCHAR, $3::VARCHAR, $4::BIGINT, $5::VARCHAR, $6::VARCHAR) RETURNING proxy_settings.id
-2025-03-25 03:31:37,140 [INFO] [generated in 0.00060s] (1756925931, 'socks4', '64.43.122.246', 50101, 'maks47turbo', 'cMAEUDRxWa')
-2025-03-25 03:31:37,144 [INFO] COMMIT
-2025-03-25 03:31:37,207 [INFO] Update id=279382916 is handled. Duration 428 ms by bot id=7168399023
-2025-03-25 03:36:45,286 [INFO] Polling stopped
-2025-03-25 03:36:45,548 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:36:58,766 [INFO] 🤖 Бот запущен!
-2025-03-25 03:36:58,767 [INFO] Start polling
-2025-03-25 03:36:58,907 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:37:05,373 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:37:05,374 [INFO] Update id=279382917 is handled. Duration 167 ms by bot id=7168399023
-2025-03-25 03:37:06,519 [INFO] Update id=279382918 is handled. Duration 59 ms by bot id=7168399023
-2025-03-25 03:37:07,928 [INFO] select pg_catalog.version()
-2025-03-25 03:37:07,928 [INFO] [raw sql] ()
-2025-03-25 03:37:07,930 [INFO] select current_schema()
-2025-03-25 03:37:07,930 [INFO] [raw sql] ()
-2025-03-25 03:37:07,932 [INFO] show standard_conforming_strings
-2025-03-25 03:37:07,932 [INFO] [raw sql] ()
-2025-03-25 03:37:07,933 [INFO] BEGIN (implicit)
-2025-03-25 03:37:07,939 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:37:07,939 [INFO] [generated in 0.00042s] (1756925931,)
-2025-03-25 03:37:07,998 [INFO] ROLLBACK
-2025-03-25 03:37:07,999 [INFO] Update id=279382919 is handled. Duration 128 ms by bot id=7168399023
-2025-03-25 03:37:10,213 [INFO] BEGIN (implicit)
-2025-03-25 03:37:10,214 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:37:10,214 [INFO] [cached since 2.275s ago] (1756925931,)
-2025-03-25 03:37:10,329 [INFO] ROLLBACK
-2025-03-25 03:37:10,330 [INFO] Update id=279382920 is handled. Duration 119 ms by bot id=7168399023
-2025-03-25 03:37:17,666 [INFO] BEGIN (implicit)
-2025-03-25 03:37:17,667 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:37:17,667 [INFO] [cached since 9.728s ago] (1756925931,)
-2025-03-25 03:37:17,968 [INFO] ROLLBACK
-2025-03-25 03:37:17,969 [INFO] Update id=279382921 is handled. Duration 305 ms by bot id=7168399023
-2025-03-25 03:37:22,058 [INFO] Update id=279382922 is handled. Duration 59 ms by bot id=7168399023
-2025-03-25 03:37:35,579 [INFO] Update id=279382923 is handled. Duration 60 ms by bot id=7168399023
-2025-03-25 03:37:39,886 [INFO] Update id=279382924 is handled. Duration 67 ms by bot id=7168399023
-2025-03-25 03:37:48,750 [INFO] BEGIN (implicit)
-2025-03-25 03:37:48,752 [INFO] INSERT INTO proxy_settings (user_id, proxy_type, proxy_host, proxy_port, proxy_login, proxy_password) VALUES ($1::BIGINT, $2::VARCHAR, $3::VARCHAR, $4::BIGINT, $5::VARCHAR, $6::VARCHAR) RETURNING proxy_settings.id
-2025-03-25 03:37:48,752 [INFO] [generated in 0.00049s] (1756925931, 'socks4', '64.43.122.246', 50101, 'maks47turbo', 'cMAEUDRxWa')
-2025-03-25 03:37:48,755 [INFO] COMMIT
-2025-03-25 03:37:48,812 [INFO] Update id=279382925 is handled. Duration 65 ms by bot id=7168399023
-2025-03-25 03:37:52,197 [INFO] BEGIN (implicit)
-2025-03-25 03:37:52,197 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:37:52,198 [INFO] [cached since 44.26s ago] (1756925931,)
-2025-03-25 03:37:52,318 [INFO] ROLLBACK
-2025-03-25 03:37:52,319 [INFO] Update id=279382926 is handled. Duration 124 ms by bot id=7168399023
-2025-03-25 03:37:55,059 [INFO] Update id=279382927 is handled. Duration 59 ms by bot id=7168399023
-2025-03-25 03:37:57,978 [INFO] BEGIN (implicit)
-2025-03-25 03:37:57,979 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT AND proxy_settings.id = $2::BIGINT
-2025-03-25 03:37:57,980 [INFO] [generated in 0.00078s] (1756925931, 2)
-2025-03-25 03:37:57,982 [INFO] DELETE FROM proxy_settings WHERE proxy_settings.id = $1::BIGINT
-2025-03-25 03:37:57,982 [INFO] [generated in 0.00019s] (2,)
-2025-03-25 03:37:57,983 [INFO] COMMIT
-2025-03-25 03:37:58,039 [INFO] Update id=279382928 is handled. Duration 63 ms by bot id=7168399023
-2025-03-25 03:38:00,048 [INFO] Update id=279382929 is handled. Duration 156 ms by bot id=7168399023
-2025-03-25 03:38:01,162 [INFO] BEGIN (implicit)
-2025-03-25 03:38:01,162 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT AND proxy_settings.id = $2::BIGINT
-2025-03-25 03:38:01,162 [INFO] [cached since 3.183s ago] (1756925931, 3)
-2025-03-25 03:38:01,163 [INFO] DELETE FROM proxy_settings WHERE proxy_settings.id = $1::BIGINT
-2025-03-25 03:38:01,163 [INFO] [cached since 3.182s ago] (3,)
-2025-03-25 03:38:01,164 [INFO] COMMIT
-2025-03-25 03:38:01,225 [INFO] Update id=279382930 is handled. Duration 65 ms by bot id=7168399023
-2025-03-25 03:38:04,035 [INFO] Update id=279382931 is handled. Duration 61 ms by bot id=7168399023
-2025-03-25 03:38:11,816 [INFO] BEGIN (implicit)
-2025-03-25 03:38:11,816 [INFO] INSERT INTO proxy_settings (user_id, proxy_type, proxy_host, proxy_port, proxy_login, proxy_password) VALUES ($1::BIGINT, $2::VARCHAR, $3::VARCHAR, $4::BIGINT, $5::VARCHAR, $6::VARCHAR) RETURNING proxy_settings.id
-2025-03-25 03:38:11,817 [INFO] [cached since 23.06s ago] (1756925931, 'socks4', '64.83.122.246', 50101, 'maks47turbo', 'cMAEUDRxWa')
-2025-03-25 03:38:11,818 [INFO] COMMIT
-2025-03-25 03:38:11,873 [INFO] Update id=279382932 is handled. Duration 59 ms by bot id=7168399023
-2025-03-25 03:38:14,909 [INFO] Update id=279382933 is handled. Duration 65 ms by bot id=7168399023
-2025-03-25 03:38:17,666 [INFO] BEGIN (implicit)
-2025-03-25 03:38:17,667 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT AND proxy_settings.id = $2::BIGINT
-2025-03-25 03:38:17,667 [INFO] [cached since 19.69s ago] (1756925931, 1)
-2025-03-25 03:38:17,852 [INFO] Update id=279382934 is handled. Duration 189 ms by bot id=7168399023
-2025-03-25 03:38:17,853 [INFO] ROLLBACK
-2025-03-25 03:38:22,015 [INFO] BEGIN (implicit)
-2025-03-25 03:38:22,016 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:38:22,016 [INFO] [cached since 74.08s ago] (1756925931,)
-2025-03-25 03:38:22,076 [INFO] ROLLBACK
-2025-03-25 03:38:22,077 [INFO] Update id=279382935 is handled. Duration 63 ms by bot id=7168399023
-2025-03-25 03:38:39,719 [INFO] BEGIN (implicit)
-2025-03-25 03:38:39,721 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:38:39,721 [INFO] [cached since 91.78s ago] (1756925931,)
-2025-03-25 03:38:39,949 [INFO] ROLLBACK
-2025-03-25 03:38:39,949 [INFO] Update id=279382936 is handled. Duration 231 ms by bot id=7168399023
-2025-03-25 03:41:27,410 [INFO] Polling stopped
-2025-03-25 03:41:27,676 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:41:47,474 [INFO] 🤖 Бот запущен!
-2025-03-25 03:41:47,474 [INFO] Start polling
-2025-03-25 03:41:47,645 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:41:52,167 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:41:52,167 [INFO] Update id=279382937 is handled. Duration 174 ms by bot id=7168399023
-2025-03-25 03:41:53,455 [INFO] Update id=279382938 is handled. Duration 71 ms by bot id=7168399023
-2025-03-25 03:42:02,703 [INFO] Update id=279382939 is handled. Duration 65 ms by bot id=7168399023
-2025-03-25 03:42:11,347 [INFO] select pg_catalog.version()
-2025-03-25 03:42:11,347 [INFO] [raw sql] ()
-2025-03-25 03:42:11,349 [INFO] select current_schema()
-2025-03-25 03:42:11,349 [INFO] [raw sql] ()
-2025-03-25 03:42:11,350 [INFO] show standard_conforming_strings
-2025-03-25 03:42:11,351 [INFO] [raw sql] ()
-2025-03-25 03:42:11,351 [INFO] BEGIN (implicit)
-2025-03-25 03:42:11,353 [INFO] INSERT INTO proxy_settings (user_id, proxy_type, proxy_host, proxy_port, proxy_login, proxy_password) VALUES ($1::BIGINT, $2::VARCHAR, $3::VARCHAR, $4::BIGINT, $5::VARCHAR, $6::VARCHAR) RETURNING proxy_settings.id
-2025-03-25 03:42:11,353 [INFO] [generated in 0.00038s] (1756925931, 'socks4', '64.83.122.246', 50101, 'maks47turbo', 'cMAEUDRxWa')
-2025-03-25 03:42:11,357 [INFO] COMMIT
-2025-03-25 03:42:11,420 [INFO] Update id=279382940 is handled. Duration 134 ms by bot id=7168399023
-2025-03-25 03:42:13,543 [INFO] BEGIN (implicit)
-2025-03-25 03:42:13,545 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:42:13,545 [INFO] [generated in 0.00042s] (1756925931,)
-2025-03-25 03:42:13,674 [INFO] ROLLBACK
-2025-03-25 03:42:13,674 [INFO] Update id=279382941 is handled. Duration 133 ms by bot id=7168399023
-2025-03-25 03:42:16,837 [INFO] BEGIN (implicit)
-2025-03-25 03:42:16,838 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:42:16,838 [INFO] [cached since 3.293s ago] (1756925931,)
-2025-03-25 03:42:38,304 [INFO] ROLLBACK
-2025-03-25 03:42:38,305 [INFO] Update id=279382942 is handled. Duration 21470 ms by bot id=7168399023
-2025-03-25 03:42:51,699 [INFO] Update id=279382943 is not handled. Duration 2 ms by bot id=7168399023
-2025-03-25 03:45:37,453 [INFO] Polling stopped
-2025-03-25 03:45:37,711 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:54:02,037 [INFO] 🤖 Бот запущен!
-2025-03-25 03:54:02,038 [INFO] Start polling
-2025-03-25 03:54:02,189 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 03:54:08,731 [INFO] 👤 1756925931 открыл меню
-2025-03-25 03:54:08,732 [INFO] Update id=279382944 is handled. Duration 177 ms by bot id=7168399023
-2025-03-25 03:54:10,014 [INFO] Update id=279382945 is handled. Duration 56 ms by bot id=7168399023
-2025-03-25 03:54:11,956 [INFO] select pg_catalog.version()
-2025-03-25 03:54:11,956 [INFO] [raw sql] ()
-2025-03-25 03:54:11,958 [INFO] select current_schema()
-2025-03-25 03:54:11,958 [INFO] [raw sql] ()
-2025-03-25 03:54:11,959 [INFO] show standard_conforming_strings
-2025-03-25 03:54:11,960 [INFO] [raw sql] ()
-2025-03-25 03:54:11,961 [INFO] BEGIN (implicit)
-2025-03-25 03:54:11,966 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:54:11,966 [INFO] [generated in 0.00042s] (1756925931,)
-2025-03-25 03:54:11,968 [INFO] ROLLBACK
-2025-03-25 03:54:27,307 [INFO] Update id=279382946 is handled. Duration 15409 ms by bot id=7168399023
-2025-03-25 03:54:34,274 [INFO] BEGIN (implicit)
-2025-03-25 03:54:34,275 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:54:34,276 [INFO] [cached since 22.31s ago] (1756925931,)
-2025-03-25 03:54:34,277 [INFO] ROLLBACK
-2025-03-25 03:54:34,337 [INFO] Update id=279382947 is handled. Duration 66 ms by bot id=7168399023
-2025-03-25 03:54:44,570 [INFO] Update id=279382948 is handled. Duration 80 ms by bot id=7168399023
-2025-03-25 03:55:05,466 [INFO] BEGIN (implicit)
-2025-03-25 03:55:05,468 [INFO] INSERT INTO proxy_settings (user_id, proxy_type, proxy_host, proxy_port, proxy_login, proxy_password) VALUES ($1::BIGINT, $2::VARCHAR, $3::VARCHAR, $4::BIGINT, $5::VARCHAR, $6::VARCHAR) RETURNING proxy_settings.id
-2025-03-25 03:55:05,468 [INFO] [generated in 0.00044s] (1756925931, 'socks5', '64.43.122.246', 50101, 'maks47turbo', 'cMAEUDRxWa')
-2025-03-25 03:55:05,472 [INFO] COMMIT
-2025-03-25 03:55:05,541 [INFO] Update id=279382949 is handled. Duration 533 ms by bot id=7168399023
-2025-03-25 03:55:10,061 [INFO] BEGIN (implicit)
-2025-03-25 03:55:10,062 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 03:55:10,062 [INFO] [cached since 58.1s ago] (1756925931,)
-2025-03-25 03:55:10,063 [INFO] ROLLBACK
-2025-03-25 03:55:25,865 [INFO] Update id=279382950 is handled. Duration 15806 ms by bot id=7168399023
-2025-03-25 04:00:07,191 [INFO] Polling stopped
-2025-03-25 04:00:07,448 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 04:00:11,301 [INFO] 🤖 Бот запущен!
-2025-03-25 04:00:11,301 [INFO] Start polling
-2025-03-25 04:00:11,494 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 04:00:17,885 [INFO] 👤 1756925931 открыл меню
-2025-03-25 04:00:17,886 [INFO] Update id=279382951 is handled. Duration 459 ms by bot id=7168399023
-2025-03-25 04:00:19,171 [INFO] Update id=279382952 is handled. Duration 146 ms by bot id=7168399023
-2025-03-25 04:00:23,909 [INFO] Update id=279382953 is handled. Duration 127 ms by bot id=7168399023
-2025-03-25 04:00:26,243 [INFO] select pg_catalog.version()
-2025-03-25 04:00:26,244 [INFO] [raw sql] ()
-2025-03-25 04:00:26,245 [INFO] select current_schema()
-2025-03-25 04:00:26,245 [INFO] [raw sql] ()
-2025-03-25 04:00:26,246 [INFO] show standard_conforming_strings
-2025-03-25 04:00:26,246 [INFO] [raw sql] ()
-2025-03-25 04:00:26,247 [INFO] BEGIN (implicit)
-2025-03-25 04:00:26,253 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 04:00:26,253 [INFO] [generated in 0.00087s] (1756925931,)
-2025-03-25 04:00:26,256 [INFO] ROLLBACK
-2025-03-25 04:00:26,317 [INFO] Update id=279382954 is handled. Duration 255 ms by bot id=7168399023
-2025-03-25 04:00:28,857 [INFO] Update id=279382955 is handled. Duration 114 ms by bot id=7168399023
-2025-03-25 04:00:50,878 [INFO] Update id=279382956 is handled. Duration 66 ms by bot id=7168399023
-2025-03-25 04:00:55,333 [INFO] 👤 1756925931 открыл меню
-2025-03-25 04:00:55,333 [INFO] Update id=279382957 is handled. Duration 57 ms by bot id=7168399023
-2025-03-25 04:00:56,448 [INFO] Update id=279382958 is handled. Duration 88 ms by bot id=7168399023
-2025-03-25 04:00:58,147 [INFO] BEGIN (implicit)
-2025-03-25 04:00:58,148 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 04:00:58,149 [INFO] [cached since 31.9s ago] (1756925931,)
-2025-03-25 04:00:58,150 [INFO] ROLLBACK
-2025-03-25 04:01:13,684 [INFO] Update id=279382959 is handled. Duration 15539 ms by bot id=7168399023
-2025-03-25 04:06:12,494 [INFO] Polling stopped
-2025-03-25 04:06:12,747 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 04:06:16,397 [INFO] 🤖 Бот запущен!
-2025-03-25 04:06:16,398 [INFO] Start polling
-2025-03-25 04:06:16,909 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 04:06:19,455 [INFO] 👤 1756925931 открыл меню
-2025-03-25 04:06:19,456 [INFO] Update id=279382960 is handled. Duration 180 ms by bot id=7168399023
-2025-03-25 04:06:21,224 [INFO] Update id=279382961 is handled. Duration 64 ms by bot id=7168399023
-2025-03-25 04:06:23,382 [INFO] select pg_catalog.version()
-2025-03-25 04:06:23,383 [INFO] [raw sql] ()
-2025-03-25 04:06:23,384 [INFO] select current_schema()
-2025-03-25 04:06:23,384 [INFO] [raw sql] ()
-2025-03-25 04:06:23,385 [INFO] show standard_conforming_strings
-2025-03-25 04:06:23,386 [INFO] [raw sql] ()
-2025-03-25 04:06:23,386 [INFO] BEGIN (implicit)
-2025-03-25 04:06:23,391 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 04:06:23,392 [INFO] [generated in 0.00044s] (1756925931,)
-2025-03-25 04:06:23,394 [INFO] ROLLBACK
-2025-03-25 04:06:39,683 [INFO] Update id=279382962 is handled. Duration 16358 ms by bot id=7168399023
-2025-03-25 04:06:50,495 [INFO] BEGIN (implicit)
-2025-03-25 04:06:50,496 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 04:06:50,496 [INFO] [cached since 27.11s ago] (1756925931,)
-2025-03-25 04:06:50,497 [INFO] ROLLBACK
-2025-03-25 04:06:50,558 [INFO] Update id=279382963 is handled. Duration 65 ms by bot id=7168399023
-2025-03-25 04:06:52,284 [INFO] BEGIN (implicit)
-2025-03-25 04:06:52,286 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT AND proxy_settings.id = $2::BIGINT
-2025-03-25 04:06:52,286 [INFO] [generated in 0.00044s] (1756925931, 4)
-2025-03-25 04:06:52,288 [INFO] DELETE FROM proxy_settings WHERE proxy_settings.id = $1::BIGINT
-2025-03-25 04:06:52,288 [INFO] [generated in 0.00032s] (4,)
-2025-03-25 04:06:52,289 [INFO] COMMIT
-2025-03-25 04:06:52,358 [INFO] Update id=279382964 is handled. Duration 76 ms by bot id=7168399023
-2025-03-25 04:06:53,225 [INFO] Update id=279382965 is not handled. Duration 2 ms by bot id=7168399023
-2025-03-25 04:06:56,348 [INFO] Update id=279382966 is not handled. Duration 1 ms by bot id=7168399023
-2025-03-25 04:11:22,082 [INFO] Polling stopped
-2025-03-25 04:11:22,344 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 04:11:26,142 [INFO] 🤖 Бот запущен!
-2025-03-25 04:11:26,143 [INFO] Start polling
-2025-03-25 04:11:26,334 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 04:11:34,169 [INFO] 👤 1756925931 открыл меню
-2025-03-25 04:11:34,170 [INFO] Update id=279382967 is handled. Duration 465 ms by bot id=7168399023
-2025-03-25 04:11:36,714 [INFO] Update id=279382968 is handled. Duration 65 ms by bot id=7168399023
-2025-03-25 04:11:38,007 [INFO] select pg_catalog.version()
-2025-03-25 04:11:38,008 [INFO] [raw sql] ()
-2025-03-25 04:11:38,009 [INFO] select current_schema()
-2025-03-25 04:11:38,010 [INFO] [raw sql] ()
-2025-03-25 04:11:38,010 [INFO] show standard_conforming_strings
-2025-03-25 04:11:38,010 [INFO] [raw sql] ()
-2025-03-25 04:11:38,011 [INFO] BEGIN (implicit)
-2025-03-25 04:11:38,016 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 04:11:38,016 [INFO] [generated in 0.00029s] (1756925931,)
-2025-03-25 04:11:38,019 [INFO] ROLLBACK
-2025-03-25 04:11:38,074 [INFO] Update id=279382969 is handled. Duration 230 ms by bot id=7168399023
-2025-03-25 04:11:41,461 [INFO] BEGIN (implicit)
-2025-03-25 04:11:41,462 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 04:11:41,462 [INFO] [cached since 3.447s ago] (1756925931,)
-2025-03-25 04:11:41,463 [INFO] ROLLBACK
-2025-03-25 04:11:49,829 [INFO] Update id=279382970 is handled. Duration 8369 ms by bot id=7168399023
-2025-03-25 04:11:52,163 [INFO] BEGIN (implicit)
-2025-03-25 04:11:52,164 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 04:11:52,164 [INFO] [cached since 14.15s ago] (1756925931,)
-2025-03-25 04:11:52,165 [INFO] ROLLBACK
-2025-03-25 04:11:52,229 [INFO] Update id=279382971 is handled. Duration 68 ms by bot id=7168399023
-2025-03-25 04:11:53,762 [INFO] BEGIN (implicit)
-2025-03-25 04:11:53,763 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 04:11:53,763 [INFO] [cached since 15.75s ago] (1756925931,)
-2025-03-25 04:11:53,764 [INFO] ROLLBACK
-2025-03-25 04:11:53,828 [INFO] Update id=279382972 is handled. Duration 68 ms by bot id=7168399023
-2025-03-25 04:11:56,763 [INFO] Update id=279382973 is handled. Duration 157 ms by bot id=7168399023
-2025-03-25 04:12:07,555 [INFO] BEGIN (implicit)
-2025-03-25 04:12:07,556 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 04:12:07,556 [INFO] [cached since 29.54s ago] (1756925931,)
-2025-03-25 04:12:07,557 [INFO] ROLLBACK
-2025-03-25 04:12:07,621 [INFO] Update id=279382974 is handled. Duration 68 ms by bot id=7168399023
-2025-03-25 04:16:01,964 [INFO] Polling stopped
-2025-03-25 04:16:02,225 [INFO] Polling stopped for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 04:16:06,010 [INFO] 🤖 Бот запущен!
-2025-03-25 04:16:06,011 [INFO] Start polling
-2025-03-25 04:16:06,185 [INFO] Run polling for bot @rdfs7675_bot id=7168399023 - 'melstroy bot'
-2025-03-25 04:16:17,081 [INFO] 👤 1756925931 открыл меню
-2025-03-25 04:16:17,081 [INFO] Update id=279382975 is handled. Duration 158 ms by bot id=7168399023
-2025-03-25 04:16:18,452 [INFO] Update id=279382976 is handled. Duration 67 ms by bot id=7168399023
-2025-03-25 04:16:19,241 [INFO] select pg_catalog.version()
-2025-03-25 04:16:19,242 [INFO] [raw sql] ()
-2025-03-25 04:16:19,243 [INFO] select current_schema()
-2025-03-25 04:16:19,243 [INFO] [raw sql] ()
-2025-03-25 04:16:19,244 [INFO] show standard_conforming_strings
-2025-03-25 04:16:19,245 [INFO] [raw sql] ()
-2025-03-25 04:16:19,245 [INFO] BEGIN (implicit)
-2025-03-25 04:16:19,250 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 04:16:19,251 [INFO] [generated in 0.00060s] (1756925931,)
-2025-03-25 04:16:19,253 [INFO] ROLLBACK
-2025-03-25 04:16:27,782 [INFO] Update id=279382977 is handled. Duration 8599 ms by bot id=7168399023
-2025-03-25 04:16:52,722 [INFO] BEGIN (implicit)
-2025-03-25 04:16:52,723 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 04:16:52,724 [INFO] [cached since 33.47s ago] (1756925931,)
-2025-03-25 04:16:52,725 [INFO] ROLLBACK
-2025-03-25 04:16:52,790 [INFO] Update id=279382978 is handled. Duration 70 ms by bot id=7168399023
-2025-03-25 04:16:53,875 [INFO] BEGIN (implicit)
-2025-03-25 04:16:53,877 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT AND proxy_settings.id = $2::BIGINT
-2025-03-25 04:16:53,877 [INFO] [generated in 0.00041s] (1756925931, 5)
-2025-03-25 04:16:53,880 [INFO] DELETE FROM proxy_settings WHERE proxy_settings.id = $1::BIGINT
-2025-03-25 04:16:53,881 [INFO] [generated in 0.00040s] (5,)
-2025-03-25 04:16:53,882 [INFO] COMMIT
-2025-03-25 04:16:53,971 [INFO] Update id=279382979 is handled. Duration 97 ms by bot id=7168399023
-2025-03-25 04:16:55,296 [INFO] BEGIN (implicit)
-2025-03-25 04:16:55,296 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT
-2025-03-25 04:16:55,297 [INFO] [cached since 36.05s ago] (1756925931,)
-2025-03-25 04:16:55,298 [INFO] ROLLBACK
-2025-03-25 04:16:55,363 [INFO] Update id=279382980 is handled. Duration 69 ms by bot id=7168399023
-2025-03-25 04:16:56,186 [INFO] BEGIN (implicit)
-2025-03-25 04:16:56,186 [INFO] SELECT proxy_settings.id, proxy_settings.user_id, proxy_settings.proxy_type, proxy_settings.proxy_host, proxy_settings.proxy_port, proxy_settings.proxy_login, proxy_settings.proxy_password 
-FROM proxy_settings 
-WHERE proxy_settings.user_id = $1::BIGINT AND proxy_settings.id = $2::BIGINT
-2025-03-25 04:16:56,187 [INFO] [cached since 2.31s ago] (1756925931, 6)
-2025-03-25 04:16:56,188 [INFO] DELETE FROM proxy_settings WHERE proxy_settings.id = $1::BIGINT
-2025-03-25 04:16:56,188 [INFO] [cached since 2.308s ago] (6,)
-2025-03-25 04:16:56,189 [INFO] COMMIT
-2025-03-25 04:16:56,249 [INFO] Update id=279382981 is handled. Duration 64 ms by bot id=7168399023
+2025-03-26 02:09:47,201 [INFO] [generated in 0.00130s] (7444003086,)
+2025-03-26 02:09:47,210 [INFO] ROLLBACK
+2025-03-26 02:09:47,293 [INFO] Update id=677740753 is handled. Duration 534 ms by bot id=7852439023
+2025-03-26 02:09:48,910 [INFO] Update id=677740754 is not handled. Duration 14 ms by bot id=7852439023
+2025-03-26 02:11:56,292 [INFO] Polling stopped
+2025-03-26 02:11:56,654 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-26 02:12:09,837 [INFO] 🤖 Бот запущен!
+2025-03-26 02:12:09,844 [INFO] Start polling
+2025-03-26 02:12:10,254 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-26 02:12:10,986 [INFO] 👤 7444003086 открыл меню
+2025-03-26 02:12:11,000 [INFO] Update id=677740755 is handled. Duration 287 ms by bot id=7852439023
+2025-03-26 02:12:13,572 [INFO] Update id=677740756 is handled. Duration 87 ms by bot id=7852439023
+2025-03-26 02:12:15,728 [INFO] Update id=677740757 is handled. Duration 83 ms by bot id=7852439023
+2025-03-26 02:12:19,526 [INFO] Update id=677740758 is handled. Duration 84 ms by bot id=7852439023
+2025-03-26 02:12:20,758 [INFO] Update id=677740759 is handled. Duration 82 ms by bot id=7852439023
+2025-03-26 02:12:31,650 [INFO] Update id=677740760 is handled. Duration 89 ms by bot id=7852439023
+2025-03-26 02:12:36,314 [INFO] Update id=677740761 is handled. Duration 80 ms by bot id=7852439023

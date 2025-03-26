@@ -17,7 +17,11 @@ router = Router()
 class ProxyStates(StatesGroup):
     waiting_for_proxy_data = State()
     waiting_for_proxy_deletion_id = State()
-
+@router.message(F.text == "⬅️ Назад")
+async def back_to_main_menu(message: types.Message, state: FSMContext):
+    from bot.handlers import main_keyboard
+    await state.set_state(State())
+    await message.answer("🔙 Возвращаюсь в главное меню", reply_markup=main_keyboard)
 # Главное меню
 @router.message(F.text == "🌐 Управление прокси")
 async def manage_proxy(message: types.Message, state: FSMContext):

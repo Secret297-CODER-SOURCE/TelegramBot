@@ -1,5 +1,5 @@
 import re
-from aiogram import Router, types
+from aiogram import Router, types, F
 from aiogram.filters import StateFilter
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
@@ -10,7 +10,7 @@ from db.sessions import get_db
 from db.models import TelegramSession, User
 from bot.logger import logger
 import os
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
 
 router = Router()
 UPLOAD_PATH = "sessions/"
@@ -23,13 +23,35 @@ class SessionStates(StatesGroup):
     waiting_for_code = State()
     waiting_for_password = State()
 
+sessions_keyboard = ReplyKeyboardMarkup(
+    keyboard=[
+        [KeyboardButton(text="➕ Создать сессию")],
+        [KeyboardButton(text="📂 Мои сессии")],
+        [KeyboardButton(text="⬅ Назад")]
+    ],
+    resize_keyboard=True
+)
+
+@router.message(F.text == "👥 Сессии")
+async def sessions_menu(message: types.Message, state: FSMContext):
+    await state.set_state(SessionStates.waiting_for_api_id)  # Для совместимости с FSM
+    await message.answer("👥 Меню сессий:", reply_markup=sessions_keyboard)
+
+@router.message(F.text == "⬅ Назад")
+async def back_to_main_menu(message: types.Message, state: FSMContext):
+    from bot.handlers import main_keyboard
+    await state.set_state(State())
+    await message.answer("🔙 Возвращаюсь в главное меню", reply_markup=main_keyboard)
+
+@router.message(F.text == "➕ Создать сессию")
 async def request_api_id(message: types.Message, state: FSMContext):
     await state.clear()
     await state.set_state(SessionStates.waiting_for_api_id)
     await message.answer(
         "📌 Получить API ID и API HASH можно тут:\n"
         "🔗 [My Telegram Apps](https://my.telegram.org/apps)\n\n"
-        "✏ Введите API ID:"
+        "✏ Введите API ID:",
+        parse_mode="Markdown"
     )
 
 @router.message(StateFilter(SessionStates.waiting_for_api_id))
@@ -125,22 +147,18 @@ async def verify_code(message: types.Message, state: FSMContext):
     try:
         logger.info(f"📨 Попытка входа: phone={phone}, code={message.text.strip()}, phone_code_hash={phone_code_hash}")
 
-        # ✅ Вход в Telegram
         await client.sign_in(phone, code=message.text.strip(), phone_code_hash=phone_code_hash)
         await message.answer("✅ Сессия успешно создана!")
 
         async for db in get_db():
-            # ✅ Проверяем, есть ли пользователь в БД
             user = await db.execute(select(User).where(User.id == message.from_user.id))
             user = user.scalars().first()
 
             if not user:
-                # ✅ Создаём пользователя перед сохранением сессии
                 new_user = User(id=message.from_user.id, telegram_id=message.from_user.id)
                 db.add(new_user)
                 await db.commit()
 
-            # ✅ Сохраняем сессию после создания юзера
             session = TelegramSession(
                 user_id=message.from_user.id,
                 session_file=session_file,
@@ -149,7 +167,7 @@ async def verify_code(message: types.Message, state: FSMContext):
             )
             db.add(session)
             await db.commit()
-            await db.close()
+
         logger.info(f"🔹 Сессия создана для {phone}")
         await state.clear()
 
@@ -177,10 +195,8 @@ async def verify_code(message: types.Message, state: FSMContext):
     finally:
         await client.disconnect()
 
-
 @router.message(StateFilter(SessionStates.waiting_for_password))
 async def get_password(message: types.Message, state: FSMContext):
-    """ 🔹 Получаем пароль и завершаем авторизацию """
     data = await state.get_data()
     phone = data["phone"]
     api_id = data["api_id"]
@@ -203,7 +219,7 @@ async def get_password(message: types.Message, state: FSMContext):
             )
             db.add(session)
             await db.commit()
-            await db.close()
+
         logger.info(f"🔹 Сессия с паролем создана для {phone}")
         await state.clear()
 
@@ -211,11 +227,7 @@ async def get_password(message: types.Message, state: FSMContext):
         await message.answer(f"❌ Ошибка: {e}")
         await state.clear()
 
-
-# ================== 🔹 ПРОСМОТР И УДАЛЕНИЕ СЕССИЙ 🔹 ==================
-
 async def list_sessions(message: types.Message):
-    """ 🔹 Показывает список сохранённых сессий пользователя """
     async for db in get_db():
         sessions = await db.execute(select(TelegramSession).where(TelegramSession.user_id == message.from_user.id))
         sessions = sessions.scalars().all()
@@ -228,10 +240,9 @@ async def list_sessions(message: types.Message):
     keyboard = InlineKeyboardMarkup(inline_keyboard=[])
 
     for session in sessions:
-        session_name = session.session_file.replace(".session", "")  # Убираем ".session"
-        session_path = f"sessions/{session.session_file}"  # Полный путь к файлу сессии
+        session_name = session.session_file.replace(".session", "")
+        session_path = f"sessions/{session.session_file}"
 
-        # Получаем username Telegram-аккаунта через Telethon
         try:
             client = TelegramClient(session_path, session.api_id, session.api_hash)
             await client.connect()
@@ -243,7 +254,7 @@ async def list_sessions(message: types.Message):
                 user_display = f"(@{me.username})" if me.username else f"(ID: {me.id})"
 
             await client.disconnect()
-        except Exception as e:
+        except Exception:
             user_display = "⚠ Ошибка загрузки"
 
         text += f"🔹 {session_name} {user_display}\n"
@@ -253,9 +264,12 @@ async def list_sessions(message: types.Message):
 
     await message.answer(text, reply_markup=keyboard, parse_mode="Markdown")
 
+@router.message(F.text == "📂 Мои сессии")
+async def handle_list_sessions(message: types.Message):
+    await list_sessions(message)
+
 @router.callback_query(lambda c: c.data.startswith("delete_session:"))
 async def delete_session(callback: types.CallbackQuery):
-    """ 🔹 Удаляет выбранную сессию """
     session_file = callback.data.split(":")[1]
     async for db in get_db():
         session = await db.execute(select(TelegramSession).where(
