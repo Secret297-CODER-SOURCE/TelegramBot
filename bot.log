@@ -1,0 +1,1825 @@
+<frozen runpy>:128: RuntimeWarning: 'bot.main' found in sys.modules after import of package 'bot', but prior to execution of 'bot.main'; this may result in unpredictable behaviour
+2025-03-26 23:43:31,494 [INFO] 🤖 Бот запущен!
+2025-03-26 23:43:31,497 [INFO] Start polling
+2025-03-26 23:43:31,618 [INFO] Run polling for bot @efbhfehb_2323_bot id=7821876298 - 'Бот'
+2025-03-26 23:43:31,802 [INFO] 👤 864179107 открыл меню
+2025-03-26 23:43:31,802 [INFO] Update id=178919698 is handled. Duration 134 ms by bot id=7821876298
+2025-03-26 23:43:31,803 [INFO] 👤 864179107 открыл меню
+2025-03-26 23:43:31,803 [INFO] Update id=178919697 is handled. Duration 135 ms by bot id=7821876298
+2025-03-27 07:00:17,575 [INFO] Update id=178919699 is handled. Duration 227 ms by bot id=7821876298
+2025-03-27 07:00:20,518 [INFO] Update id=178919700 is handled. Duration 53 ms by bot id=7821876298
+2025-03-27 07:00:23,810 [INFO] Update id=178919701 is handled. Duration 74 ms by bot id=7821876298
+2025-03-27 07:05:23,854 [INFO] Update id=178919702 is handled. Duration 128 ms by bot id=7821876298
+2025-03-27 07:05:26,469 [INFO] Update id=178919703 is handled. Duration 54 ms by bot id=7821876298
+2025-03-27 07:05:37,366 [INFO] Update id=178919704 is handled. Duration 64 ms by bot id=7821876298
+2025-03-27 07:32:19,155 [INFO] Update id=178919705 is handled. Duration 117 ms by bot id=7821876298
+2025-03-27 07:32:20,598 [INFO] Update id=178919706 is handled. Duration 107 ms by bot id=7821876298
+2025-03-27 07:32:25,021 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+2025-03-27 07:32:25,021 [INFO] select pg_catalog.version()
+2025-03-27 07:32:25,021 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-03-27 07:32:25,021 [INFO] [raw sql] ()
+2025-03-27 07:32:25,027 INFO sqlalchemy.engine.Engine select current_schema()
+2025-03-27 07:32:25,027 [INFO] select current_schema()
+2025-03-27 07:32:25,027 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-03-27 07:32:25,027 [INFO] [raw sql] ()
+2025-03-27 07:32:25,032 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+2025-03-27 07:32:25,032 [INFO] show standard_conforming_strings
+2025-03-27 07:32:25,032 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-03-27 07:32:25,032 [INFO] [raw sql] ()
+2025-03-27 07:32:25,033 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 07:32:25,033 [INFO] BEGIN (implicit)
+2025-03-27 07:32:25,042 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 07:32:25,042 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 07:32:25,042 INFO sqlalchemy.engine.Engine [generated in 0.00022s] (721713059,)
+2025-03-27 07:32:25,042 [INFO] [generated in 0.00022s] (721713059,)
+2025-03-27 07:32:25,049 [INFO] Update id=178919707 is not handled. Duration 131 ms by bot id=7821876298
+2025-03-27 07:32:25,049 [ERROR] Cause exception while process update id=178919707 by bot id=7821876298
+ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "users" does not exist
+[SQL: SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT]
+[parameters: (721713059,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 521, in _prepare_and_execute
+    prepared_stmt, attributes = await adapt_connection._prepare(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 768, in _prepare
+    prepared_stmt = await self._connection.prepare(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/asyncpg/connection.py", line 635, in prepare
+    return await self._prepare(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/asyncpg/connection.py", line 653, in _prepare
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/asyncpg/connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedTableError: relation "users" does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.ProgrammingError: <class 'asyncpg.exceptions.UndefinedTableError'>: relation "users" does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/TelegramBot/bot/admin_panel.py", line 27, in admin_panel_menu
+    if not await is_admin_user(message.from_user.id):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/TelegramBot/bot/admin_panel.py", line 20, in is_admin_user
+    result = await db.execute(select(User).where(User.id == user_id))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/session.py", line 463, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 305, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "users" does not exist
+[SQL: SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT]
+[parameters: (721713059,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-27 07:32:25,076 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 07:32:25,076 [INFO] ROLLBACK
+2025-03-27 07:32:32,611 [INFO] Update id=178919708 is handled. Duration 105 ms by bot id=7821876298
+2025-03-27 07:32:35,130 [INFO] Update id=178919709 is handled. Duration 61 ms by bot id=7821876298
+2025-03-27 07:32:53,590 [INFO] Update id=178919710 is handled. Duration 45 ms by bot id=7821876298
+2025-03-27 07:32:57,990 [INFO] Update id=178919711 is handled. Duration 53 ms by bot id=7821876298
+2025-03-27 07:32:59,034 [INFO] Update id=178919712 is handled. Duration 59 ms by bot id=7821876298
+2025-03-27 07:33:00,594 [INFO] Update id=178919713 is handled. Duration 60 ms by bot id=7821876298
+2025-03-27 07:33:03,572 [INFO] Update id=178919714 is handled. Duration 78 ms by bot id=7821876298
+2025-03-27 07:45:25,635 [INFO] Update id=178919715 is handled. Duration 60 ms by bot id=7821876298
+2025-03-27 07:45:33,530 [INFO] Update id=178919716 is handled. Duration 72 ms by bot id=7821876298
+2025-03-27 07:45:36,455 [INFO] Update id=178919717 is handled. Duration 142 ms by bot id=7821876298
+2025-03-27 07:45:37,960 [INFO] Update id=178919718 is handled. Duration 119 ms by bot id=7821876298
+2025-03-27 07:45:50,371 [INFO] Update id=178919719 is handled. Duration 63 ms by bot id=7821876298
+2025-03-27 07:46:00,229 [INFO] Update id=178919720 is handled. Duration 77 ms by bot id=7821876298
+2025-03-27 07:46:58,550 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 07:47:00,544 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 07:47:00,734 [INFO] 📨 Попытка отправки кода на +380974917268...
+2025-03-27 07:47:00,840 [INFO] 📩 Код отправлен! `phone_code_hash`: d42c9b181009994ebc
+2025-03-27 07:47:00,898 [INFO] Update id=178919721 is handled. Duration 2408 ms by bot id=7821876298
+2025-03-27 07:47:13,746 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 07:47:13,771 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 07:47:13,875 [INFO] 📨 Попытка входа: phone=+380974917268, code=41935, phone_code_hash=d42c9b181009994ebc
+2025-03-27 07:47:14,085 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 07:47:14,085 [INFO] BEGIN (implicit)
+2025-03-27 07:47:14,085 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 07:47:14,085 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 07:47:14,085 INFO sqlalchemy.engine.Engine [cached since 889s ago] (721713059,)
+2025-03-27 07:47:14,085 [INFO] [cached since 889s ago] (721713059,)
+2025-03-27 07:47:14,087 [ERROR] ❌ Ошибка входа: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "users" does not exist
+[SQL: SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT]
+[parameters: (721713059,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-27 07:47:14,088 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 07:47:14,088 [INFO] ROLLBACK
+2025-03-27 07:47:14,145 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-27 07:47:14,146 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-27 07:47:14,151 [INFO] Update id=178919722 is handled. Duration 413 ms by bot id=7821876298
+2025-03-27 07:47:48,263 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 07:47:48,263 [INFO] BEGIN (implicit)
+2025-03-27 07:47:48,264 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 07:47:48,264 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 07:47:48,264 INFO sqlalchemy.engine.Engine [generated in 0.00020s] (721713059,)
+2025-03-27 07:47:48,264 [INFO] [generated in 0.00020s] (721713059,)
+2025-03-27 07:47:48,272 [INFO] Update id=178919723 is not handled. Duration 13 ms by bot id=7821876298
+2025-03-27 07:47:48,272 [ERROR] Cause exception while process update id=178919723 by bot id=7821876298
+ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "telegram_sessions" does not exist
+[SQL: SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT]
+[parameters: (721713059,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 521, in _prepare_and_execute
+    prepared_stmt, attributes = await adapt_connection._prepare(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 768, in _prepare
+    prepared_stmt = await self._connection.prepare(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/asyncpg/connection.py", line 635, in prepare
+    return await self._prepare(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/asyncpg/connection.py", line 653, in _prepare
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/asyncpg/connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedTableError: relation "telegram_sessions" does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.ProgrammingError: <class 'asyncpg.exceptions.UndefinedTableError'>: relation "telegram_sessions" does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/TelegramBot/bot/handlers.py", line 123, in show_sessions
+    await list_sessions(message)
+  File "/home/ubuntu/TelegramBot/bot/session_manager.py", line 232, in list_sessions
+    sessions = await db.execute(select(TelegramSession).where(TelegramSession.user_id == message.from_user.id))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/session.py", line 463, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 305, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "telegram_sessions" does not exist
+[SQL: SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT]
+[parameters: (721713059,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-27 07:47:48,277 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 07:47:48,277 [INFO] ROLLBACK
+2025-03-27 07:47:51,335 [INFO] Update id=178919724 is handled. Duration 57 ms by bot id=7821876298
+2025-03-27 07:47:52,949 [INFO] Update id=178919725 is handled. Duration 47 ms by bot id=7821876298
+2025-03-27 07:47:54,150 [INFO] Update id=178919726 is handled. Duration 147 ms by bot id=7821876298
+2025-03-27 07:47:56,760 [INFO] Update id=178919727 is handled. Duration 48 ms by bot id=7821876298
+2025-03-27 07:47:57,108 [INFO] Update id=178919728 is handled. Duration 60 ms by bot id=7821876298
+2025-03-27 07:47:59,844 [INFO] Update id=178919729 is handled. Duration 49 ms by bot id=7821876298
+2025-03-27 07:48:02,966 [INFO] Update id=178919730 is handled. Duration 53 ms by bot id=7821876298
+2025-03-27 07:48:05,814 [INFO] Update id=178919731 is handled. Duration 55 ms by bot id=7821876298
+2025-03-27 07:48:08,972 [INFO] Update id=178919732 is handled. Duration 106 ms by bot id=7821876298
+2025-03-27 07:48:11,938 [INFO] Update id=178919733 is handled. Duration 60 ms by bot id=7821876298
+2025-03-27 07:48:15,720 [INFO] Update id=178919734 is not handled. Duration 5 ms by bot id=7821876298
+2025-03-27 07:48:15,721 [ERROR] Cause exception while process update id=178919734 by bot id=7821876298
+TypeError: start_spam() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/TelegramBot/bot/handlers.py", line 250, in process_spam_message
+    await start_spam(message, message.text.strip())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: start_spam() takes 1 positional argument but 2 were given
+2025-03-27 08:07:28,158 [INFO] Update id=178919735 is handled. Duration 235 ms by bot id=7821876298
+2025-03-27 08:07:30,827 [INFO] Update id=178919736 is handled. Duration 67 ms by bot id=7821876298
+2025-03-27 08:07:33,411 [INFO] Update id=178919737 is handled. Duration 123 ms by bot id=7821876298
+2025-03-27 08:07:34,863 [INFO] Update id=178919738 is handled. Duration 81 ms by bot id=7821876298
+2025-03-27 08:07:35,848 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 08:07:35,848 [INFO] BEGIN (implicit)
+2025-03-27 08:07:35,849 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:07:35,849 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:07:35,849 INFO sqlalchemy.engine.Engine [cached since 1188s ago] (721713059,)
+2025-03-27 08:07:35,849 [INFO] [cached since 1188s ago] (721713059,)
+2025-03-27 08:07:35,856 [INFO] Update id=178919739 is not handled. Duration 18 ms by bot id=7821876298
+2025-03-27 08:07:35,856 [ERROR] Cause exception while process update id=178919739 by bot id=7821876298
+ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "telegram_sessions" does not exist
+[SQL: SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT]
+[parameters: (721713059,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 521, in _prepare_and_execute
+    prepared_stmt, attributes = await adapt_connection._prepare(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 768, in _prepare
+    prepared_stmt = await self._connection.prepare(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/asyncpg/connection.py", line 635, in prepare
+    return await self._prepare(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/asyncpg/connection.py", line 653, in _prepare
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/asyncpg/connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedTableError: relation "telegram_sessions" does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.ProgrammingError: <class 'asyncpg.exceptions.UndefinedTableError'>: relation "telegram_sessions" does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/TelegramBot/bot/handlers.py", line 123, in show_sessions
+    await list_sessions(message)
+  File "/home/ubuntu/TelegramBot/bot/session_manager.py", line 232, in list_sessions
+    sessions = await db.execute(select(TelegramSession).where(TelegramSession.user_id == message.from_user.id))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/session.py", line 463, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 305, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 580, in execute
+    self._adapt_connection.await_(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 558, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 508, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 792, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.ProgrammingError: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "telegram_sessions" does not exist
+[SQL: SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT]
+[parameters: (721713059,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-27 08:07:35,866 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 08:07:35,866 [INFO] ROLLBACK
+2025-03-27 08:09:53,647 [WARNING] Received SIGTERM signal
+2025-03-27 08:09:53,648 [INFO] Polling stopped for bot @efbhfehb_2323_bot id=7821876298 - 'Бот'
+2025-03-27 08:09:53,648 [INFO] Polling stopped
+2025-03-27 08:09:54,017 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-3020' coro=<UpdateMethods._keepalive_loop() done, defined at /home/ubuntu/.local/lib/python3.12/site-packages/telethon/client/updates.py:481> exception=OperationalError('attempt to write a readonly database')>
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/telethon/client/updates.py", line 517, in _keepalive_loop
+    self._save_states_and_entities()
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/telethon/client/telegrambaseclient.py", line 702, in _save_states_and_entities
+    self.session.set_update_state(0, types.updates.State(**ss, unread_count=0))
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/telethon/sessions/sqlite.py", line 214, in set_update_state
+    self._execute('insert or replace into update_state values (?,?,?,?,?)',
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/telethon/sessions/sqlite.py", line 253, in _execute
+    return c.execute(stmt, values).fetchone()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: attempt to write a readonly database
+<frozen runpy>:128: RuntimeWarning: 'bot.main' found in sys.modules after import of package 'bot', but prior to execution of 'bot.main'; this may result in unpredictable behaviour
+2025-03-27 08:10:14,461 [INFO] 🤖 Бот запущен!
+2025-03-27 08:10:14,462 [INFO] Start polling
+2025-03-27 08:10:14,567 [INFO] Run polling for bot @efbhfehb_2323_bot id=7821876298 - 'Бот'
+2025-03-27 08:23:10,648 [INFO] Update id=178919740 is handled. Duration 137 ms by bot id=7821876298
+2025-03-27 08:23:18,570 [INFO] Update id=178919741 is handled. Duration 52 ms by bot id=7821876298
+2025-03-27 08:23:25,400 [INFO] Update id=178919742 is handled. Duration 66 ms by bot id=7821876298
+2025-03-27 08:23:33,727 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 08:23:34,800 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:23:34,935 [INFO] 📨 Попытка отправки кода на +380974917268...
+2025-03-27 08:23:35,022 [INFO] 📩 Код отправлен! `phone_code_hash`: a2d066435afba407ed
+2025-03-27 08:23:35,078 [INFO] Update id=178919743 is handled. Duration 1409 ms by bot id=7821876298
+2025-03-27 08:23:45,062 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 08:23:45,087 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:23:45,320 [INFO] 📨 Попытка входа: phone=+380974917268, code=76596, phone_code_hash=a2d066435afba407ed
+2025-03-27 08:23:45,741 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+2025-03-27 08:23:45,741 [INFO] select pg_catalog.version()
+2025-03-27 08:23:45,741 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-03-27 08:23:45,741 [INFO] [raw sql] ()
+2025-03-27 08:23:45,749 INFO sqlalchemy.engine.Engine select current_schema()
+2025-03-27 08:23:45,749 [INFO] select current_schema()
+2025-03-27 08:23:45,749 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-03-27 08:23:45,749 [INFO] [raw sql] ()
+2025-03-27 08:23:45,753 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+2025-03-27 08:23:45,753 [INFO] show standard_conforming_strings
+2025-03-27 08:23:45,753 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-03-27 08:23:45,753 [INFO] [raw sql] ()
+2025-03-27 08:23:45,755 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 08:23:45,755 [INFO] BEGIN (implicit)
+2025-03-27 08:23:45,766 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 08:23:45,766 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 08:23:45,766 INFO sqlalchemy.engine.Engine [generated in 0.00030s] (721713059,)
+2025-03-27 08:23:45,766 [INFO] [generated in 0.00030s] (721713059,)
+2025-03-27 08:23:45,779 INFO sqlalchemy.engine.Engine INSERT INTO users (id, telegram_id, username, is_admin) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR, $4::BOOLEAN)
+2025-03-27 08:23:45,779 [INFO] INSERT INTO users (id, telegram_id, username, is_admin) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR, $4::BOOLEAN)
+2025-03-27 08:23:45,780 INFO sqlalchemy.engine.Engine [generated in 0.00026s] (721713059, 721713059, None, False)
+2025-03-27 08:23:45,780 [INFO] [generated in 0.00026s] (721713059, 721713059, None, False)
+2025-03-27 08:23:45,782 INFO sqlalchemy.engine.Engine COMMIT
+2025-03-27 08:23:45,782 [INFO] COMMIT
+2025-03-27 08:23:45,785 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 08:23:45,785 [INFO] BEGIN (implicit)
+2025-03-27 08:23:45,787 INFO sqlalchemy.engine.Engine INSERT INTO telegram_sessions (user_id, api_id, api_hash, session_file) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR, $4::VARCHAR) RETURNING telegram_sessions.id
+2025-03-27 08:23:45,787 [INFO] INSERT INTO telegram_sessions (user_id, api_id, api_hash, session_file) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR, $4::VARCHAR) RETURNING telegram_sessions.id
+2025-03-27 08:23:45,787 INFO sqlalchemy.engine.Engine [generated in 0.00062s] (721713059, 16998002, '2fe50d030d2be10113c23c0e35fc63e1', '380974917268.session')
+2025-03-27 08:23:45,787 [INFO] [generated in 0.00062s] (721713059, 16998002, '2fe50d030d2be10113c23c0e35fc63e1', '380974917268.session')
+2025-03-27 08:23:45,798 INFO sqlalchemy.engine.Engine COMMIT
+2025-03-27 08:23:45,798 [INFO] COMMIT
+2025-03-27 08:23:45,800 [INFO] 🔹 Сессия создана для +380974917268
+2025-03-27 08:23:45,801 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-27 08:23:45,801 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:23:45,807 [INFO] Update id=178919744 is handled. Duration 756 ms by bot id=7821876298
+2025-03-27 08:24:09,235 [INFO] Update id=178919745 is handled. Duration 58 ms by bot id=7821876298
+2025-03-27 08:24:11,855 [INFO] Update id=178919746 is handled. Duration 77 ms by bot id=7821876298
+2025-03-27 08:24:17,010 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 08:24:17,010 [INFO] BEGIN (implicit)
+2025-03-27 08:24:17,013 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:24:17,013 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:24:17,013 INFO sqlalchemy.engine.Engine [generated in 0.00020s] (721713059,)
+2025-03-27 08:24:17,013 [INFO] [generated in 0.00020s] (721713059,)
+2025-03-27 08:24:17,015 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 08:24:17,015 [INFO] ROLLBACK
+2025-03-27 08:24:17,016 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 08:24:17,041 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:24:17,225 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-27 08:24:17,225 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:24:17,258 [INFO] Update id=178919747 is not handled. Duration 250 ms by bot id=7821876298
+2025-03-27 08:24:17,258 [ERROR] Cause exception while process update id=178919747 by bot id=7821876298
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 56
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/TelegramBot/bot/handlers.py", line 123, in show_sessions
+    await list_sessions(message)
+  File "/home/ubuntu/TelegramBot/bot/session_manager.py", line 265, in list_sessions
+    await message.answer(text, reply_markup=keyboard, parse_mode="Markdown")
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 56
+2025-03-27 08:36:57,617 [INFO] 👤 864179107 открыл меню
+2025-03-27 08:36:57,617 [INFO] Update id=178919748 is handled. Duration 103 ms by bot id=7821876298
+2025-03-27 08:37:00,222 [INFO] Update id=178919749 is handled. Duration 52 ms by bot id=7821876298
+2025-03-27 08:37:01,508 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 08:37:01,508 [INFO] BEGIN (implicit)
+2025-03-27 08:37:01,509 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:37:01,509 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:37:01,509 INFO sqlalchemy.engine.Engine [cached since 764.5s ago] (864179107,)
+2025-03-27 08:37:01,509 [INFO] [cached since 764.5s ago] (864179107,)
+2025-03-27 08:37:01,510 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 08:37:01,510 [INFO] ROLLBACK
+2025-03-27 08:37:01,561 [INFO] Update id=178919750 is handled. Duration 55 ms by bot id=7821876298
+2025-03-27 08:37:03,033 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 08:37:03,033 [INFO] BEGIN (implicit)
+2025-03-27 08:37:03,035 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:37:03,035 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:37:03,035 INFO sqlalchemy.engine.Engine [cached since 766s ago] (864179107,)
+2025-03-27 08:37:03,035 [INFO] [cached since 766s ago] (864179107,)
+2025-03-27 08:37:03,038 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 08:37:03,038 [INFO] ROLLBACK
+2025-03-27 08:37:03,092 [INFO] Update id=178919751 is handled. Duration 63 ms by bot id=7821876298
+2025-03-27 08:37:06,785 [INFO] Update id=178919752 is handled. Duration 67 ms by bot id=7821876298
+2025-03-27 08:37:08,673 [INFO] Update id=178919753 is handled. Duration 53 ms by bot id=7821876298
+2025-03-27 08:37:09,901 [INFO] Update id=178919754 is handled. Duration 51 ms by bot id=7821876298
+2025-03-27 08:37:17,424 [INFO] Update id=178919755 is handled. Duration 64 ms by bot id=7821876298
+2025-03-27 08:38:23,896 [INFO] 👤 864179107 открыл меню
+2025-03-27 08:38:23,897 [INFO] Update id=178919756 is handled. Duration 61 ms by bot id=7821876298
+2025-03-27 08:38:44,928 [INFO] Update id=178919757 is handled. Duration 55 ms by bot id=7821876298
+2025-03-27 08:38:45,647 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 08:38:45,647 [INFO] BEGIN (implicit)
+2025-03-27 08:38:45,648 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 08:38:45,648 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 08:38:45,648 INFO sqlalchemy.engine.Engine [cached since 899.9s ago] (721713059,)
+2025-03-27 08:38:45,648 [INFO] [cached since 899.9s ago] (721713059,)
+2025-03-27 08:38:45,650 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 08:38:45,650 [INFO] ROLLBACK
+2025-03-27 08:38:45,708 [INFO] Update id=178919758 is handled. Duration 62 ms by bot id=7821876298
+2025-03-27 08:38:57,321 [INFO] Update id=178919759 is handled. Duration 110 ms by bot id=7821876298
+2025-03-27 08:39:00,476 [INFO] Update id=178919760 is handled. Duration 119 ms by bot id=7821876298
+2025-03-27 08:39:02,905 [INFO] Update id=178919761 is handled. Duration 140 ms by bot id=7821876298
+2025-03-27 08:39:07,151 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 08:39:07,151 [INFO] BEGIN (implicit)
+2025-03-27 08:39:07,152 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:39:07,152 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:39:07,152 INFO sqlalchemy.engine.Engine [cached since 890.1s ago] (721713059,)
+2025-03-27 08:39:07,152 [INFO] [cached since 890.1s ago] (721713059,)
+2025-03-27 08:39:07,153 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 08:39:07,153 [INFO] ROLLBACK
+2025-03-27 08:39:07,154 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 08:39:07,180 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:39:07,525 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-27 08:39:07,525 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:39:07,570 [INFO] Update id=178919762 is not handled. Duration 421 ms by bot id=7821876298
+2025-03-27 08:39:07,570 [ERROR] Cause exception while process update id=178919762 by bot id=7821876298
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 56
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/TelegramBot/bot/handlers.py", line 123, in show_sessions
+    await list_sessions(message)
+  File "/home/ubuntu/TelegramBot/bot/session_manager.py", line 265, in list_sessions
+    await message.answer(text, reply_markup=keyboard, parse_mode="Markdown")
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 56
+2025-03-27 08:39:08,282 [INFO] Update id=178919763 is handled. Duration 164 ms by bot id=7821876298
+2025-03-27 08:39:09,413 [INFO] Update id=178919764 is handled. Duration 62 ms by bot id=7821876298
+2025-03-27 08:50:35,583 [INFO] Update id=178919765 is handled. Duration 115 ms by bot id=7821876298
+2025-03-27 08:50:36,442 [INFO] Update id=178919766 is handled. Duration 50 ms by bot id=7821876298
+2025-03-27 08:53:06,621 [INFO] Update id=178919767 is handled. Duration 123 ms by bot id=7821876298
+2025-03-27 08:53:15,859 [INFO] Update id=178919768 is handled. Duration 69 ms by bot id=7821876298
+2025-03-27 08:53:19,576 [INFO] Update id=178919769 is handled. Duration 50 ms by bot id=7821876298
+2025-03-27 08:53:25,638 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 08:53:26,849 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:53:27,235 [INFO] 📨 Попытка отправки кода на +5583996004385...
+2025-03-27 08:53:27,303 [INFO] Phone migrated to 1
+2025-03-27 08:53:27,304 [INFO] Reconnecting to new data center 1
+2025-03-27 08:53:27,362 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-27 08:53:27,363 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:53:27,364 [INFO] Connecting to 149.154.175.57:443/TcpFull...
+2025-03-27 08:53:29,256 [INFO] Connection to 149.154.175.57:443/TcpFull complete!
+2025-03-27 08:53:29,920 [INFO] 📩 Код отправлен! `phone_code_hash`: 6db6327a89b22ea82d
+2025-03-27 08:53:29,977 [INFO] Update id=178919770 is handled. Duration 4389 ms by bot id=7821876298
+2025-03-27 08:53:49,450 [INFO] Connecting to 149.154.175.57:443/TcpFull...
+2025-03-27 08:53:49,578 [INFO] Connection to 149.154.175.57:443/TcpFull complete!
+2025-03-27 08:53:49,977 [INFO] 📨 Попытка входа: phone=+5583996004385, code=52439, phone_code_hash=6db6327a89b22ea82d
+2025-03-27 08:53:50,294 [INFO] Disconnecting from 149.154.175.57:443/TcpFull...
+2025-03-27 08:53:50,294 [INFO] Disconnection from 149.154.175.57:443/TcpFull complete!
+2025-03-27 08:53:50,300 [INFO] Update id=178919771 is handled. Duration 855 ms by bot id=7821876298
+2025-03-27 08:53:58,343 [INFO] Connecting to 149.154.175.57:443/TcpFull...
+2025-03-27 08:53:58,474 [INFO] Connection to 149.154.175.57:443/TcpFull complete!
+2025-03-27 08:53:59,686 [INFO] Update id=178919772 is handled. Duration 1348 ms by bot id=7821876298
+2025-03-27 08:56:51,836 [INFO] Update id=178919773 is handled. Duration 130 ms by bot id=7821876298
+2025-03-27 08:56:52,810 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 08:56:52,810 [INFO] BEGIN (implicit)
+2025-03-27 08:56:52,811 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:56:52,811 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:56:52,811 INFO sqlalchemy.engine.Engine [cached since 1956s ago] (864179107,)
+2025-03-27 08:56:52,811 [INFO] [cached since 1956s ago] (864179107,)
+2025-03-27 08:56:52,812 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 08:56:52,812 [INFO] ROLLBACK
+2025-03-27 08:56:52,864 [INFO] Update id=178919774 is handled. Duration 56 ms by bot id=7821876298
+2025-03-27 08:56:53,831 [INFO] Update id=178919775 is handled. Duration 63 ms by bot id=7821876298
+2025-03-27 08:56:56,328 [INFO] Update id=178919776 is handled. Duration 58 ms by bot id=7821876298
+2025-03-27 08:57:03,500 [INFO] Update id=178919777 is handled. Duration 194 ms by bot id=7821876298
+2025-03-27 08:57:09,897 [INFO] Update id=178919778 is handled. Duration 67 ms by bot id=7821876298
+2025-03-27 08:57:20,964 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 08:57:23,042 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:57:23,267 [INFO] 📨 Попытка отправки кода на +601161423915...
+2025-03-27 08:57:23,337 [INFO] Phone migrated to 5
+2025-03-27 08:57:23,337 [INFO] Reconnecting to new data center 5
+2025-03-27 08:57:23,343 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-27 08:57:23,343 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:57:23,343 [INFO] Connecting to 91.108.56.159:443/TcpFull...
+2025-03-27 08:57:25,243 [INFO] Connection to 91.108.56.159:443/TcpFull complete!
+2025-03-27 08:57:26,492 [INFO] 📩 Код отправлен! `phone_code_hash`: 5281a80260f09cecb3
+2025-03-27 08:57:26,545 [INFO] Update id=178919779 is handled. Duration 5661 ms by bot id=7821876298
+2025-03-27 08:57:42,956 [INFO] Connecting to 91.108.56.159:443/TcpFull...
+2025-03-27 08:57:43,133 [INFO] Connection to 91.108.56.159:443/TcpFull complete!
+2025-03-27 08:57:43,699 [INFO] 📨 Попытка входа: phone=+601161423915, code=21100, phone_code_hash=5281a80260f09cecb3
+2025-03-27 08:57:44,437 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 08:57:44,437 [INFO] BEGIN (implicit)
+2025-03-27 08:57:44,437 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 08:57:44,437 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 08:57:44,438 INFO sqlalchemy.engine.Engine [cached since 2039s ago] (864179107,)
+2025-03-27 08:57:44,438 [INFO] [cached since 2039s ago] (864179107,)
+2025-03-27 08:57:44,439 INFO sqlalchemy.engine.Engine INSERT INTO users (id, telegram_id, username, is_admin) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR, $4::BOOLEAN)
+2025-03-27 08:57:44,439 [INFO] INSERT INTO users (id, telegram_id, username, is_admin) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR, $4::BOOLEAN)
+2025-03-27 08:57:44,439 INFO sqlalchemy.engine.Engine [cached since 2039s ago] (864179107, 864179107, None, False)
+2025-03-27 08:57:44,439 [INFO] [cached since 2039s ago] (864179107, 864179107, None, False)
+2025-03-27 08:57:44,440 INFO sqlalchemy.engine.Engine COMMIT
+2025-03-27 08:57:44,440 [INFO] COMMIT
+2025-03-27 08:57:44,442 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 08:57:44,442 [INFO] BEGIN (implicit)
+2025-03-27 08:57:44,443 INFO sqlalchemy.engine.Engine INSERT INTO telegram_sessions (user_id, api_id, api_hash, session_file) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR, $4::VARCHAR) RETURNING telegram_sessions.id
+2025-03-27 08:57:44,443 [INFO] INSERT INTO telegram_sessions (user_id, api_id, api_hash, session_file) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR, $4::VARCHAR) RETURNING telegram_sessions.id
+2025-03-27 08:57:44,443 INFO sqlalchemy.engine.Engine [cached since 2039s ago] (864179107, 24708318, '3abcbbfb6277f455bb79dc381432f384', '601161423915.session')
+2025-03-27 08:57:44,443 [INFO] [cached since 2039s ago] (864179107, 24708318, '3abcbbfb6277f455bb79dc381432f384', '601161423915.session')
+2025-03-27 08:57:44,444 INFO sqlalchemy.engine.Engine COMMIT
+2025-03-27 08:57:44,444 [INFO] COMMIT
+2025-03-27 08:57:44,445 [INFO] 🔹 Сессия создана для +601161423915
+2025-03-27 08:57:44,445 [INFO] Disconnecting from 91.108.56.159:443/TcpFull...
+2025-03-27 08:57:44,446 [INFO] Disconnection from 91.108.56.159:443/TcpFull complete!
+2025-03-27 08:57:44,451 [INFO] Update id=178919780 is handled. Duration 1500 ms by bot id=7821876298
+2025-03-27 08:58:11,858 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 08:58:11,858 [INFO] BEGIN (implicit)
+2025-03-27 08:58:11,859 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:58:11,859 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:58:11,859 INFO sqlalchemy.engine.Engine [cached since 2035s ago] (864179107,)
+2025-03-27 08:58:11,859 [INFO] [cached since 2035s ago] (864179107,)
+2025-03-27 08:58:11,860 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 08:58:11,860 [INFO] ROLLBACK
+2025-03-27 08:58:11,861 [INFO] Connecting to 91.108.56.159:443/TcpFull...
+2025-03-27 08:58:12,039 [INFO] Connection to 91.108.56.159:443/TcpFull complete!
+2025-03-27 08:58:13,146 [INFO] Disconnecting from 91.108.56.159:443/TcpFull...
+2025-03-27 08:58:13,147 [INFO] Disconnection from 91.108.56.159:443/TcpFull complete!
+2025-03-27 08:58:13,194 [INFO] Update id=178919781 is not handled. Duration 1340 ms by bot id=7821876298
+2025-03-27 08:58:13,194 [ERROR] Cause exception while process update id=178919781 by bot id=7821876298
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 57
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/TelegramBot/bot/handlers.py", line 123, in show_sessions
+    await list_sessions(message)
+  File "/home/ubuntu/TelegramBot/bot/session_manager.py", line 265, in list_sessions
+    await message.answer(text, reply_markup=keyboard, parse_mode="Markdown")
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 57
+2025-03-27 08:59:57,231 [INFO] Update id=178919782 is handled. Duration 62 ms by bot id=7821876298
+2025-03-27 08:59:59,913 [INFO] Update id=178919783 is handled. Duration 56 ms by bot id=7821876298
+2025-03-27 09:00:02,704 [INFO] Update id=178919784 is handled. Duration 150 ms by bot id=7821876298
+2025-03-27 09:00:03,571 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 09:00:03,571 [INFO] BEGIN (implicit)
+2025-03-27 09:00:03,571 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 09:00:03,571 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 09:00:03,571 INFO sqlalchemy.engine.Engine [cached since 2178s ago] (721713059,)
+2025-03-27 09:00:03,571 [INFO] [cached since 2178s ago] (721713059,)
+2025-03-27 09:00:03,573 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 09:00:03,573 [INFO] ROLLBACK
+2025-03-27 09:00:03,665 [INFO] Update id=178919785 is handled. Duration 95 ms by bot id=7821876298
+2025-03-27 09:00:17,144 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 09:00:17,144 [INFO] BEGIN (implicit)
+2025-03-27 09:00:17,144 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:00:17,144 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:00:17,144 INFO sqlalchemy.engine.Engine [cached since 2160s ago] (864179107,)
+2025-03-27 09:00:17,144 [INFO] [cached since 2160s ago] (864179107,)
+2025-03-27 09:00:17,146 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 09:00:17,146 [INFO] ROLLBACK
+2025-03-27 09:00:17,147 [INFO] Connecting to 91.108.56.159:443/TcpFull...
+2025-03-27 09:00:17,325 [INFO] Connection to 91.108.56.159:443/TcpFull complete!
+2025-03-27 09:00:18,268 [INFO] Disconnecting from 91.108.56.159:443/TcpFull...
+2025-03-27 09:00:18,268 [INFO] Disconnection from 91.108.56.159:443/TcpFull complete!
+2025-03-27 09:00:18,301 [INFO] Update id=178919786 is not handled. Duration 1160 ms by bot id=7821876298
+2025-03-27 09:00:18,301 [ERROR] Cause exception while process update id=178919786 by bot id=7821876298
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 57
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/TelegramBot/bot/handlers.py", line 123, in show_sessions
+    await list_sessions(message)
+  File "/home/ubuntu/TelegramBot/bot/session_manager.py", line 265, in list_sessions
+    await message.answer(text, reply_markup=keyboard, parse_mode="Markdown")
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 57
+2025-03-27 09:15:45,251 [INFO] Update id=178919787 is handled. Duration 110 ms by bot id=7821876298
+2025-03-27 09:16:10,881 [INFO] Update id=178919788 is handled. Duration 57 ms by bot id=7821876298
+2025-03-27 09:16:17,162 [INFO] Update id=178919789 is handled. Duration 63 ms by bot id=7821876298
+2025-03-27 09:16:24,359 [INFO] Connecting to 91.108.56.159:443/TcpFull...
+2025-03-27 09:16:24,537 [INFO] Connection to 91.108.56.159:443/TcpFull complete!
+2025-03-27 09:16:25,385 [INFO] Disconnecting from 91.108.56.159:443/TcpFull...
+2025-03-27 09:16:25,385 [INFO] Disconnection from 91.108.56.159:443/TcpFull complete!
+2025-03-27 09:16:25,391 [INFO] Update id=178919790 is handled. Duration 1038 ms by bot id=7821876298
+2025-03-27 09:16:32,039 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 09:16:32,039 [INFO] BEGIN (implicit)
+2025-03-27 09:16:32,040 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:16:32,040 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:16:32,040 INFO sqlalchemy.engine.Engine [cached since 3135s ago] (864179107,)
+2025-03-27 09:16:32,040 [INFO] [cached since 3135s ago] (864179107,)
+2025-03-27 09:16:32,041 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 09:16:32,041 [INFO] ROLLBACK
+2025-03-27 09:16:32,042 [INFO] Connecting to 91.108.56.159:443/TcpFull...
+2025-03-27 09:16:32,220 [INFO] Connection to 91.108.56.159:443/TcpFull complete!
+2025-03-27 09:16:33,169 [INFO] Disconnecting from 91.108.56.159:443/TcpFull...
+2025-03-27 09:16:33,169 [INFO] Disconnection from 91.108.56.159:443/TcpFull complete!
+2025-03-27 09:16:33,203 [INFO] Update id=178919791 is not handled. Duration 1167 ms by bot id=7821876298
+2025-03-27 09:16:33,203 [ERROR] Cause exception while process update id=178919791 by bot id=7821876298
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 57
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/TelegramBot/bot/handlers.py", line 123, in show_sessions
+    await list_sessions(message)
+  File "/home/ubuntu/TelegramBot/bot/session_manager.py", line 265, in list_sessions
+    await message.answer(text, reply_markup=keyboard, parse_mode="Markdown")
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 57
+2025-03-27 09:22:49,024 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 09:22:49,024 [INFO] BEGIN (implicit)
+2025-03-27 09:22:49,027 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:22:49,027 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:22:49,027 INFO sqlalchemy.engine.Engine [cached since 3512s ago] (864179107,)
+2025-03-27 09:22:49,027 [INFO] [cached since 3512s ago] (864179107,)
+2025-03-27 09:22:49,032 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 09:22:49,032 [INFO] ROLLBACK
+2025-03-27 09:22:49,034 [INFO] Connecting to 91.108.56.159:443/TcpFull...
+2025-03-27 09:22:49,212 [INFO] Connection to 91.108.56.159:443/TcpFull complete!
+2025-03-27 09:22:50,391 [INFO] Disconnecting from 91.108.56.159:443/TcpFull...
+2025-03-27 09:22:50,391 [INFO] Disconnection from 91.108.56.159:443/TcpFull complete!
+2025-03-27 09:22:50,428 [INFO] Update id=178919792 is not handled. Duration 1415 ms by bot id=7821876298
+2025-03-27 09:22:50,429 [ERROR] Cause exception while process update id=178919792 by bot id=7821876298
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 57
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/TelegramBot/bot/handlers.py", line 123, in show_sessions
+    await list_sessions(message)
+  File "/home/ubuntu/TelegramBot/bot/session_manager.py", line 265, in list_sessions
+    await message.answer(text, reply_markup=keyboard, parse_mode="Markdown")
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 57
+2025-03-27 09:22:52,430 [INFO] Update id=178919793 is handled. Duration 61 ms by bot id=7821876298
+2025-03-27 09:22:53,742 [INFO] Update id=178919794 is handled. Duration 51 ms by bot id=7821876298
+2025-03-27 09:22:54,699 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 09:22:54,699 [INFO] BEGIN (implicit)
+2025-03-27 09:22:54,699 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:22:54,699 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:22:54,703 INFO sqlalchemy.engine.Engine [cached since 3518s ago] (864179107,)
+2025-03-27 09:22:54,703 [INFO] [cached since 3518s ago] (864179107,)
+2025-03-27 09:22:54,713 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 09:22:54,713 [INFO] ROLLBACK
+2025-03-27 09:22:54,717 [INFO] Connecting to 91.108.56.159:443/TcpFull...
+2025-03-27 09:22:54,894 [INFO] Connection to 91.108.56.159:443/TcpFull complete!
+2025-03-27 09:22:55,844 [INFO] Disconnecting from 91.108.56.159:443/TcpFull...
+2025-03-27 09:22:55,845 [INFO] Disconnection from 91.108.56.159:443/TcpFull complete!
+2025-03-27 09:22:55,981 [INFO] Update id=178919795 is not handled. Duration 1287 ms by bot id=7821876298
+2025-03-27 09:22:55,981 [ERROR] Cause exception while process update id=178919795 by bot id=7821876298
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 57
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/TelegramBot/bot/handlers.py", line 123, in show_sessions
+    await list_sessions(message)
+  File "/home/ubuntu/TelegramBot/bot/session_manager.py", line 265, in list_sessions
+    await message.answer(text, reply_markup=keyboard, parse_mode="Markdown")
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 57
+2025-03-27 09:24:23,597 [INFO] Update id=178919796 is handled. Duration 114 ms by bot id=7821876298
+2025-03-27 09:24:27,782 [INFO] Update id=178919797 is handled. Duration 51 ms by bot id=7821876298
+2025-03-27 09:24:29,026 [INFO] Update id=178919798 is handled. Duration 63 ms by bot id=7821876298
+2025-03-27 09:27:24,241 [WARNING] Received SIGTERM signal
+2025-03-27 09:27:24,241 [INFO] Polling stopped for bot @efbhfehb_2323_bot id=7821876298 - 'Бот'
+2025-03-27 09:27:24,241 [INFO] Polling stopped
+Traceback (most recent call last):
+  File "<frozen runpy>", line 189, in _run_module_as_main
+  File "<frozen runpy>", line 112, in _get_module_details
+  File "/home/ubuntu/TelegramBot/bot/__init__.py", line 1, in <module>
+    from bot import main
+  File "/home/ubuntu/TelegramBot/bot/main.py", line 4, in <module>
+    from bot.handlers import router
+  File "/home/ubuntu/TelegramBot/bot/handlers.py", line 8, in <module>
+    from bot.session_manager import request_api_id, list_sessions, sessions_menu
+  File "/home/ubuntu/TelegramBot/bot/session_manager.py", line 244
+    await message.answer("? � ��� ��� ����������� ������.")
+                         ^^^^^^^^^^^^^^^
+SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xd3 in position 2: invalid continuation byte
+<frozen runpy>:128: RuntimeWarning: 'bot.main' found in sys.modules after import of package 'bot', but prior to execution of 'bot.main'; this may result in unpredictable behaviour
+2025-03-27 09:31:35,081 [INFO] 🤖 Бот запущен!
+2025-03-27 09:31:35,082 [INFO] Start polling
+2025-03-27 09:31:35,173 [INFO] Run polling for bot @efbhfehb_2323_bot id=7821876298 - 'Бот'
+2025-03-27 09:31:35,329 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+2025-03-27 09:31:35,329 [INFO] select pg_catalog.version()
+2025-03-27 09:31:35,329 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-03-27 09:31:35,329 [INFO] [raw sql] ()
+2025-03-27 09:31:35,334 INFO sqlalchemy.engine.Engine select current_schema()
+2025-03-27 09:31:35,334 [INFO] select current_schema()
+2025-03-27 09:31:35,334 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-03-27 09:31:35,334 [INFO] [raw sql] ()
+2025-03-27 09:31:35,337 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+2025-03-27 09:31:35,337 [INFO] show standard_conforming_strings
+2025-03-27 09:31:35,337 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-03-27 09:31:35,337 [INFO] [raw sql] ()
+2025-03-27 09:31:35,338 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 09:31:35,338 [INFO] BEGIN (implicit)
+2025-03-27 09:31:35,345 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 09:31:35,345 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 09:31:35,346 INFO sqlalchemy.engine.Engine [generated in 0.00020s] (864179107,)
+2025-03-27 09:31:35,346 [INFO] [generated in 0.00020s] (864179107,)
+2025-03-27 09:31:35,357 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 09:31:35,357 [INFO] ROLLBACK
+2025-03-27 09:31:35,397 [INFO] Update id=178919804 is handled. Duration 176 ms by bot id=7821876298
+2025-03-27 09:31:35,399 [INFO] Update id=178919799 is handled. Duration 181 ms by bot id=7821876298
+2025-03-27 09:31:35,427 [INFO] Update id=178919801 is handled. Duration 208 ms by bot id=7821876298
+2025-03-27 09:31:35,446 [INFO] Update id=178919800 is handled. Duration 227 ms by bot id=7821876298
+2025-03-27 09:31:35,472 [INFO] Update id=178919802 is handled. Duration 253 ms by bot id=7821876298
+2025-03-27 09:31:35,498 [INFO] Update id=178919805 is handled. Duration 278 ms by bot id=7821876298
+2025-03-27 09:31:35,512 [INFO] Update id=178919806 is handled. Duration 243 ms by bot id=7821876298
+2025-03-27 09:31:35,540 [INFO] Update id=178919803 is handled. Duration 321 ms by bot id=7821876298
+2025-03-27 09:31:38,849 [INFO] Update id=178919807 is handled. Duration 120 ms by bot id=7821876298
+2025-03-27 09:31:44,745 [INFO] Update id=178919808 is handled. Duration 138 ms by bot id=7821876298
+2025-03-27 09:31:47,490 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 09:31:47,490 [INFO] BEGIN (implicit)
+2025-03-27 09:31:47,492 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:31:47,492 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:31:47,492 INFO sqlalchemy.engine.Engine [generated in 0.00023s] (864179107,)
+2025-03-27 09:31:47,492 [INFO] [generated in 0.00023s] (864179107,)
+2025-03-27 09:31:47,496 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 09:31:47,496 [INFO] ROLLBACK
+2025-03-27 09:31:47,503 [INFO] Connecting to 91.108.56.159:443/TcpFull...
+2025-03-27 09:31:47,681 [INFO] Connection to 91.108.56.159:443/TcpFull complete!
+2025-03-27 09:31:48,664 [INFO] Disconnecting from 91.108.56.159:443/TcpFull...
+2025-03-27 09:31:48,664 [INFO] Disconnection from 91.108.56.159:443/TcpFull complete!
+2025-03-27 09:31:48,723 [INFO] Update id=178919809 is handled. Duration 1235 ms by bot id=7821876298
+2025-03-27 09:31:54,931 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 09:31:54,931 [INFO] BEGIN (implicit)
+2025-03-27 09:31:54,932 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT AND telegram_sessions.session_file = $2::VARCHAR
+2025-03-27 09:31:54,932 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT AND telegram_sessions.session_file = $2::VARCHAR
+2025-03-27 09:31:54,932 INFO sqlalchemy.engine.Engine [generated in 0.00020s] (864179107, '601161423915.session')
+2025-03-27 09:31:54,932 [INFO] [generated in 0.00020s] (864179107, '601161423915.session')
+2025-03-27 09:31:54,943 INFO sqlalchemy.engine.Engine DELETE FROM telegram_sessions WHERE telegram_sessions.id = $1::BIGINT
+2025-03-27 09:31:54,943 [INFO] DELETE FROM telegram_sessions WHERE telegram_sessions.id = $1::BIGINT
+2025-03-27 09:31:54,943 INFO sqlalchemy.engine.Engine [generated in 0.00025s] (2,)
+2025-03-27 09:31:54,943 [INFO] [generated in 0.00025s] (2,)
+2025-03-27 09:31:54,946 INFO sqlalchemy.engine.Engine COMMIT
+2025-03-27 09:31:54,946 [INFO] COMMIT
+2025-03-27 09:31:55,034 [INFO] Update id=178919810 is handled. Duration 105 ms by bot id=7821876298
+2025-03-27 09:32:47,138 [INFO] Update id=178919811 is handled. Duration 59 ms by bot id=7821876298
+2025-03-27 09:32:47,985 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 09:32:47,985 [INFO] BEGIN (implicit)
+2025-03-27 09:32:47,985 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 09:32:47,985 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 09:32:47,985 INFO sqlalchemy.engine.Engine [cached since 72.64s ago] (721713059,)
+2025-03-27 09:32:47,985 [INFO] [cached since 72.64s ago] (721713059,)
+2025-03-27 09:32:47,987 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 09:32:47,987 [INFO] ROLLBACK
+2025-03-27 09:32:48,042 [INFO] Update id=178919812 is handled. Duration 58 ms by bot id=7821876298
+2025-03-27 09:32:49,844 [INFO] Update id=178919813 is handled. Duration 98 ms by bot id=7821876298
+2025-03-27 09:32:50,643 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 09:32:50,643 [INFO] BEGIN (implicit)
+2025-03-27 09:32:50,643 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:32:50,643 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:32:50,643 INFO sqlalchemy.engine.Engine [cached since 63.15s ago] (721713059,)
+2025-03-27 09:32:50,643 [INFO] [cached since 63.15s ago] (721713059,)
+2025-03-27 09:32:50,644 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 09:32:50,644 [INFO] ROLLBACK
+2025-03-27 09:32:50,646 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 09:32:50,671 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 09:32:50,951 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-27 09:32:50,952 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-27 09:32:51,137 [INFO] Update id=178919814 is handled. Duration 497 ms by bot id=7821876298
+2025-03-27 09:33:01,886 [INFO] Update id=178919815 is handled. Duration 75 ms by bot id=7821876298
+2025-03-27 09:33:04,884 [INFO] Update id=178919816 is handled. Duration 58 ms by bot id=7821876298
+2025-03-27 09:33:12,113 [INFO] Update id=178919817 is handled. Duration 145 ms by bot id=7821876298
+2025-03-27 09:33:16,033 [INFO] Update id=178919818 is handled. Duration 145 ms by bot id=7821876298
+2025-03-27 09:33:18,564 [INFO] Update id=178919819 is handled. Duration 90 ms by bot id=7821876298
+2025-03-27 09:33:20,885 [INFO] Update id=178919820 is handled. Duration 52 ms by bot id=7821876298
+2025-03-27 09:33:23,187 [INFO] Update id=178919821 is handled. Duration 50 ms by bot id=7821876298
+2025-03-27 09:34:21,920 [INFO] Update id=178919822 is handled. Duration 125 ms by bot id=7821876298
+2025-03-27 09:34:38,164 [INFO] Update id=178919823 is handled. Duration 59 ms by bot id=7821876298
+2025-03-27 09:34:40,479 [INFO] Update id=178919824 is handled. Duration 119 ms by bot id=7821876298
+2025-03-27 09:35:11,357 [INFO] Update id=178919825 is handled. Duration 123 ms by bot id=7821876298
+2025-03-27 09:35:12,746 [INFO] Update id=178919826 is handled. Duration 97 ms by bot id=7821876298
+2025-03-27 09:35:15,231 [INFO] Update id=178919827 is handled. Duration 78 ms by bot id=7821876298
+2025-03-27 09:35:18,074 [INFO] Update id=178919828 is handled. Duration 67 ms by bot id=7821876298
+2025-03-27 09:35:19,674 [INFO] Update id=178919829 is handled. Duration 57 ms by bot id=7821876298
+2025-03-27 09:35:22,851 [INFO] Update id=178919830 is handled. Duration 55 ms by bot id=7821876298
+2025-03-27 09:35:30,295 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 09:35:30,295 [INFO] BEGIN (implicit)
+2025-03-27 09:35:30,296 INFO sqlalchemy.engine.Engine SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-27 09:35:30,296 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions
+2025-03-27 09:35:30,296 INFO sqlalchemy.engine.Engine [generated in 0.00017s] ()
+2025-03-27 09:35:30,296 [INFO] [generated in 0.00017s] ()
+2025-03-27 09:35:30,304 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 09:35:30,329 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 09:35:30,620 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-27 09:35:30,620 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-27 09:36:30,627 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 09:36:30,627 [INFO] ROLLBACK
+2025-03-27 09:36:30,741 [INFO] Подписка завершена: 0 успешных, 1 ошибок
+2025-03-27 09:36:30,804 [INFO] Update id=178919831 is handled. Duration 60561 ms by bot id=7821876298
+2025-03-27 09:38:36,061 [INFO] Update id=178919832 is handled. Duration 55 ms by bot id=7821876298
+2025-03-27 09:38:39,414 [INFO] Update id=178919833 is not handled. Duration 3 ms by bot id=7821876298
+2025-03-27 09:38:39,414 [ERROR] Cause exception while process update id=178919833 by bot id=7821876298
+TypeError: check_subscription() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/TelegramBot/bot/handlers.py", line 245, in process_check_subscription
+    await check_subscription(message, group_link)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: check_subscription() takes 1 positional argument but 2 were given
+2025-03-27 09:40:54,000 [INFO] Update id=178919834 is handled. Duration 53 ms by bot id=7821876298
+2025-03-27 09:40:55,122 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 09:40:55,122 [INFO] BEGIN (implicit)
+2025-03-27 09:40:55,123 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 09:40:55,123 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 09:40:55,123 INFO sqlalchemy.engine.Engine [cached since 559.8s ago] (864179107,)
+2025-03-27 09:40:55,123 [INFO] [cached since 559.8s ago] (864179107,)
+2025-03-27 09:40:55,125 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 09:40:55,125 [INFO] ROLLBACK
+2025-03-27 09:40:55,171 [INFO] Update id=178919835 is handled. Duration 49 ms by bot id=7821876298
+2025-03-27 09:40:57,600 [INFO] Update id=178919836 is handled. Duration 48 ms by bot id=7821876298
+2025-03-27 09:41:13,533 [INFO] Update id=178919837 is handled. Duration 50 ms by bot id=7821876298
+2025-03-27 09:41:18,462 [INFO] Update id=178919838 is handled. Duration 56 ms by bot id=7821876298
+2025-03-27 09:41:22,044 [INFO] Update id=178919839 is not handled. Duration 8 ms by bot id=7821876298
+2025-03-27 09:41:22,045 [ERROR] Cause exception while process update id=178919839 by bot id=7821876298
+TypeError: start_spam() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/TelegramBot/bot/handlers.py", line 250, in process_spam_message
+    await start_spam(message, message.text.strip())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: start_spam() takes 1 positional argument but 2 were given
+2025-03-27 09:41:31,073 [INFO] Update id=178919840 is handled. Duration 86 ms by bot id=7821876298
+2025-03-27 09:49:43,765 [INFO] Update id=178919841 is handled. Duration 89 ms by bot id=7821876298
+2025-03-27 09:49:46,103 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 09:49:46,103 [INFO] BEGIN (implicit)
+2025-03-27 09:49:46,103 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 09:49:46,103 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 09:49:46,103 INFO sqlalchemy.engine.Engine [cached since 1091s ago] (864179107,)
+2025-03-27 09:49:46,103 [INFO] [cached since 1091s ago] (864179107,)
+2025-03-27 09:49:46,106 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 09:49:46,106 [INFO] ROLLBACK
+2025-03-27 09:49:46,195 [INFO] Update id=178919842 is handled. Duration 93 ms by bot id=7821876298
+2025-03-27 09:50:02,371 [INFO] Update id=178919843 is handled. Duration 50 ms by bot id=7821876298
+2025-03-27 09:50:07,354 [INFO] Update id=178919844 is handled. Duration 201 ms by bot id=7821876298
+2025-03-27 09:50:14,787 [INFO] Update id=178919845 is handled. Duration 46 ms by bot id=7821876298
+2025-03-27 09:50:17,638 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-03-27 09:50:17,638 [INFO] BEGIN (implicit)
+2025-03-27 09:50:17,639 INFO sqlalchemy.engine.Engine SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 09:50:17,639 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 09:50:17,639 INFO sqlalchemy.engine.Engine [cached since 1122s ago] (864179107,)
+2025-03-27 09:50:17,639 [INFO] [cached since 1122s ago] (864179107,)
+2025-03-27 09:50:17,641 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-03-27 09:50:17,641 [INFO] ROLLBACK
+2025-03-27 09:50:17,690 [INFO] Update id=178919846 is handled. Duration 52 ms by bot id=7821876298
+2025-03-27 09:50:24,396 [INFO] Update id=178919847 is handled. Duration 64 ms by bot id=7821876298
+2025-03-27 09:50:33,315 [INFO] Update id=178919848 is handled. Duration 51 ms by bot id=7821876298
