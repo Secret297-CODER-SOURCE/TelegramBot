@@ -227,9 +227,17 @@ async def get_password(message: types.Message, state: FSMContext):
         await message.answer(f"❌ Ошибка: {e}")
         await state.clear()
 
+def escape_markdown(text: str) -> str:
+    # Экранирование символов для Markdown V1
+    escape_chars = r"\_*[]()~`>#+-=|{}.!"
+    return re.sub(rf"([{re.escape(escape_chars)}])", r"\\\1", text)
+
+
 async def list_sessions(message: types.Message):
     async for db in get_db():
-        sessions = await db.execute(select(TelegramSession).where(TelegramSession.user_id == message.from_user.id))
+        sessions = await db.execute(
+            select(TelegramSession).where(TelegramSession.user_id == message.from_user.id)
+        )
         sessions = sessions.scalars().all()
 
     if not sessions:
@@ -257,9 +265,16 @@ async def list_sessions(message: types.Message):
         except Exception:
             user_display = "⚠ Ошибка загрузки"
 
-        text += f"🔹 {session_name} {user_display}\n"
+        # Экранируем все переменные перед вставкой в Markdown
+        safe_session_name = escape_markdown(session_name)
+        safe_user_display = escape_markdown(user_display)
+
+        text += f"🔹 {safe_session_name} {safe_user_display}\n"
         keyboard.inline_keyboard.append([
-            InlineKeyboardButton(text=f"🗑 Удалить {session_name}", callback_data=f"delete_session:{session.session_file}")
+            InlineKeyboardButton(
+                text=f"🗑 Удалить {session_name}",
+                callback_data=f"delete_session:{session.session_file}"
+            )
         ])
 
     await message.answer(text, reply_markup=keyboard, parse_mode="Markdown")

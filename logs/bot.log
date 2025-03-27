@@ -10402,3 +10402,368 @@ WHERE users.id = $1::BIGINT
 2025-03-26 22:11:01,827 [INFO] Update id=677740778 is handled. Duration 83 ms by bot id=7852439023
 2025-03-26 22:17:05,299 [INFO] Polling stopped
 2025-03-26 22:17:05,521 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-27 08:48:39,068 [INFO] 🤖 Бот запущен!
+2025-03-27 08:48:39,079 [INFO] Start polling
+2025-03-27 08:48:39,468 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-27 08:48:53,918 [INFO] Update id=677740779 is handled. Duration 323 ms by bot id=7852439023
+2025-03-27 08:48:55,170 [INFO] Update id=677740780 is handled. Duration 144 ms by bot id=7852439023
+2025-03-27 08:49:18,383 [INFO] Update id=677740781 is handled. Duration 251 ms by bot id=7852439023
+2025-03-27 08:49:26,692 [INFO] Update id=677740782 is handled. Duration 101 ms by bot id=7852439023
+2025-03-27 08:49:31,951 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 08:49:32,011 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:49:32,094 [INFO] System clock is wrong, set time offset to 7205s
+2025-03-27 08:49:32,228 [WARNING] Server resent the older message 7486408790558994433, ignoring
+2025-03-27 08:49:32,778 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-27 08:49:32,785 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:49:32,790 [INFO] Update id=677740783 is handled. Duration 864 ms by bot id=7852439023
+2025-03-27 08:49:38,425 [INFO] select pg_catalog.version()
+2025-03-27 08:49:38,425 [INFO] [raw sql] ()
+2025-03-27 08:49:38,433 [INFO] select current_schema()
+2025-03-27 08:49:38,433 [INFO] [raw sql] ()
+2025-03-27 08:49:38,441 [INFO] show standard_conforming_strings
+2025-03-27 08:49:38,442 [INFO] [raw sql] ()
+2025-03-27 08:49:38,446 [INFO] BEGIN (implicit)
+2025-03-27 08:49:38,467 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:49:38,468 [INFO] [generated in 0.00159s] (7444003086,)
+2025-03-27 08:49:38,483 [INFO] ROLLBACK
+2025-03-27 08:49:38,487 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 08:49:38,562 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:49:38,638 [INFO] System clock is wrong, set time offset to 7205s
+2025-03-27 08:49:38,707 [WARNING] Server resent the older message 7486408818682750977, ignoring
+2025-03-27 08:49:39,176 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-27 08:49:39,184 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:49:39,194 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 08:49:39,257 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:49:39,339 [INFO] System clock is wrong, set time offset to 7205s
+2025-03-27 08:49:40,428 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-27 08:49:40,431 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:49:40,537 [INFO] Update id=677740784 is handled. Duration 2444 ms by bot id=7852439023
+2025-03-27 08:49:43,172 [INFO] BEGIN (implicit)
+2025-03-27 08:49:43,179 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT AND telegram_sessions.session_file = $2::VARCHAR
+2025-03-27 08:49:43,191 [INFO] [generated in 0.01136s] (7444003086, '380665662638.session')
+2025-03-27 08:49:43,208 [INFO] DELETE FROM telegram_sessions WHERE telegram_sessions.id = $1::BIGINT
+2025-03-27 08:49:43,209 [INFO] [generated in 0.00112s] (12,)
+2025-03-27 08:49:43,219 [INFO] COMMIT
+2025-03-27 08:49:43,418 [INFO] Update id=677740785 is handled. Duration 254 ms by bot id=7852439023
+2025-03-27 08:49:44,592 [INFO] BEGIN (implicit)
+2025-03-27 08:49:44,594 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT AND telegram_sessions.session_file = $2::VARCHAR
+2025-03-27 08:49:44,594 [INFO] [cached since 1.415s ago] (7444003086, '380638667495.session')
+2025-03-27 08:49:44,598 [INFO] DELETE FROM telegram_sessions WHERE telegram_sessions.id = $1::BIGINT
+2025-03-27 08:49:44,599 [INFO] [cached since 1.391s ago] (11,)
+2025-03-27 08:49:44,608 [INFO] COMMIT
+2025-03-27 08:49:45,473 [INFO] Update id=677740786 is handled. Duration 883 ms by bot id=7852439023
+2025-03-27 08:51:27,112 [INFO] 👤 5476099221 открыл меню
+2025-03-27 08:51:27,114 [INFO] Update id=677740787 is handled. Duration 136 ms by bot id=7852439023
+2025-03-27 08:51:28,721 [INFO] Update id=677740788 is handled. Duration 112 ms by bot id=7852439023
+2025-03-27 08:51:30,002 [INFO] Update id=677740789 is handled. Duration 113 ms by bot id=7852439023
+2025-03-27 08:51:41,220 [INFO] Update id=677740790 is handled. Duration 146 ms by bot id=7852439023
+2025-03-27 08:51:52,474 [INFO] Update id=677740791 is handled. Duration 104 ms by bot id=7852439023
+2025-03-27 08:52:03,322 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 08:52:04,886 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:52:05,268 [INFO] 📨 Попытка отправки кода на +5583996004385...
+2025-03-27 08:52:05,366 [INFO] Phone migrated to 1
+2025-03-27 08:52:05,367 [INFO] Reconnecting to new data center 1
+2025-03-27 08:52:05,469 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-27 08:52:05,471 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-27 08:52:05,473 [INFO] Connecting to 149.154.175.58:443/TcpFull...
+2025-03-27 08:52:08,354 [INFO] Connection to 149.154.175.58:443/TcpFull complete!
+2025-03-27 08:52:09,787 [INFO] 📩 Код отправлен! `phone_code_hash`: 4f8918fb672c0e54e4
+2025-03-27 08:52:09,931 [INFO] Update id=677740792 is handled. Duration 6710 ms by bot id=7852439023
+2025-03-27 08:52:19,167 [INFO] Connecting to 149.154.175.58:443/TcpFull...
+2025-03-27 08:52:19,354 [INFO] Connection to 149.154.175.58:443/TcpFull complete!
+2025-03-27 08:52:19,602 [INFO] System clock is wrong, set time offset to 7205s
+2025-03-27 08:52:20,197 [INFO] 📨 Попытка входа: phone=+5583996004385, code=76423, phone_code_hash=4f8918fb672c0e54e4
+2025-03-27 08:52:20,629 [WARNING] ❌ Код истёк для +5583996004385, запрашиваю новый...
+2025-03-27 08:52:21,042 [INFO] Disconnecting from 149.154.175.58:443/TcpFull...
+2025-03-27 08:52:21,044 [INFO] Disconnection from 149.154.175.58:443/TcpFull complete!
+2025-03-27 08:52:21,057 [INFO] Update id=677740793 is handled. Duration 1928 ms by bot id=7852439023
+2025-03-27 08:52:38,204 [INFO] BEGIN (implicit)
+2025-03-27 08:52:38,205 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 08:52:38,206 [INFO] [cached since 179.7s ago] (5476099221,)
+2025-03-27 08:52:38,209 [INFO] ROLLBACK
+2025-03-27 08:52:38,307 [INFO] Update id=677740794 is handled. Duration 112 ms by bot id=7852439023
+2025-03-27 08:52:39,858 [INFO] Update id=677740795 is handled. Duration 187 ms by bot id=7852439023
+2025-03-27 08:52:41,285 [INFO] Update id=677740796 is handled. Duration 134 ms by bot id=7852439023
+2025-03-27 08:52:43,962 [INFO] Update id=677740797 is handled. Duration 185 ms by bot id=7852439023
+2025-03-27 08:52:47,848 [INFO] Update id=677740798 is handled. Duration 121 ms by bot id=7852439023
+2025-03-27 09:09:37,228 [INFO] Polling stopped
+2025-03-27 09:09:37,628 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-27 09:10:13,373 [INFO] 🤖 Бот запущен!
+2025-03-27 09:10:13,374 [INFO] Start polling
+2025-03-27 09:10:13,755 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-27 09:10:20,685 [INFO] select pg_catalog.version()
+2025-03-27 09:10:20,686 [INFO] [raw sql] ()
+2025-03-27 09:10:20,690 [INFO] select current_schema()
+2025-03-27 09:10:20,691 [INFO] [raw sql] ()
+2025-03-27 09:10:20,693 [INFO] show standard_conforming_strings
+2025-03-27 09:10:20,694 [INFO] [raw sql] ()
+2025-03-27 09:10:20,697 [INFO] BEGIN (implicit)
+2025-03-27 09:10:20,709 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:10:20,711 [INFO] [generated in 0.00124s] (7444003086,)
+2025-03-27 09:10:20,718 [INFO] ROLLBACK
+2025-03-27 09:10:21,216 [INFO] Update id=677740799 is handled. Duration 805 ms by bot id=7852439023
+2025-03-27 09:10:40,394 [INFO] Polling stopped
+2025-03-27 09:10:40,558 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2775)
+2025-03-27 09:10:40,559 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7852439023)
+2025-03-27 09:10:40,663 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-27 09:10:54,775 [INFO] 🤖 Бот запущен!
+2025-03-27 09:10:54,776 [INFO] Start polling
+2025-03-27 09:10:55,171 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-27 09:11:16,506 [INFO] select pg_catalog.version()
+2025-03-27 09:11:16,507 [INFO] [raw sql] ()
+2025-03-27 09:11:16,511 [INFO] select current_schema()
+2025-03-27 09:11:16,512 [INFO] [raw sql] ()
+2025-03-27 09:11:16,515 [INFO] show standard_conforming_strings
+2025-03-27 09:11:16,516 [INFO] [raw sql] ()
+2025-03-27 09:11:16,521 [INFO] BEGIN (implicit)
+2025-03-27 09:11:16,537 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:11:16,538 [INFO] [generated in 0.00115s] (7444003086,)
+2025-03-27 09:11:16,545 [INFO] ROLLBACK
+2025-03-27 09:11:16,899 [INFO] Update id=677740800 is handled. Duration 726 ms by bot id=7852439023
+2025-03-27 09:11:35,780 [INFO] Update id=677740801 is handled. Duration 115 ms by bot id=7852439023
+2025-03-27 09:11:37,358 [INFO] BEGIN (implicit)
+2025-03-27 09:11:37,359 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:11:37,360 [INFO] [cached since 20.82s ago] (7444003086,)
+2025-03-27 09:11:37,365 [INFO] ROLLBACK
+2025-03-27 09:11:37,581 [INFO] Update id=677740802 is handled. Duration 230 ms by bot id=7852439023
+2025-03-27 09:11:39,120 [INFO] BEGIN (implicit)
+2025-03-27 09:11:39,121 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:11:39,122 [INFO] [cached since 22.59s ago] (7444003086,)
+2025-03-27 09:11:39,124 [INFO] ROLLBACK
+2025-03-27 09:11:39,299 [INFO] Update id=677740803 is handled. Duration 186 ms by bot id=7852439023
+2025-03-27 09:12:12,045 [INFO] BEGIN (implicit)
+2025-03-27 09:12:12,046 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:12:12,047 [INFO] [cached since 55.51s ago] (864179107,)
+2025-03-27 09:12:12,050 [INFO] ROLLBACK
+2025-03-27 09:12:12,192 [INFO] Update id=677740804 is handled. Duration 154 ms by bot id=7852439023
+2025-03-27 09:12:14,478 [INFO] 👤 864179107 открыл меню
+2025-03-27 09:12:14,479 [INFO] Update id=677740805 is handled. Duration 181 ms by bot id=7852439023
+2025-03-27 09:12:15,271 [INFO] Update id=677740806 is handled. Duration 123 ms by bot id=7852439023
+2025-03-27 09:12:17,395 [INFO] BEGIN (implicit)
+2025-03-27 09:12:17,397 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:12:17,401 [INFO] [cached since 60.86s ago] (864179107,)
+2025-03-27 09:12:17,404 [INFO] ROLLBACK
+2025-03-27 09:12:17,541 [INFO] Update id=677740807 is handled. Duration 154 ms by bot id=7852439023
+2025-03-27 09:12:26,016 [INFO] BEGIN (implicit)
+2025-03-27 09:12:26,019 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:12:26,020 [INFO] [cached since 69.48s ago] (5476099221,)
+2025-03-27 09:12:26,026 [INFO] ROLLBACK
+2025-03-27 09:12:26,173 [INFO] Update id=677740808 is handled. Duration 175 ms by bot id=7852439023
+2025-03-27 09:12:27,587 [INFO] Update id=677740809 is handled. Duration 163 ms by bot id=7852439023
+2025-03-27 09:22:24,995 [INFO] Polling stopped
+2025-03-27 09:22:25,608 [INFO] Polling stopped for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-27 09:22:28,493 [ERROR] Task was destroyed but it is pending!
+task: <Task cancelling name='Task-3' coro=<Event.wait() running at C:\Users\maks4\AppData\Local\Programs\Python\Python313\Lib\asyncio\locks.py:213> wait_for=<Future cancelled> cb=[gather.<locals>._done_callback() at C:\Users\maks4\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:820]>
+2025-03-27 09:22:41,068 [INFO] 🤖 Бот запущен!
+2025-03-27 09:22:41,069 [INFO] Start polling
+2025-03-27 09:22:41,465 [INFO] Run polling for bot @name_itfriends_bot id=7852439023 - 'Name'
+2025-03-27 09:24:42,165 [INFO] select pg_catalog.version()
+2025-03-27 09:24:42,166 [INFO] [raw sql] ()
+2025-03-27 09:24:42,169 [INFO] select current_schema()
+2025-03-27 09:24:42,169 [INFO] [raw sql] ()
+2025-03-27 09:24:42,172 [INFO] show standard_conforming_strings
+2025-03-27 09:24:42,173 [INFO] [raw sql] ()
+2025-03-27 09:24:42,175 [INFO] BEGIN (implicit)
+2025-03-27 09:24:42,186 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:24:42,187 [INFO] [generated in 0.00094s] (864179107,)
+2025-03-27 09:24:42,194 [INFO] ROLLBACK
+2025-03-27 09:24:42,551 [INFO] Update id=677740810 is handled. Duration 652 ms by bot id=7852439023
+2025-03-27 09:24:46,952 [INFO] BEGIN (implicit)
+2025-03-27 09:24:46,954 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:24:46,957 [INFO] [cached since 4.77s ago] (864179107,)
+2025-03-27 09:24:46,963 [INFO] ROLLBACK
+2025-03-27 09:24:47,096 [INFO] Update id=677740811 is handled. Duration 162 ms by bot id=7852439023
+2025-03-27 09:25:03,636 [INFO] Update id=677740812 is handled. Duration 128 ms by bot id=7852439023
+2025-03-27 09:25:12,985 [INFO] Update id=677740813 is handled. Duration 123 ms by bot id=7852439023
+2025-03-27 09:25:20,955 [INFO] Update id=677740814 is handled. Duration 117 ms by bot id=7852439023
+2025-03-27 09:25:24,338 [INFO] Connecting to 149.154.167.51:443/TcpFull...
+2025-03-27 09:25:26,551 [INFO] Connection to 149.154.167.51:443/TcpFull complete!
+2025-03-27 09:25:26,909 [INFO] 📨 Попытка отправки кода на +601161423915...
+2025-03-27 09:25:27,029 [INFO] Phone migrated to 5
+2025-03-27 09:25:27,030 [INFO] Reconnecting to new data center 5
+2025-03-27 09:25:27,184 [INFO] Disconnecting from 149.154.167.51:443/TcpFull...
+2025-03-27 09:25:27,186 [INFO] Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-03-27 09:25:27,187 [INFO] Connecting to 91.108.56.127:443/TcpFull...
+2025-03-27 09:25:29,504 [INFO] Connection to 91.108.56.127:443/TcpFull complete!
+2025-03-27 09:25:30,973 [INFO] 📩 Код отправлен! `phone_code_hash`: 6fff89fa5e8cca8189
+2025-03-27 09:25:31,103 [INFO] Update id=677740815 is handled. Duration 6822 ms by bot id=7852439023
+2025-03-27 09:25:45,259 [INFO] Connecting to 91.108.56.127:443/TcpFull...
+2025-03-27 09:25:45,479 [INFO] Connection to 91.108.56.127:443/TcpFull complete!
+2025-03-27 09:25:45,714 [INFO] System clock is wrong, set time offset to 7205s
+2025-03-27 09:25:45,940 [WARNING] Server resent the older message 7486418126729987073, ignoring
+2025-03-27 09:25:46,597 [INFO] 📨 Попытка входа: phone=+601161423915, code=89589, phone_code_hash=6fff89fa5e8cca8189
+2025-03-27 09:25:47,525 [INFO] BEGIN (implicit)
+2025-03-27 09:25:47,529 [INFO] SELECT users.id, users.telegram_id, users.username, users.is_admin 
+FROM users 
+WHERE users.id = $1::BIGINT
+2025-03-27 09:25:47,530 [INFO] [generated in 0.00102s] (864179107,)
+2025-03-27 09:25:47,542 [INFO] INSERT INTO users (id, telegram_id, username, is_admin) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR, $4::BOOLEAN)
+2025-03-27 09:25:47,543 [INFO] [generated in 0.00117s] (864179107, 864179107, None, False)
+2025-03-27 09:25:47,555 [INFO] COMMIT
+2025-03-27 09:25:47,559 [INFO] BEGIN (implicit)
+2025-03-27 09:25:47,562 [INFO] INSERT INTO telegram_sessions (user_id, api_id, api_hash, session_file) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR, $4::VARCHAR) RETURNING telegram_sessions.id
+2025-03-27 09:25:47,562 [INFO] [generated in 0.00053s] (864179107, 24708318, '3abcbbfb6277f455bb79dc381432f384', '601161423915.session')
+2025-03-27 09:25:47,573 [INFO] COMMIT
+2025-03-27 09:25:47,575 [INFO] 🔹 Сессия создана для +601161423915
+2025-03-27 09:25:47,576 [INFO] Disconnecting from 91.108.56.127:443/TcpFull...
+2025-03-27 09:25:47,578 [INFO] Disconnection from 91.108.56.127:443/TcpFull complete!
+2025-03-27 09:25:47,582 [INFO] Update id=677740816 is handled. Duration 2335 ms by bot id=7852439023
+2025-03-27 09:25:51,002 [INFO] BEGIN (implicit)
+2025-03-27 09:25:51,004 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:25:51,005 [INFO] [cached since 68.82s ago] (864179107,)
+2025-03-27 09:25:51,008 [INFO] ROLLBACK
+2025-03-27 09:25:51,012 [INFO] Connecting to 91.108.56.127:443/TcpFull...
+2025-03-27 09:25:51,242 [INFO] Connection to 91.108.56.127:443/TcpFull complete!
+2025-03-27 09:25:51,491 [INFO] System clock is wrong, set time offset to 7205s
+2025-03-27 09:25:51,736 [WARNING] Server resent the older message 7486418151594618881, ignoring
+2025-03-27 09:25:52,697 [INFO] Disconnecting from 91.108.56.127:443/TcpFull...
+2025-03-27 09:25:52,721 [INFO] Disconnection from 91.108.56.127:443/TcpFull complete!
+2025-03-27 09:25:52,926 [INFO] Update id=677740817 is handled. Duration 1929 ms by bot id=7852439023
+2025-03-27 09:26:00,318 [INFO] BEGIN (implicit)
+2025-03-27 09:26:00,320 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT AND telegram_sessions.session_file = $2::VARCHAR
+2025-03-27 09:26:00,321 [INFO] [generated in 0.00079s] (864179107, '601161423915.session')
+2025-03-27 09:26:00,330 [INFO] DELETE FROM telegram_sessions WHERE telegram_sessions.id = $1::BIGINT
+2025-03-27 09:26:00,330 [INFO] [generated in 0.00073s] (13,)
+2025-03-27 09:26:00,335 [INFO] COMMIT
+2025-03-27 09:26:00,339 [INFO] Update id=677740818 is not handled. Duration 22 ms by bot id=7852439023
+2025-03-27 09:26:00,339 [ERROR] Cause exception while process update id=677740818 by bot id=7852439023
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'sessions/601161423915.session'
+Traceback (most recent call last):
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\PycharmProjects\TelegramBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\maks4\OneDrive\Документы\GitHub\TelegramBot\bot\session_manager.py", line 305, in delete_session
+    os.remove(session_path)
+    ~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'sessions/601161423915.session'
+2025-03-27 09:26:17,427 [INFO] BEGIN (implicit)
+2025-03-27 09:26:17,428 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:26:17,429 [INFO] [cached since 95.24s ago] (864179107,)
+2025-03-27 09:26:17,431 [INFO] ROLLBACK
+2025-03-27 09:26:17,563 [INFO] Update id=677740819 is handled. Duration 142 ms by bot id=7852439023
+2025-03-27 09:29:06,697 [INFO] BEGIN (implicit)
+2025-03-27 09:29:06,698 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:29:06,701 [INFO] [cached since 264.5s ago] (864179107,)
+2025-03-27 09:29:06,703 [INFO] ROLLBACK
+2025-03-27 09:29:06,881 [INFO] Update id=677740820 is handled. Duration 190 ms by bot id=7852439023
+2025-03-27 09:29:07,921 [INFO] BEGIN (implicit)
+2025-03-27 09:29:07,922 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:29:07,923 [INFO] [cached since 265.7s ago] (864179107,)
+2025-03-27 09:29:07,925 [INFO] ROLLBACK
+2025-03-27 09:29:08,049 [INFO] Update id=677740821 is handled. Duration 135 ms by bot id=7852439023
+2025-03-27 09:29:08,705 [INFO] BEGIN (implicit)
+2025-03-27 09:29:08,706 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:29:08,707 [INFO] [cached since 266.5s ago] (864179107,)
+2025-03-27 09:29:08,708 [INFO] ROLLBACK
+2025-03-27 09:29:08,860 [INFO] Update id=677740822 is handled. Duration 162 ms by bot id=7852439023
+2025-03-27 09:29:09,148 [INFO] BEGIN (implicit)
+2025-03-27 09:29:09,151 [INFO] SELECT telegram_sessions.id, telegram_sessions.user_id, telegram_sessions.api_id, telegram_sessions.api_hash, telegram_sessions.session_file 
+FROM telegram_sessions 
+WHERE telegram_sessions.user_id = $1::BIGINT
+2025-03-27 09:29:09,153 [INFO] [cached since 267s ago] (864179107,)
+2025-03-27 09:29:09,156 [INFO] ROLLBACK
+2025-03-27 09:29:09,287 [INFO] Update id=677740823 is handled. Duration 147 ms by bot id=7852439023
+2025-03-27 10:29:42,948 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-03-27 10:29:43,398 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7852439023)
+2025-03-27 10:29:45,175 [WARNING] Server closed the connection: [WinError 64] Указанное сетевое имя более недоступно
+2025-03-27 10:29:45,349 [INFO] Connection closed while receiving data: [WinError 64] Указанное сетевое имя более недоступно
+2025-03-27 10:29:45,455 [INFO] Closing current connection to begin reconnect...
+2025-03-27 10:29:45,714 [INFO] <class 'ConnectionResetError'> during disconnect: [WinError 64] Указанное сетевое имя более недоступно
+2025-03-27 10:29:45,853 [INFO] Connecting to 91.108.56.127:443/TcpFull...
+2025-03-27 10:29:46,269 [INFO] Connection to 91.108.56.127:443/TcpFull complete!
+2025-03-27 10:29:47,522 [WARNING] Server resent the older message 7486434624061436929, ignoring
+2025-03-27 10:29:58,231 [INFO] Connection established (tryings = 1, bot id = 7852439023)
